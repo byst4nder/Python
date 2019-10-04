@@ -1,0 +1,4994 @@
+<html style="overflow: hidden;"><head><link href="/js/jquery/jquery_dialog_wev8.css" type="text/css" rel="STYLESHEET">
+<script type="text/javascript" src="/wui/common/jquery/jquery.min_wev8.js"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery/jquery_dialog_wev8.js"></script>
+
+<script src="/social/js/drageasy/drageasy.js"></script>
+<script type="text/javascript" src="/social/js/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/social/im/js/IMUtil_wev8.js"></script>
+
+<script type="text/javascript" src="/social/js/imcarousel/imcarousel.js"></script>
+<script type="text/javascript" language="javascript">
+function ReloadOpenerByDialogClose() {
+    document.location="/login/VerifyRtxLogin.jsp?para=309E8BC1C22704EC492584DB74590E0F46935E31BF5D9843615D29FFD937E2D65A0A8FDCF036954FA28CA24C228A27AEEFCFE3F15C7B97ABD6D2CDBA3506A7A1783833BABAF4F1022EFE556551D1C0C388004F20AD7C5482A2B033A52D706E0C9E80AD536240F008F7590D1EE7EC0068";
+        return;
+
+
+}
+
+function doScannerEscape(ev, obj){
+	IMCarousel.doScannerEscape(ev, obj);
+}
+
+function scaleImg(obj, tag){
+	IMCarousel.scaleImg(obj, tag);
+}
+
+function rotateImg(obj){
+	IMCarousel.rotateImg(obj);
+}
+
+function downloadImg(obj){
+	IMCarousel.downloadImg(obj);
+}
+
+function slideImg(obj, direction){
+	IMCarousel.slideImg(obj, direction);
+}
+
+function showImgScanner(ev, isShow, id){
+	IMCarousel.showImgScanner(ev, isShow, id);
+}
+
+function downloads(id){
+	document.location.href="/weaver/weaver.file.FileDownload?fileid="+id+"&download=1";
+}
+</script>
+
+
+<script type="text/javascript">
+	jQuery.ajax({
+		url:"/dateformat/timezone.jsp?timeZoneOffset="+new Date().getTimezoneOffset(),
+		type:"get",
+		dataType:"text",
+		error:function(xhr,msg,e){
+			if(window.console)console.log("wui/main.jsp#timezone.jsp error!");
+		}
+	});
+</script>
+
+
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8;">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+        <title>重庆市第六人民医院 - 王炼</title>
+		<!--For Base-->
+		<script type="text/javascript">
+		var isShowLeftMenu=1
+		</script>
+		<link rel="stylesheet" type="text/css" href="/wui/common/css/base_wev8.css">
+		<link rel="stylesheet" href="/wui/common/js/MenuMatic/css/MenuMatic_wev8.css" type="text/css" media="screen">
+		<script type="text/javascript" src="/js/ecology8/lang/weaver_lang_7_wev8.js"></script>
+		<script type="text/javascript" src="/wui/theme/ecology8/jquery/js/zDrag_wev8.js"></script>
+		<script type="text/javascript" src="/wui/theme/ecology8/jquery/js/zDialog_wev8.js"></script>
+		<link href="/wui/theme/ecology8/jquery/js/e8_zDialog_btn_wev8.css" type="text/css" rel="STYLESHEET">
+		
+		<link rel="stylesheet" href="/wui/common/js/MenuMatic/css/MenuMatic_wev8.css" type="text/css" media="screen">
+		<script type="text/javascript" src="/appres/hrm/js/mfcommon_wev8.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/wui/theme/ecology8/page/perfect-scrollbar/perfect-scrollbar_wev8.css">
+		<script type="text/javascript" src="/wui/theme/ecology8/page/perfect-scrollbar/perfect-scrollbar_wev8.js"></script>
+		<script type="text/javascript" src="/wui/theme/ecology8/page/perfect-scrollbar/jquery.mousewheel_wev8.js"></script>
+		<script type="text/javascript" src="/js/jquery/plugins/client/jquery.client_wev8.js"></script>
+		<script src="/wui/common/js/MenuMatic/js/mootools-yui-compressed_wev8.js"></script>
+		<script src="/wui/common/js/MenuMatic/js/MenuMatic_0.68.3-source_wev8.js" type="text/javascript"></script>
+		
+		 <!--[if IE 6]>
+			<script type='text/javascript' src='/wui/common/jquery/plugin/8a-min_wev8.js'></script>
+		<![endif]-->
+		 <!--[if IE 6]>	
+			<script languange="javascript">
+				DD_belatedPNG.fix('.menuItemIcon,#divFloatBg,.menuNavSpan_Expand,.menuNavSpan_Contraction,.toolbarSplitLine,#navTd span,.divFloatLeftmenu div,#leftBlockHrmInfoCenter,#topBlockHiddenContr,#leftBlockHiddenContr,.leftBlockTopBgLeft,.leftBlockHrmInfoLeft,.leftBlockHrmInfoRight,.leftMenuBottomLeft,.leftMenuBottomRight,.versiontype,#tblHrmToolbr span,.tbItm,#toolbarMoreBlockTop,.searchBlockBgDiv,#sign_dispan,.topBlockDateBlock,.toolbarTopRight,background');
+				DD_belatedPNG.fix('#logo');
+			</script>  
+			<STYLE TYPE="text/css">
+				html {filter:expression(document.execCommand("BackgroundImageCache", false, true));}
+			</style>
+
+		<![endif]-->
+      
+            
+            
+		            	<link rel="stylesheet" id="themecolorfile" type="text/css" href="/wui/theme/ecology8/skins/default/page/left_wev8.css"> 
+		            	<style type="text/css" id="themecolor">
+		            	.logocolor{
+							background-color:#008df6!important;
+						}
+						
+						.logobordercolor{
+							border-color: #008df6!important;
+						}
+						
+						
+						.hrmcolor{
+							background-color:#003667;
+						}
+						
+						.leftcolor{
+							background-color:#2a2e34!important;
+						}
+						
+						.topcolor{
+							background-color:#0070c1;
+						}
+						</style> 
+		            	
+        <link rel="stylesheet" id="portalCss" type="text/css" href="/wui/theme/ecology8/skins/default/page/_wev8.css"> 
+        
+            
+        <style type="text/css">
+            body{
+                 margin: 0px; 
+                /*可以被动态更改的值*/
+                /*background:url('images/body-bg_wev8.png') repeat-y;*/
+                font-size: 9pt;font-family: verdana;
+                
+            }
+            TABLE {
+			    FONT-SIZE: 9pt; FONT-FAMILY: Verdana
+			}
+            .xTable_message{
+			    border:1px solid #8888AA;
+			    background:white;
+			    position:absolute;
+			    padding:5px;
+			    z-index:100;
+			    display:none;
+			    FONT-SIZE: 9pt; 
+			    MARGIN: 0px; 
+			    FONT-FAMILY: Verdana; 
+			    LIST-STYLE-TYPE: circle; 
+            }   
+            
+            table td{
+                padding:0px;
+            }
+            #container{
+                width:100%;height:100%;    border-collapse:collapse;
+                overflow: hidden;
+            }
+            #head{
+                WIDTH:100%;
+				height:50px;
+                /*background:url('/wui/theme/ecology8/skins/default/page/main/head-bg_wev8.jpg') no-repeat;*/
+                /*background:url('images/head-bg_wev8.png') no-repeat;*/
+                border-collapse:collapse;
+            }
+            
+
+
+            #contentcontainer{
+                WIDTH:100%;height:100%;
+                border-collapse:collapse;
+            }
+            #contentcontainer #content{
+                WIDTH:100%;height:100%;
+                border-collapse:collapse;
+                position:relative;
+            }
+
+            #leftmenucontainer{
+                height:100%;
+            }
+            #footer{
+
+            }
+
+            #shadown-corner{
+                background:url('/wui/theme/ecology8/skins/default/page/main/shadown-coner_wev8.png') no-repeat; width:10px;height:10px;
+            }
+            #shadown-x{
+                background:url('/wui/theme/ecology8/skins/default/page/main/shadown-x_wev8.png') repeat-x; height:10px;
+            }
+            #shadown-y{
+            	display:none;
+                background:url('/wui/theme/ecology8/skins/default/page/main/shadown-y_wev8.png') repeat-y; 
+				/*width:10px;*/
+            }
+            #shadown-content{background:#fff;}
+            
+            
+            /*可更改区域  左侧菜单*/
+            /*左侧菜单下*/
+            #leftmenucontainer{}
+            /*左侧菜单上*/
+            #leftmenucontainer-top{
+                height:10px;
+            }
+
+            #leftmenu-top{
+                height:86px;
+            } 
+            #leftmenu-bottom{
+                
+                height:250px;                
+            }
+            #leftmenu-bottom-bottom{
+                height:7px;
+            }
+			#leftmenu-bottom {
+				position:absolute;
+				width:128;
+				height:0px;
+				z-index:0;
+			}
+			
+			
+			#leftBlockTd {
+				background-color:#FFF;
+				height:100%;
+				top:0;
+				position:absolute;
+			}
+			.leftBlockTopBgLeft {
+				overflow:hidden;width:10px;position:absolute;left:0;top:0;background:url(/wui/theme/ecology8/skins/default/page/left/leftBlockTopBgLeft_wev8.jpg) no-repeat;height:10px;
+			}
+			#leftBlockTopBgCenter {
+				overflow:hidden;position:absolute;left:10px;right:2px;top:0;height:10px;
+			}
+			.leftBlockTopBgRight {
+				overflow:hidden;position:absolute;right:-2;top:0;
+				/*background:url(/wui/theme/ecology8/skins/default/page/left/leftBlockTopBgRight_wev8.jpg) no-repeat;*/
+				height:10px;width:2px;
+			}
+			
+			#leftmenu-top {
+				position:absolute;width:128;height:87px;
+			}
+			
+			.leftBlockHrmInfoLeft {
+				width:60px;position:absolute;left:0;top:0;
+				/*background:url(/wui/theme/ecology8/skins/default/page/left/leftBlockHrmInfoBgLeft_wev8.png) no-repeat;height:87px;*/
+			}
+			
+			.leftBlockHrmInfoCenter {
+				position:absolute;left:60px;right:6px;top:0;height:87px;width:60px;
+			}
+			
+			.leftBlockHrmInfoRight {
+				position:absolute;right:0;top:0;
+				/*background:url(/wui/theme/ecology8/skins/default/page/left/leftBlockHrmInfoBgRight_wev8.png) no-repeat;*/
+				height:87px;width:6px;
+			}
+			#leftBlock_HrmDiv {
+				position:relative;top:0px;height:41px;
+			}
+			
+			#leftmenu-bottom-bottom {
+				width:128px;position:relative;top:0px;
+			}
+			.leftMenuBottomLeft {
+				width:5px;position:absolute;left:0;top:0;background:url(/wui/theme/ecology8/skins/default/page/left/leftMenuBottomLeft_wev8.png) no-repeat;height:7px;
+			}
+			#leftMenuBottomCenter {
+				position:absolute;left:5px;right:6px;top:0;background:url(/wui/theme/ecology8/skins/default/page/left/leftMenuBottomCenter_wev8.png) repeat-x;height:7px;
+			}
+			
+			.leftMenuBottomRight {
+				position:absolute;right:0;top:0;background:url(/wui/theme/ecology8/skins/default/page/left/leftMenuBottomRight_wev8.png) no-repeat;height:7px;width:6px;
+			}
+			
+			#topBlockHiddenContr {
+				width:502px;height:20px;position:relative;margin-bottom:-12px;cursor:pointer;background:url(/wui/theme/ecology8/skins/default/page/main/topBlockContraction_wev8.png) no-repeat;background-position:0 25;
+			}
+			#leftBlockHiddenContr {
+				height:502px;width:12px;position:relative;margin-right:-12px;cursor:pointer;background:url(/wui/theme/ecology8/skins/default/page/main/leftBlockContraction_wev8.png) no-repeat;overflow:hidden;background-position:25 0;
+			}
+			.versiontype { 
+				position:absolute;left:150;top:40;
+				/*background:url(/wui/theme/ecology8/page/images/versiontype_wev8.png) no-repeat;height:10px;width:33px;display:block;overflow:hidden;*/
+			}
+			#mainFrame {
+				height:100%!important;
+			}
+			
+			/*IE6 fixed*/
+			
+			 .accoutSelect{
+			 	padding-top:5px;
+			 	padding-left:10px;
+			 	position:relative;
+			 	
+			 	width:110px;
+			 	background-image: url("/images/ecology8/doc/down_sel_wev8.png");
+			 	background-repeat: no-repeat;
+			 	background-position: center right;
+			 	height:20px;
+			 	line-height: 20px;
+			 }
+			 
+			.accoutBg{
+				background: #adadad;
+			}
+        	.accoutList{
+        		display:none;
+        		padding-top:5px;
+        		position:absolute;
+        		top:35px;
+        		width:200px;
+        		z-index:100;
+        		padding-bottom: 5px;
+        	}
+        	.accountItem{
+        		height:65px;
+        		cursor:pointer;
+        	}
+        	
+        	.accoutListBox{
+        		background: #ffffff;
+        		border:1px solid #d4d4d4;
+        		width:190px;
+        		padding:0 5px;
+        		top: 8px;
+        		left:-18px;
+        		position: absolute;
+        		-moz-border-radius: 3px;
+			    -webkit-border-radius: 3px;
+			    border-radius:3px;
+        	}
+        	.accountText{
+        		width:185px;
+        		height: 56px;
+        		margin-top:9px;
+        		padding-left:5px;
+        		line-height:28px;
+        		white-space: nowrap;
+        		overflow: hidden;
+        		text-overflow:ellipsis;
+        	}
+        	.accountIcon{
+        		width:20px;
+        		height:20px;
+        		right:5px;
+        		position: absolute;
+        		margin-top:-39px;
+        	}
+        	.accountContext{
+        		float: right;
+        		
+        	}
+        	
+        	
+        
+        </style>
+        
+        <style type="text/css">
+    .tbItm{
+        cursor:pointer;
+        background-position: left center;
+        height:20px;
+        width:30px;
+		color:#fff;
+		font-size:14px;
+		color:rgb(205,205,205);
+       /* background:url(/wui/theme/ecology8/skins/default/page/ecologyShellImg_wev8.png);*/
+    }
+    
+    .tbItmNav{
+    	 cursor:pointer;
+    	 width:106px;
+    	 color:#fff;
+    }
+    
+    .toolbarItemSelected{
+        filter:alpha(opacity=99);-moz-opacity:0.99;
+    }
+
+	.searchkeywork {width: 112px;font-size: 12px;height:32px !important;margin-top:1;background-color:transparent;border:none !important;line-height:30px;}
+	.dropdown {
+		padding-left:5px; 
+		font-size:11px; 
+		color:#000;
+		height:35px;
+		border-left:1px solid transparent;
+		border-top:1px solid transparent;
+		border-right:1px solid transparent;
+	}
+	.selectContent, .selectTile, .dropdown ul { margin:0px; padding:0px;}
+	.selectContent { position:relative;z-index:6; }
+	.dropdown a, .dropdown a:visited { color:#666666; text-decoration:none; outline:none;}
+	.dropdown a:hover { color:#5d4617;}
+	.selectTile a:hover { color:#5d4617;}
+	.selectTile a {background:none; display:block;width:40px;margin-left:4px;margin-top:1px;}
+	.selectTile a span {cursor:pointer; display:block; padding:6 0 0 0;background:none;height:25px;font-size:14px; }
+	.selectContent ul { 
+		background:#fff none repeat scroll 0 0; 
+		border-left:1px solid #d0d0d0; 
+		border-right:1px solid #d0d0d0;
+		border-bottom:1px solid #d0d0d0;
+		color:#C5C0B0; 
+		display:none;
+		left:-6px; 
+		position:absolute; 
+		top:8px; 
+		
+		min-width:50px; 
+		list-style:none;}
+	.selectContent ul a{
+	 	position:relative;
+	 	display: block;
+	}
+	
+	.selectContent ul img{
+	 	position:absolute;
+	 	top:2px;
+	 	display: block;
+	}
+	.selectContent ul span{
+		padding-right:10px;
+		padding-left:27px;
+		white-space:nowrap;
+		display:block;
+		
+	}
+	.dropdown span.value { display:none;}
+	.selectContent ul li{list-style:none;!important;height:25px;color:#656565}
+	.selectContent ul li a { padding:0px; display:block;margin:0;height:25px;line-height:21px;font-size:14pt; }
+	.selectContent ul li a:hover { background-color:#218bde;color:#fff!important;}
+	.selectContent ul li a img {border:none;vertical-align:middle;padding-left:8px;}
+	.selectContent ul li a span {margin-left:5px;}
+	.flagvisibility { display:none;}
+	.sampleSelected{
+		background-color:#fff;
+		border-left:1px solid rgb(170,210,242);
+		border-top:1px solid rgb(170,210,242);
+		border-right:1px solid rgb(170,210,242);
+	}
+	.sampleSelected .selectTile a span{
+		color:#4a4a4a!important;
+	}
+	.sampleSelected .selectTile a div{
+		color:#fff!important;
+	}
+	.sampleSelected .e8_dropdown{
+		background-image:url(/wui/theme/ecology8/page/images/toolbar/up_wev8.png)!important;
+	}
+	.dropdown .e8_dropdown{
+		background-image:url(/wui/theme/ecology8/page/images/toolbar/down_wev8.png);
+		width:12px;
+		height:12px;
+		float:left;
+		margin-top:10px;
+		background-position:50% 50%;
+	}
+	
+	.menuMore{
+		background-image: url(/wui/theme/ecology8/page/images/menumoretext_bright_wev8.png);
+		
+		background-repeat: no-repeat;
+		width: 100%;
+		line-height:40px;
+		cursor: pointer;
+		
+		
+		
+		
+	}
+	.menuMore .text{
+		background-position: 12px center;
+		background-repeat: no-repeat;
+		width: 100px;
+		display: inline-block;
+		
+	}
+	.lfFoot {
+        bottom: 0px!important;
+    }
+	
+</style>
+		
+		<script type="text/javascript">
+		window.onresize = function winResize() {
+			if (jQuery("#mainBody").width() <= 1024 ) {
+				jQuery("#container").css("width", "1024px");
+			} else {
+				jQuery("#container").css("width", jQuery("#mainBody").width());
+			}
+		}
+		var common = new MFCommon();
+		var uid = "141";
+		var isAdmin = "false";
+		function checkUserOffline(){
+			var result = "";
+			try{
+				result = common.ajax("cmd=isOffline&uid="+uid);
+			}catch(e){}
+			if(result === "-1" || result === "0"){
+				window.top.Dialog.alert("您已被管理员强制下线！", function(){
+					window.location = '/login/Login.jsp';
+				});
+				return;
+			}
+			setTimeout("checkUserOffline()",3000);
+		}
+		jQuery(document).ready(function(){
+			//if(isAdmin === "false") checkUserOffline();
+		     //jQuery("#mainBody").css("background","url('/wui/theme/ecology8/skins/default/page/main/body-bg_wev8.png') repeat-y");
+			 //jQuery("#mainBody").css("background-color","#4F81BD");
+		});
+		//background:url('/wui/theme/ecology8/skins/default/page/main/body-bg_wev8.png') repeat-y;
+		</script>
+		
+		
+    </head>
+        
+    
+<!-- 锁定整个界面的CSS2011/5/19 -->
+
+    <body id="mainBody" scroll="no" style="overflow-y:hidden;">
+			
+			
+				
+
+
+
+ 
+
+
+
+<style>
+    .IMbg {
+        position: fixed;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(51, 51, 51);
+        z-index: 1001
+    }
+    #immsgdiv {
+        height: 40px;
+        background: url('/social/images/im_msg.png') #4ba9df no-repeat 15px center;
+        padding-left: 40px;
+        padding-right: 10px;
+        position: fixed;
+        right: 0px;
+        bottom: 45px;
+        z-index: 1000;
+        color: #fff;
+        line-height: 40px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    /*
+    * 判断浏览器版本
+    * */
+    function IEVersion() {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+       // var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+        var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+            if (fIEVersion == 7) {
+                return 7;
+            } else if (fIEVersion == 8) {
+                return 8;
+            } else if (fIEVersion == 9) {
+                return 9;
+            } else if (fIEVersion == 10) {
+                return 10;
+            } else {
+                return 6;//IE版本<=7
+            }
+        } else if (isIE11) {
+            return 11; //IE11
+        } else {
+            return -1;//不是ie浏览器
+        }
+    }
+
+    var versionNO = IEVersion();
+    //禁止IE9以下浏览器访问，并提示安装IE8
+    if (versionNO >= 10 || versionNO < 0) {
+        //初始化中间区域高度
+        jQuery.ajax({
+            url: "/social/im/ServerStatus.jsp?p=CheckpcOnline",
+            type: "post",
+            dataType: "json",
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success: function (isonline) {
+                if (typeof isonline == 'string') {
+                    isonline = parseInt($.trim(isonline));
+                } else {
+                    isonline = !!isonline;
+                }
+                if (!isonline) {
+                    $("#socialIMFrm").load(function () {
+                        initIMBox();
+                    });
+                    $("#socialIMFrm").attr("src", "/social/im/SocialIMMain.jsp?from=main&websessionkey=013341b3-7ee3-43d5-b9b5-6df152dcc8d8");
+                    //设置web登录状态
+                    $.get('/social/im/ServerStatus.jsp?p=webLogin&websessionkey=013341b3-7ee3-43d5-b9b5-6df152dcc8d8');
+                } else {
+                    $("#IMbg").remove();
+                    $("#immsgdiv").remove();
+                    $("#addressdiv").remove();
+                }
+            }
+        });
+    }
+    var IMCarousel = null, ChatUtil = null;
+
+    function initIMBox() {
+        // 刷新或关闭页面时，退出IM
+        window.onbeforeunload = function () {
+            $.get('/social/im/ServerStatus.jsp?p=logout&websessionkey=013341b3-7ee3-43d5-b9b5-6df152dcc8d8');
+        };
+        if (!IMCarousel)
+            IMCarousel = $('#socialIMFrm')[0].contentWindow.IMCarousel;
+        if (!ChatUtil)
+            ChatUtil = $('#socialIMFrm')[0].contentWindow.ChatUtil;
+        //展示浮动框
+        $("#immsgdiv").show();
+    }
+/*
+* 点击浮动框时间  flag: 1 显示  0 隐藏
+* */
+    function showIMdiv(flag) {
+        var imRightdiv = $("#socialIMFrm").contents().find(".imRightdiv");
+        var imLeftdiv = $("#socialIMFrm").contents().find(".imLeftdiv");
+        var imCenterdiv = $("#socialIMFrm").contents().find(".imCenterdiv");
+        var imSlideDiv = $("#socialIMFrm").contents().find(".imSlideDiv");
+        var recenttab = $("#socialIMFrm").contents().find(".imToptab .tabitem:first");
+        var _thiswin = $("#socialIMFrm")[0].contentWindow;
+        var leftMenuScrollbar = $("#ascrail" + ($("#leftMenu").attr("tabindex") - 5000 + 2000)); //左侧菜单滚动条，会产生遮盖
+        var recentListdiv = $("#socialIMFrm").contents().find("#recentListdiv");
+
+        if (flag == 1) {
+            //使socialIMMain.jsp为聚焦状态，消息提醒bug 1203 by wyw
+            if (_thiswin.IMUtil)
+                _thiswin.IMUtil.cache.isWindowFocus = 1;
+            $("#IMbg").show();
+            $("#addressdiv").show();
+            $("#immsgdiv").hide();
+            leftMenuScrollbar.hide();//隐藏左侧菜单滚动条
+
+            imRightdiv.animate({
+                'width': '281px',
+                'height': '600px'
+            }, 400, function () {
+                if (imCenterdiv.find(".chatWin").length > 0) {
+                    imCenterdiv.show();
+                }
+                if (imLeftdiv.find(".chatIMTabItem").length > 0) {
+                    imLeftdiv.show();
+                    //以下代码会引起bug，事实上showIMChatpanel中的click方法是异步的，
+                    //这里的代码在尚未进入handler前被调用，这样会导致点击通知跳转到窗口时左边的tab页会被还原为上次隐藏前的状态 1127 by wyw
+                    var chatIMTabActiveItem = $("#socialIMFrm").contents().find(".chatIMTabActiveItem");
+                    if (chatIMTabActiveItem.length > 0) {
+                        chatIMTabActiveItem.click();
+                    }
+                }
+                var unreadMsgCount = Number($("#unreadMsgCount").html());
+                if (unreadMsgCount > 0) {
+                    recenttab.click();
+                }
+                if (recentListdiv.perfectScrollbar) {
+                    recentListdiv.perfectScrollbar("update");
+                }
+            })
+
+        } else {
+            if (_thiswin.IMUtil)
+                _thiswin.IMUtil.cache.isWindowFocus = 0;
+            imLeftdiv.hide();
+            imCenterdiv.hide();
+            imSlideDiv.css({
+                "display": "none",
+                "width": "0px"
+            });
+
+            $("#IMbg").hide();
+            imRightdiv.animate({
+                'width': '0px',
+                'height': '0px'
+            }, 400, function () {
+                $("#addressdiv").hide();
+                $("#immsgdiv").show();
+                leftMenuScrollbar.show();//显示左侧菜单滚动条
+            })
+        }
+    }
+</script>
+
+
+
+
+
+			
+			
+			<!-- 签到签退用div -->
+            <div id="divShowSignInfo" style="background:#FFFFFF;padding:0px;width:100%;display:none;" valign="top"></div>            
+            <div id="message_Div" style="display:none;"></div>    
+            <div id="container" style="height:100%;">
+                <!--上-->
+                <div id="mainTopBlockTr" class="topcolor">
+                    <div id="head">
+                        <div>
+                            <div id="lftop" class="logocolor" style="float:left;width:225px;">
+                            	<div class="logoArea">
+                            		
+									<span>
+										e-cology | 前端用户中心
+									</span>
+									
+                                	<!-- main功能插件 -->
+                                	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+添加至init.css
+<style type="text/css">
+	html{height:100%;}
+</style>
+ -->
+
+
+
+
+
+
+
+<script type="text/javascript" src="/wui/common/jquery/jquery.min_wev8.js"></script>
+
+<script language="javascript" type="text/javascript" src="/FCKEditor/swfobject_wev8.js"></script>
+
+
+<!-- js 整合到 init_wev8.js -->
+<script type="text/javascript" src="/js/jquery.table_wev8.js"></script>
+<script language="javascript" type="text/javascript" src="/js/init_wev8.js"></script>
+<script language="javascript" src="/js/wbusb_wev8.js"></script>
+<script type="text/javascript" src="/js/jquery/plugins/client/jquery.client_wev8.js"></script>
+<script type="text/javascript" src="/js/ecology8/jNice/jNice/jquery.jNice_wev8.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete/jquery.autocomplete_wev8.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete/browser_wev8.js"></script>
+<script language="javascript" src="/wui/theme/ecology8/jquery/js/zDialog_wev8.js"></script>
+<script type="text/javascript" src="/js/ecology8/request/hoverBtn_wev8.js"></script>
+<script type="text/javascript" src="/js/ecology8/lang/weaver_lang_7_wev8.js"></script>
+<script type="text/javascript" src="/js/messagejs/highslide/highslide-full_wev8.js"></script>
+<script type="text/javascript" src="/js/workflow/BigDecimal.js"></script>
+<script type="text/javascript">
+    hs.graphicsDir = '/js/messagejs/highslide/graphics/';
+    hs.align = 'center';
+    hs.transitions = ['expand', 'crossfade'];
+    hs.outlineType = 'rounded-white';
+    hs.fadeInOut = true;
+</script>
+<!-- init.css, 所有css文件都在此文件中引入 -->
+<link rel="stylesheet" href="/css/init_wev8.css" type="text/css">
+
+
+<script language="javascript">
+window["_jsessionid"] = "abcHTA5WExT73a7vxptZw";
+function check_conn() {
+	return confirm('网络故障或其它原因导致您连接不上服务器，请复制下重要信息稍候再提交！\r\n\r\n按【确定】继续,按【取消】停留在本页!');
+}
+
+function _onViewLog(operateitem,sqlwhere,id){
+	if(!sqlwhere)sqlwhere = "";
+	var dialog = new window.top.Dialog();
+	dialog.currentWindow = window;
+	dialog.Title = "查看日志";
+	var url = "/docs/tabs/DocCommonTab.jsp?_fromURL=3&operateitem="+operateitem+"&sqlwhere="+sqlwhere;
+	if(id){
+		url = "/docs/tabs/DocCommonTab.jsp?_fromURL=3&relatedid="+id+"&operateitem="+operateitem+"&sqlwhere="+sqlwhere;
+		if(operateitem==418||operateitem==419||operateitem==420){
+			dialog.Title = "变更日志";
+		}
+	}
+	dialog.Width = jQuery(window).width();
+	dialog.Height = 610;
+	dialog.Drag = true;
+	dialog.checkDataChange = false;
+	dialog.maxiumnable = true;
+	dialog.URL = url;
+	dialog.show();
+}
+
+
+function check_form(thiswins,items)
+{
+	/* added by cyril on 2008-08-14 for td:8521 */
+	var isconn = false;
+	try {
+		var xmlhttp;
+	    if (window.XMLHttpRequest) {
+	    	xmlhttp = new XMLHttpRequest();
+	    }  
+	    else if (window.ActiveXObject) {
+	    	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");  
+	    }
+	    var URL = "/systeminfo/CheckConn.jsp?userid=141&time="+new Date()+"&f_weaver_belongto_userid=141&f_weaver_belongto_usertype=0";
+	    xmlhttp.open("GET",URL, false);
+	    xmlhttp.send(null);
+	    var result = xmlhttp.status;
+	    if(result==200) {
+		    isconn = true;
+	    	var response_flag = xmlhttp.responseText;
+	    	if(response_flag!='0') {
+	    		var flag_msg = '';
+	    		if(response_flag=='1') {
+	    			var diag = new Dialog();
+					diag.Width = 300;
+					diag.Height = 180;
+					diag.ShowCloseButton=false;
+					diag.Title = "网页超时提醒";
+					//diag.InvokeElementId="pageOverlay"
+					diag.URL = "/wui/theme/ecology7/page/loginSmall.jsp?username=61309011";
+					diag.show();
+			        return false;
+	    		}
+	    		else if(response_flag=='2') {
+	    			flag_msg = '网络故障或其它原因导致您连接不上服务器，请复制下重要信息稍候再提交！';
+	    		}
+	    		//主从帐户特殊处理 by alan for TD10156
+	    		if(response_flag=='3') {
+	    			flag_msg = '提交信息失败,该页面非当前帐号打开,请刷新页面后再提交!';
+	   
+	    			return false;
+	    		}
+	    		flag_msg += '\r\n\r\n按【确定】继续,按【取消】停留在本页!';
+	        	//alert(xmlhttp.responseText);
+	        	return confirm(flag_msg);
+	        }
+	    }
+	    xmlhttp = null;
+
+	  	//检查多行文本框 oracle下检查HTML不能超过4000个字符
+	    
+	    try {
+		    var lenck = true;
+		    var tempfieldvlaue = document.getElementById("htmlfieldids").value;
+		    while(true) {
+			    var tempfield = tempfieldvlaue.substring(0, tempfieldvlaue.indexOf(","));
+			    tempfieldvlaue = tempfieldvlaue.substring(tempfieldvlaue.indexOf(",")+1);
+			    var fieldid = tempfield.substring(0, tempfield.indexOf(";"));
+			    var fieldname = tempfield.substring(tempfield.indexOf(";")+1);
+			    if(fieldname=='') break;
+			    if(!checkLengthOnly(fieldid,'4000',fieldname,'当前文本长度','文本长度不能超过','1个中文字符等于3个长度')) {
+				    lenck = false;
+				    break;
+			    }
+		    }
+		    if(lenck==false) return false;
+	    }
+	    catch(e) {}
+	    
+	}
+	catch(e) {
+		return check_conn();
+	}
+	if(!isconn)
+		return check_conn();
+    /* end by cyril on 2008-08-14 for td:8521 */
+	
+	thiswin = thiswins
+	items = ","+items + ",";
+	
+	var tempfieldvlaue1 = "";
+	try{
+		tempfieldvlaue1 = document.getElementById("htmlfieldids").value;
+	}catch (e) {
+	}
+
+	for(i=1;i<=thiswin.length;i++){
+		tmpname = thiswin.elements[i-1].name;
+		tmpvalue = thiswin.elements[i-1].value;
+	    if(tmpvalue==null){
+	        continue;
+	    }
+
+		if(tmpname!="" && items.indexOf(","+tmpname+",")!=-1){		
+			var __fieldhtmltype = jQuery("input[name=" + tmpname + "]").attr("__fieldhtmltype");
+		    if (__fieldhtmltype == '9') {
+		        continue;
+		    }
+		
+			var href = location.href;
+			if(href && href.indexOf("Ext.jsp")!=-1){
+				window.__oriAlert__ = true;
+			}
+			if(tempfieldvlaue1.indexOf(tmpname+";") == -1){
+				while(tmpvalue.indexOf(" ") >= 0){
+					tmpvalue = tmpvalue.replace(" ", "");
+				}
+				while(tmpvalue.indexOf("\r\n") >= 0){
+					tmpvalue = tmpvalue.replace("\r\n", "");
+				}
+
+				if(tmpvalue == ""){
+					if(thiswin.elements[i-1].getAttribute("temptitle")!=null && thiswin.elements[i-1].getAttribute("temptitle")!=""){
+						if(window.__oriAlert__){
+							window.top.Dialog.alert("\""+thiswin.elements[i-1].getAttribute("temptitle")+"\""+"未填写");
+						}else{
+							var tempElement = thiswin.elements[i-1];
+							//ueditor必填验证
+							if (checkueditorContent(tempElement)) {
+								continue;
+							}
+							
+							window.top.Dialog.alert("&quot;"+thiswin.elements[i-1].getAttribute("temptitle")+"&quot;"+"未填写", function () {
+						    formElementFocus(tempElement);						
+							});
+						}
+						return false;
+					}else{
+						if(window.__oriAlert__){
+							try{
+								window.top.Dialog.alert("必要信息不完整，红色叹号为必填项！");
+							}catch(e){
+								Dialog.alert("必要信息不完整，红色叹号为必填项！");
+							}
+						}else{
+							try{
+								window.top.Dialog.alert("必要信息不完整，红色叹号为必填项！");
+							}catch(e){
+								Dialog.alert("必要信息不完整，红色叹号为必填项！");
+							}
+						}
+						return false;
+					}
+				}
+			} else {
+				var divttt=document.createElement("div");
+				divttt.innerHTML = tmpvalue;
+				var tmpvaluettt = jQuery.trim(jQuery(divttt).text());
+				if(tmpvaluettt == ""){
+					if(thiswin.elements[i-1].getAttribute("temptitle")!=null && thiswin.elements[i-1].getAttribute("temptitle")!=""){
+						if(window.__oriAlert__){
+							window.top.Dialog.alert("\";"+thiswin.elements[i-1].getAttribute("temptitle")+"\""+"未填写");
+						}else{
+							var tempElement = thiswin.elements[i-1];
+							
+							//ueditor必填验证
+							if (checkueditorContent(tempElement)) {
+								continue;
+							}
+							
+							window.top.Dialog.alert("&quot;"+thiswin.elements[i-1].getAttribute("temptitle")+"&quot;"+"未填写", function () {
+								formElementFocus(tempElement);
+							});
+							
+						}
+						return false;
+					}else{
+						if(window.__oriAlert__){
+							window.top.Dialog.alert("必要信息不完整，红色叹号为必填项！");
+						}else{
+							window.top.Dialog.alert("必要信息不完整，红色叹号为必填项！");
+						}
+						return false;
+					}
+				}
+			}
+		}
+	}
+	return true;
+}
+
+function isdel(){
+	var str = "确定要删除吗?";
+   if(!confirm(str)){
+       return false;
+   }
+       return true;
+ } 
+
+function issubmit(){
+	var str = "确定要提交吗?";
+   if(!confirm(str)){
+       return false;
+   }
+       return true;
+   } 
+
+///*流程里面使用，主要是因为流程内容放到iframe里面，通过response返回的时候，要返回的到其父窗口*/
+function wfforward(wfurl){
+	parent.location.href = wfurl;
+}
+
+function myescapecode(str)
+{
+	return encodeURIComponent(str);
+}
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="JavaScript"> 
+  var companyname = "重庆市职业病防治院";
+  var str1 = "此系统由泛微软件授权于";
+
+  if(companyname.length >0 ){
+  	window.status = str1+companyname;
+  }
+</script>
+<!-- 删除 -->
+
+
+<!--USB 验证 -->
+
+
+<!--WUI -->
+
+<link href="/js/jquery/jquery_dialog_wev8.css" type="text/css" rel="STYLESHEET">
+<script type="text/javascript" src="/wui/common/jquery/jquery.min_wev8.js"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery/jquery_dialog_wev8.js"></script>
+
+<script src="/social/js/drageasy/drageasy.js"></script>
+<script type="text/javascript" src="/social/js/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/social/im/js/IMUtil_wev8.js"></script>
+
+<script type="text/javascript" src="/social/js/imcarousel/imcarousel.js"></script>
+<script type="text/javascript" language="javascript">
+function ReloadOpenerByDialogClose() {
+    document.location="/login/VerifyRtxLogin.jsp?para=309E8BC1C22704EC492584DB74590E0F46935E31BF5D9843615D29FFD937E2D65A0A8FDCF036954FA28CA24C228A27AEEFCFE3F15C7B97ABD6D2CDBA3506A7A1783833BABAF4F1022EFE556551D1C0C388004F20AD7C5482A2B033A52D706E0C9E80AD536240F008F7590D1EE7EC0068";
+        return;
+
+
+}
+
+function doScannerEscape(ev, obj){
+	IMCarousel.doScannerEscape(ev, obj);
+}
+
+function scaleImg(obj, tag){
+	IMCarousel.scaleImg(obj, tag);
+}
+
+function rotateImg(obj){
+	IMCarousel.rotateImg(obj);
+}
+
+function downloadImg(obj){
+	IMCarousel.downloadImg(obj);
+}
+
+function slideImg(obj, direction){
+	IMCarousel.slideImg(obj, direction);
+}
+
+function showImgScanner(ev, isShow, id){
+	IMCarousel.showImgScanner(ev, isShow, id);
+}
+
+function downloads(id){
+	document.location.href="/weaver/weaver.file.FileDownload?fileid="+id+"&download=1";
+}
+</script>
+
+
+
+<!--For wui-->
+
+
+<!--For wui-->
+<link type="text/css" rel="stylesheet" href="/wui/theme/ecology8/skins/default/wui_wev8.css">
+
+
+
+<!-- 字体设置，win7、vista系统使用雅黑字体,其他系统使用宋体 Start -->
+<!--
+添加至init_wev8.css 
+<link type='text/css' rel='stylesheet'  href='/wui/common/css/w7OVFont_wev8.css' id="FONT2SYSTEMF">
+ -->
+<script language="javascript"> 
+/*
+if (jQuery.client.version< 6) {
+	document.getElementById('FONT2SYSTEMF').href = "/wui/common/css/notW7AVFont_wev8.css";
+}
+*/
+</script> 
+<!-- 字体设置，win7、vista系统使用雅黑字体,其他系统使用宋体 End -->
+
+<!-- 页面切换效果Start -->
+
+<!-- 页面切换效果End -->
+
+
+<script language="javascript">
+
+//------------------------------
+// the folder of current skins 
+//------------------------------
+//当前使用的主题
+var GLOBAL_CURRENT_THEME = "ecology8";
+//当前主题使用的皮肤
+var GLOBAL_SKINS_FOLDER = "default";
+</script>
+
+<!--For wuiForm-->
+<script type="text/javascript" src="/wui/common/jquery/plugin/wuiform/jquery.wuiform_wev8.js"></script>
+<script language="javascript">
+jQuery(document).ready(function(){
+	wuiform.init();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#divFavContent{display:none;}
+.toolbarMenu{border-collapse:collapse}
+.toolbarMenu td{width:21px;height:20px;text-align:center;cursor:pointer;}
+.toolbarMenuOver{
+	background-color:#B6BDD2;border:1px solid #0A246A;
+	/*background-color:#ccc;border:1px solid #666;
+	background-color:#ACACAC;border:1px solid #7A797F;*/
+}
+.toolbarMenuOut{background-color:;border:0}
+.topBg{
+	
+	background-color:#172971;
+}
+
+
+/* 快捷按钮背景色(图) */
+.templateToolbarBg{
+	
+		background-image:url(/images/StyleGray/toolbarBg_wev8.jpg);
+	
+	background-color:#DDDDDD;
+}
+
+.OTtable{
+	border:0px solid #AAA;
+	width:100%;
+	height:100%;
+	background-color:#7B7B7B;
+}
+.OTtd{
+	line-height:18px;
+	padding-left:2px
+}
+.OTspan{display:none;}
+
+/* 左菜单分类背景色(图) */
+.folder{
+	height:22px;
+	padding:0 0 0 10px;
+	color:#444444;
+	cursor:hand;
+	
+		background-image:url(/images/StyleGray/leftbarBgImage_wev8.jpg);
+	
+	background-color:#C4C4C4;
+}
+.folder img{margin:0 10px 0 10px;vertical-align:middle}
+
+.folderMouseOver{
+	height:22px;
+	padding:0 0 0 10px;
+	color:#444444;
+	cursor:hand;
+	
+		background-image:url(/images/StyleGray/leftbarBgImageH_wev8.gif);
+	
+	background-color:#C4C4C4;
+}
+.folderMouseOver img{margin:0 10px 0 10px;vertical-align:middle}
+
+
+.file{
+	vertical-align:top;
+	padding:0px;
+}
+.file a{
+	color:;
+	text-decoration:none;
+}
+.handle{
+	height:3px;
+	
+		background-image:url(/images/StyleGray/leftmenuToggleHBg_wev8.jpg);
+		
+	cursor:row-resize;
+	text-align:center;
+}
+
+
+#thumbBox{
+	height:22px;
+	text-align:right;
+	background-image:url('/images/StyleGray/thumbBoxBg_wev8.jpg');
+	
+		background-image:url('/images/StyleGray/thumbBoxBg_wev8.jpg');
+	
+	background-repeat:no-repeat;
+}
+
+#thumbBox img{margin-right:5px}
+
+#rightArrow{cursor:hand}
+/* menu body */
+*{font-family:	MS Shell Dlg;font-size:12px;}
+.menu-body {
+	color:		Black;
+	margin:		0;
+	padding:	0;
+	overflow:	hidden;
+	border:		0;
+	cursor:		default;
+}
+
+.menu-body .outer-border {
+	border:		1px solid #666666;
+	margin:		0;
+	padding:	0;
+	
+}
+
+.menu-body .inner-border {
+	width:			100%;
+	
+	border:			1px solid #f9f8f7;
+	border-width:	1px 0 1px 0;
+	padding:		0 1px 0 1px;
+	margin:			0;
+	background:		#f9f8f7 url("/images/popup/bg_menu_wev8.gif") repeat-y;
+}
+
+/* menu body */
+
+/*****************************************************************************/
+
+/* menu items */
+
+.menu-body td {
+	font-family:	MS Shell Dlg;
+	font-size:12px;
+	color:			Black;
+}
+
+.menu-body .hover td {
+	background-color:	#b6bdd2;
+}
+
+.menu-body .disabled-hover td {
+	background-color:	white;
+}
+
+.menu-body td.empty-icon-cell {
+	padding:		2px;
+	border:		0;
+}
+
+.menu-body td.empty-icon-cell span {
+	width:	16px;
+}
+
+.menu-body td.icon-cell {
+	padding:	2px;
+	border:		0;
+}
+
+
+.menu-body td.icon-cell img {
+	width:	16px;
+	height:	16px;
+	margin:	0;
+	filter:	Alpha(Opacity=70);
+}
+
+.menu-body .hover td.icon-cell img {
+	filter:	none;
+	position:	relative;
+	left:		-1px;
+	top:		-1px;
+}
+
+
+.menu-body .disabled-hover td.icon-cell img,
+.menu-body .disabled td.icon-cell img {
+	display:	static;
+	filter:		Gray() Alpha(Opacity=40);
+}
+
+
+.menu-body .disabled-hover td.empty-icon-cell,
+.menu-body .hover td.empty-icon-cell,
+.menu-body .disabled-hover td.icon-cell,
+.menu-body .hover td.icon-cell {
+	border:			1px solid #0A246A;
+	border-right:	0;
+	padding:		1px 2px 1px 1px;
+}
+
+.menu-body td.label-cell {
+	width:		100%;
+	padding:	2px 5px 2px 5px;
+	border:		0;
+}
+
+.menu-body .disabled-hover td.label-cell,
+.menu-body .hover td.label-cell,
+.menu-body .disabled-hover td.shortcut-cell,
+.menu-body .hover td.shortcut-cell {
+	padding:		1px 5px 1px 5px;
+	border:			1px solid #0A246A;
+	border-left:	0;
+	border-right:	0;
+}
+
+.menu-body td.shortcut-cell {
+	padding:	2px 5px 2px 5px;
+}
+
+.menu-body td.arrow-cell {
+	width:			20px;
+	padding:		2px 2px 2px 0px;
+	font-family:	Webdings;
+}
+
+/* end menu items */
+
+/*****************************************************************************/
+
+/* disabled items */
+
+.menu-body .disabled-hover td.arrow-cell,
+.menu-body .hover td.arrow-cell {
+	padding:		1px 1px 1px 0px;
+	border:			1px solid #0A246A;
+	border-left:	0;
+}
+
+.menu-body #scroll-up-item td,
+.menu-body #scroll-down-item td {
+	font-family:	Webdings !important;
+	text-align:		center;
+	padding:		10px;
+}
+
+.menu-body .disabled td {
+	color:				#cccccc;
+}
+
+.menu-body .disabled-hover td {
+	background-color:	white;
+	color:				#cccccc;
+}
+
+/* end disabled items */
+
+/*****************************************************************************/
+
+/* separator */
+
+.menu-body .separator td {
+	font-size:	0.001mm;
+	padding:	1px 0px 1px 27px;
+}
+
+.menu-body .separator-line {
+	overflow:		hidden;
+	border-top:		1px solid #dbd8d1;
+	height:			1px;
+}
+
+/* end separator */
+
+/*****************************************************************************/
+
+/* Scroll buttons */
+
+.menu-body #scroll-up-item,
+.menu-body #scroll-down-item {
+	width:		100%;
+}
+
+.menu-body #scroll-up-item td,
+.menu-body #scroll-down-item td {
+	font-family:	Webdings;
+	text-align:		center;
+	padding:		1px 5px 1px 5px;
+}
+
+.menu-body #scroll-up-item .disabled-hover td,
+.menu-body #scroll-up-item .hover td,
+.menu-body #scroll-down-item .disabled-hover td,
+.menu-body #scroll-down-item .hover td {
+	border:		1px solid #0A246A;
+	padding:	0px 4px 0px 4px;
+}
+
+/* End scroll buttons */
+
+/*****************************************************************************/
+
+/* radio and check box items */
+
+.menu-body .checked {
+	padding:	0px;
+}
+
+.menu-body .checked.hover {
+	padding:	0px;
+}
+
+.menu-body .checked .check-box,
+.menu-body .checked .radio-button {
+	display:		inline-block;
+	font-family:	Webdings;
+	overflow:		hidden;
+	color:			MenuText;
+	text-align:		center;
+	vertical-align:	center;
+	background-color:	#b6bdd2;
+	border:				1px solid #0A246A;
+}
+
+.menu-body .check-box {
+	width:			19px;
+	height:			19px;
+	font-size:		133%;
+	padding-bottom:	5px;
+	padding-left:	1px;
+}
+
+.menu-body .radio-button {
+	width:			19px;
+	height:			19px;
+	font-size:		50%;
+	padding:		5px;
+}
+
+/* end radio and check box items */
+
+/*****************************************************************************/
+
+/* Menu Bar */
+
+.menu-bar {
+	background:		#172971;
+	cursor:			default;
+	padding:		0px;
+}
+
+.menu-bar .menu-button {
+	background:	#172971;
+	color:		#FFFFFF;
+	font-family:	MS Shell Dlg;
+	font-size:12px;
+	padding:	3px 7px 3px 7px;
+	border:		0;
+	margin:		0;
+	display:	inline-block;
+	white-space:	nowrap;
+	cursor:			default;
+}
+
+.menu-bar .menu-button.active {
+	background:		#42549E;
+	padding:		2px 6px 3px 6px;
+	border:			1px solid #172971;
+	border-bottom:	0;
+}
+
+.menu-bar .menu-button.hover {
+	background:		#42549E;
+	padding:		2px 6px 2px 6px;
+	border-width:	1px;
+	border-style:	solid;
+	border-color:	#172971;
+}
+
+/* End Menu Bar */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+//设置页面title
+document.title = "重庆市第六人民医院 - 王炼";
+</script>
+
+<script language="javascript">
+var eBirth = false;//判断是否有人过生日
+</script>
+
+<!--网上调查部分-- 开始No blank -->
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+<script language="javascript">
+
+jQuery(document).ready(function() {
+   showBirth();
+});
+  
+ 
+  function showBirth(){
+     if(eBirth){
+    	var diag_bir = new window.top.Dialog();
+ 		diag_bir.Width = 475;
+ 		diag_bir.Height = 475;
+ 		diag_bir.AutoClose=15;
+		diag_bir.Title = "生日提醒";
+		diag_bir.URL = "/hrm/setting/Birthday.jsp?theme=ecology7";
+		diag_bir.show();
+	 }
+  }
+ 
+</script> 
+
+<script language="javascript">
+var glbreply = true;
+</script>
+
+
+
+
+<script language="javascript">
+    //alert("您已经登录系统!\n上次登录信息:"+"172.1.2.3 2019-08-27 21:20:41");
+    jQuery(function () {
+		Dialog.alert("您已经登录系统!<br>上次登录信息:"+"172.1.2.3 2019-08-27 21:20:41"
+			,function(){}, 372, 70, false
+		);
+	});
+</script>
+
+<script language="javascript">
+function goMainFrame(o){
+    o.contentWindow.document.frames[1].document.location.href = "/homepage/HomepageRedirect.jsp?hpid=1&subCompanyId=1&isfromportal=0&isfromhp=0";    
+}
+ 
+//------------------------------------
+//个人计划生成部分 Start
+//------------------------------------
+</script>
+
+
+
+
+
+
+<!-- //------------------------------------  -->
+<!-- //页面关闭时，提示脚本 Start -->
+<!-- //------------------------------------ -->
+
+
+
+
+
+
+
+
+
+<script language="javascript" src="/FCKEditor/swfobject_wev8.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="/favourite/js/menu4/js/poslib_wev8.js" type="text/javascript"></script>
+<script src="/favourite/js/menu4/js/scrollbutton_wev8.js" type="text/javascript"></script>
+<script src="/favourite/js/menu4/js/menu4_wev8.js" type="text/javascript"></script>
+<script type="text/javascript" src="/favourite/js/menu4/skins/winxp.css_wev8.js"></script>
+<style>
+.menu-bar .menu-button {
+	
+		background-image:url(/images/StyleGray/toolbarBg_wev8.jpg);
+	
+	background-color:#DDDDDD;
+	
+	color:		black;	
+	padding:	7px 0px 6px 0px;
+	border:		0;
+	margin:		0;
+	display:	;
+	white-space:	nowrap;
+}
+</style>
+<script type="text/javascript"><!--
+//<![CDATA[
+Menu.prototype.cssFile = "/favourite/js/menu4/skins/officexp/officexp_wev8.css";
+Menu.prototype.mouseHoverDisabled = false;
+var tmp;
+var mb = new MenuBar();
+var menu = new Menu();
+
+mItem = new MenuItem("收藏夹管理","/favourite/ManageFavourite.jsp");
+mItem.target = "mainFrame";
+menu.add(mItem);
+menu.add( new MenuSeparator() );
+
+mItem = new MenuItem("关于开展重庆市医疗机构电子病历系统应用水平分级评价...","/workflow/request/ViewRequest.jsp?requestid=5595&isfromchatshare=1&sharer=137&addfavourite=1","/images_face/ecologyFace_2/LeftMenuIcon/MyWorkflow_wev8.png",null);
+mItem.target = "";
+menu.add(mItem);
+
+mItem = new MenuItem("关于开展居民个人健康信息查询系统内部测试工作的通知","","/images/filetypeicons/html_wev8.png",null);
+mItem.target = "";
+menu.add(mItem);
+
+
+mb.add(tmp = new MenuButton("<span style='cursor:hand;width:50px;color:#172971'>收藏夹▼</span>",menu,"","mainFrame"));
+tmp.mnemonic = 's';
+//]]>
+--></script>
+<script>   
+    var con=null;
+    window.onbeforeunload=function(){   
+    	if(!isMesasgerUnavailable && glbreply == true){
+            return "当前即时聊天在线,是否继续退出系统？";
+        }   
+    }  
+    window.onunload=function(e){
+		e=e||event;
+        var   n   =   e.screenX   -   window.screenLeft;      
+        var   b   =   n   >   document.documentElement.scrollWidth-20;   
+        if(b   &&   e.clientY   <   0   ||   e.altKey) {          
+            $.get("/login/LogoutForMain.jsp");
+        }
+        
+    }
+</script>
+
+<!-- //------------------------------------  -->
+<!-- //页面关闭时，提示脚本 End -->
+<!-- //------------------------------------ -->
+
+
+<script>
+//------------------------------------
+//鼠标右键部分 Start
+//------------------------------------
+/*
+document.oncontextmenu=""
+search.searchvalue.oncontextmenu=showRightClickMenu1
+
+function showRightClickMenu1(){
+    var o = document.getElementById("leftFrame").contentWindow.document.getElementById("mainFrame");
+    if(o.workSpaceLeft!=null)
+        o.workSpaceLeft.rightMenu.style.visibility="hidden";
+    if(o.workSpaceInfo!=null)
+        o.workSpaceInfo.rightMenu.style.visibility="hidden";
+    if(o.workSpaceRight!=null)
+        o.workSpaceRight.rightMenu.style.visibility="hidden";
+    if(o.workplanLeft!=null)
+        o.workplanLeft.rightMenu.style.visibility="hidden";
+    if(o.workplanRight!=null)
+        o.workplanRight.rightMenu.style.visibility="hidden";
+        showRightClickMenu();
+}
+*/
+//------------------------------------
+//鼠标右键部分 End
+//------------------------------------
+</script>
+
+
+
+<!--文档弹出窗口-- 开始-->
+
+<!--文档弹出窗口-- 结束-->
+
+
+
+<script language="javascript">
+//------------------------------------
+//RTX客户端打开 Start
+//------------------------------------
+function openRtxClient(){
+
+	document.all("mainFrame").src="/wui/common/page/sysRemind.jsp?labelid=83530";
+
+}
+function openEimClient(){
+
+	document.all("mainFrame").src="/wui/common/page/sysRemind.jsp?labelid=27463";
+
+}
+//------------------------------------
+//RTX客户端打开 End
+//------------------------------------
+
+//------------------------------------
+//左侧菜单和顶部隐藏 Start
+//------------------------------------
+function mnToggleleft(){
+}
+function mnToggletop(){
+}
+//------------------------------------
+//左侧菜单和顶部隐藏 END
+//------------------------------------
+
+
+//------------------------------------
+//多账号 Start
+//------------------------------------
+/*
+var firstTime = new Date().getTime();
+function setAccountSelect(){
+    var nowTime = new Date().getTime();
+    if((nowTime-firstTime) < 10000){
+        setTimeout(function(){setAccountSelect();},1000);
+    }else{
+        try{
+            document.getElementById("accountSelect").disabled = false;
+        }catch(e){}
+    }
+}
+setAccountSelect();
+*/
+//------------------------------------
+//多账号 end
+//------------------------------------
+</script>
+
+<!-- //------------------------------------  -->
+<!-- //显示版本 Start                    -->
+<!-- //------------------------------------  -->
+<script language="vbs">
+'sub showVersion()
+'    about=window.showModalDialog("/systeminfo/version.jsp",,"dialogHeight:376px;dialogwidth:466px;help:no")
+'end sub
+</script>
+<!-- //------------------------------------  -->
+<!-- //显示版本 End                    -->
+<!-- //------------------------------------  -->
+<script language="javascript" src="/js/Cookies_wev8.js"></script>
+
+<!-- //------------------------------------  -->
+<!-- //消息提醒 start                    -->
+<!-- //------------------------------------  -->
+
+    <iframe border="0" frameborder="no" noresize="NORESIZE" width="0" height="0" scrolling="no" src="/system/SysRemind.jsp"></iframe>
+
+<!-- //------------------------------------  -->
+<!-- //消息提醒 End                    -->
+<!-- //------------------------------------  -->
+
+<iframe name="rtxClient" src="" style="display:none"></iframe>
+
+<script language="javascript">
+
+function showSkinListDialog(){
+	var hasSubTemplate = 'true';
+	if(hasSubTemplate == 'true'){
+		Dialog.alert("分部已指定主题模板，不能修改!");
+		return;	
+	}
+	var diag_xx = new Dialog();
+	diag_xx.Width = 600;
+	diag_xx.Height = 500;
+	
+	diag_xx.ShowCloseButton=true;
+	diag_xx.Title = "主题中心";//"主题中心";
+	diag_xx.Modal = true;
+	diag_xx.opacity=0;
+	diag_xx.URL = "/wui/theme/ecology8/page/skinTabs.jsp";
+	diag_xx.show();
+}
+</script>
+                                </div>
+                            </div>
+                            <div class="center" align="center" style="position:relative;z-index:1;float:left" id="topCenter">
+                                <!--放置菜单区域-->
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    
+	
+</style>
+
+<script type="text/javascript">
+<!--
+function topMenuBgIframeOnload(_this) {
+	_this.contentWindow.document.body.style.background = 'transparent';
+	_this.contentWindow.document.body.style.border='none';
+}
+//-->
+</script>
+
+<table border="0" width="661px" height="50px" align="left" cellpadding="0px" cellspacing="0px" id="topCenterTable">
+<tbody><tr>
+	<td align="left" width="661px">
+		<div class="topMenuDiv">
+		
+		<div class="topMenuDiv_top">
+			<div id="divFloatBg"></div>
+			<div class="menuItem" style="" onclick="dymlftenu(this);topMenuContraction();">
+			    <!--<DIV class="menuItemIcon" style="background-position:0 0;"></DIV>-->
+				<div class="slideItemText topItemSelect">门户</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="536" id="null" target="mainFrame" title="我的邮件">
+			    <!--<DIV class="menuItemIcon" style="background-position:-111 -37;"></DIV>-->
+				<div class="slideItemText">邮件</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="1" id="null" target="mainFrame" title="我的流程">
+			    <!--<DIV class="menuItemIcon" style="background-position:-111 -0;"></DIV>-->
+				<div class="slideItemText">流程</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="6" id="null" target="mainFrame" title="我的会议">
+			    <!--<DIV class="menuItemIcon" style="background-position:-74 -37;"></DIV>-->
+				<div class="slideItemText">会议</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="2" id="null" target="mainFrame" title="文件">
+			    <!--<DIV class="menuItemIcon" style="background-position:-74 -0;"></DIV>-->
+				<div class="slideItemText">文件</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="5" id="null" target="mainFrame" title="我的人事">
+			    <!--<DIV class="menuItemIcon" style="background-position:-222 -0;"></DIV>-->
+				<div class="slideItemText">人事</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="140" id="null" target="mainFrame" title="我的日程">
+			    <!--<DIV class="menuItemIcon" style="background-position:-148 -37;"></DIV>-->
+				<div class="slideItemText">日程</div>
+			</div>
+			 
+			<div class="menuItem" style="" onclick="clickstatictics(this);" levelid="635" id="null" target="mainFrame" title="调查">
+			    <!--<DIV class="menuItemIcon" style="background-position:-315 0;"></DIV>-->
+				<div class="slideItemText">调查</div>
+			</div>
+			
+
+		</div>
+		<div style="height:50px;float:left;">
+			<div id="topMenuContr" class="slideItemText moreText leftMenuTopBtn   add" style="vertical-align:middle;width:40px;top:7px;">
+				<div style="padding-top:8px; position:absolute;width:100%" class="">
+				<img src="/wui/theme/ecology8/page/images/nav_wev8.png" width="16px" height="16px" style="vertical-align:middle;" id="closeTop">
+				</div>
+			</div>
+		</div>
+		<div style="margin-left:3px;top:7px;" class="slideItemText moreText leftMenuTopBtn">
+			<div id="freqUse" class="freqUse" style="height:100%;line-height:35px;">常用</div>
+			
+		</div>
+	<form name="searchForm" method="post" action="/system/QuickSearchOperation.jsp" target="mainFrame">
+		<div class="searchBlockBgDiv slideItemText" style="overflow:visible;position:absolute;left:380px;"></div>
+			
+					<input type="hidden" name="searchtype" value="2">
+					<input type="hidden" id="mainid" name="mainid" value="">
+					<input type="hidden" id="stype" name="stype" value="">
+					<input type="hidden" id="fieldname" name="fieldname" value="">
+						<div id="sample" class="dropdown" style="float:left;position:absolute;left:410px;top:8px">
+							<div class="selectTile">
+								<a href="#" style="width:57px;">
+									<span style="height:35px;line-height:28px;float:left;width:32px;display:block;overflow:hidden;text-overflow:ellipsis;color:#fff;padding:0;" class="searchTxt">
+										人员
+									</span>
+									<div class="e8_dropdown"></div>
+									<!--background: url(/wui/theme/ecology8/skins/default/page/ecologyShellImg_wev8.png);background-repeat: no-repeat; background-position: -262px  -62px;-->
+									<div style="float:right;display: block; width:8px;height:18px;*height:18px;margin-top:3px;" class="searchTxt searchTxtSplit">|</div>
+								</a>
+							</div>
+							<div class="selectContent" style="margin-top:26px;*margin-top:20px;_margin-top:0px;">
+								<ul id="searchBlockUl">
+									<iframe src="" style="filter:alpha(opacity=0);opacity:0;position:absolute; visibility:inherit; top:0px; left:0px; width:100%; height:100%; z-index:-1; filter='progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';">
+									</iframe>
+									
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/hrs_wev8.png"><span searchtype="2">人员</span></a></li>
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/wls_wev8.png"><span searchtype="5">流程</span></a></li>
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/docs_wev8.png"><span searchtype="1">文档</span></a></li>
+								
+									
+										
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/xz_wev8.png"><span searchtype="8">协作</span></a></li>
+								
+								
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/mail_wev8.png"><span searchtype="7">邮件</span></a></li>
+								
+							
+							
+									<li><a href="#"><img src="/wui/theme/ecology8/page/images/toolbar/zc_wev8.png"><span searchtype="4">资产</span></a></li>
+								
+							
+								
+								
+								</ul>
+							</div>
+						</div>
+						
+						<div style="float:left;vertical-align :middle;position:absolute;left:480px;top:8px;">
+							<input type="text" id="searchvalue" name="searchvalue" onfocus="clearVal(this);" onblur="recoverVal(this);" class="searchkeywork" value="请输入关键词搜索" style="vertical-align :middle;">
+						</div>
+						<div class="keywordsearchbtn" style="position:absolute;left:590px;top:7px;">
+							<div onclick="clearVal(document.getElementById('searchvalue'));searchForm.submit()" id="searchbt" style="cursor:pointer;height:100%;width:100%;">
+								<img style="vertical-align:middle;margin-top:10px;position:absolute;left:8px" src="/wui/theme/ecology8/skins/default/page/search_wev8.png">
+							</div>
+						</div>
+						
+				 </form>
+			
+			
+			<!--<div style="float:left;">
+					<div style="float:left">
+						<div class="topBlockDateBlock" style="float:left;cursor:pointer;font-weight:bold;color:#003366;background:url(/wui/theme/ecology8/skins/default/page/ecologyShellImg_wev8.png);background-position: -148px -75px;background-repeat: no-repeat;width:54px;height:29px;line-height:32px;text-align:center;overflow:hidden;" >
+							星期二
+						</div>
+					</div>-->
+					
+					<!--<div style="float:left;display:block;background:url(/wui/theme/ecology8/skins/default/page/ecologyShellImg_wev8.png);background-position: -252 -75px;background-repeat: no-repeat;width:6px;height:29px;" class="toolbarTopRight">
+					</div>-->
+			</div>
+		
+		
+	</td>
+	
+</tr>
+</tbody></table>
+
+<!-- For slide-->
+<script type="text/javascript" src="/wui/common/jquery/plugin/jquery.cycle.all_wev8.js"></script>
+<script type="text/javascript" src="/wui/common/jquery/plugin/jquery.easing_wev8.js"></script>
+<script type="text/javascript" src="/js/ecology8/jQueryRotate_wev8.js"></script>    
+<script language="javascript">
+
+var isAdd = true;
+
+//顶部菜单最大高度
+var TOP_MENU_MAX_HEIGHT = "80";   
+jQuery(document).ready(function(){
+	//导航块移动
+    jQuery(".menuItem").bind("mouseover",function() {
+    	topMenuNavMove(this);
+    });
+	jQuery(".menuItem").bind("mouseout",function(){
+		topMenuNavOut(this);
+	})
+    //菜单展开或者收缩
+    jQuery("#topMenuContr").bind("click", function() {
+    	hideOtherHoverDiv('top');
+    	if (jQuery(".topMenuDiv_top").height() > 70) {
+    		jQuery(this).removeClass("menuNavSpan_Contraction").removeClass("leftcolor");
+    		jQuery(this).addClass("menuNavSpan_Expand");
+    		topMenuContraction();
+    	} else {
+    		jQuery(this).removeClass("menuNavSpan_Expand");
+    		jQuery(this).addClass("menuNavSpan_Contraction").addClass("leftcolor");
+	        topMenuExpand();
+	    }
+    });
+    
+    //光标不在菜单区域时，如果菜单时展开的则收缩。
+    jQuery(".topMenuDiv").hover(function() {}, function() {
+    	if (jQuery(".topMenuDiv_top").height() > 70) {
+	    	topMenuContraction();
+	    }else if(jQuery(".topMenuDiv_top").height() < 70&&jQuery(".topMenuDiv_top").hasClass("leftcolor")){
+	        topMenuContraction();
+	    }
+    });
+    
+    jQuery.ajax({
+		url: "/wui/theme/ecology8/page/getLeftMenu.jsp?t="+new Date().getTime(),
+	    dataType: "text", 
+	    contentType : "charset=UTF-8", 
+	    error:function(ajaxrequest){}, 
+	    success:function(content){
+	    	eval(content);
+	    }
+	})
+});
+
+function topMenuNavMove(_this) {
+    $this=jQuery(_this);
+    /*jQuery("#divFloatBg").show();
+    jQuery("#divFloatBg").each(function(){jQuery.dequeue(this, "fx");}).animate({                
+        top: $this.position().top -3,
+        left: $this.position().left+4
+    },600, 'easeOutExpo');*/
+	$this.children(".slideItemText").addClass("topItemOver");
+}
+
+function topMenuNavOut(_this){
+	$this=jQuery(_this);
+	$this.children(".slideItemText").removeClass("topItemOver");
+}
+
+/**
+* 菜单收缩
+*/
+function topMenuContraction() {
+	jQuery("#topMenuContr").removeClass("menuNavSpan_Contraction").removeClass("leftcolor");
+    jQuery("#topMenuContr").addClass("menuNavSpan_Expand");
+    jQuery("#topMenuContr").parent().removeClass("menuNavSpan_Contraction").removeClass("leftcolor");
+   	jQuery(".topMenuDiv_top .slideItemText").removeClass("slideItemTextExpand");
+	jQuery(".topMenuDiv_top").each(function() {jQuery.dequeue(this, "fx")}).animate({
+		height:35
+	} , 0);
+	if (jQuery("#divFloatBg").offset().top >= 67 ) {
+	    jQuery("#divFloatBg").hide();
+	}
+	/*if(isAdd){
+	}else{
+		var angle = 0;
+		var timer = setInterval(function(){
+			angle+=5;
+			jQuery("#closeTop").rotate(angle);
+			if (angle==90) clearInterval(timer);
+		},5);
+	}*/
+	jQuery(".topMenuDiv_top").removeClass("topMenuDivOver").removeClass("leftcolor")
+	//jQuery(".topMenuDiv_top").css("background", "");
+	jQuery("#topMenuContr").css("height","35px");
+	jQuery(".topItemSelect").removeClass("topItemSelectBorder").removeClass("logobordercolor");
+}
+
+/**
+* 菜单展开
+*/
+function topMenuExpand() {
+	/*jQuery(".topMenuDiv").css("background", "url(/wui/theme/ecology8/skins/default/page/top/menu_expand_bg_wev8.jpg)  ");*/
+	jQuery(".topMenuDiv_top").addClass("topMenuDivOver").addClass("leftcolor");
+	jQuery(".topMenuDiv_top").css("background-position","0 -262");
+	jQuery(".topMenuDiv_top").css("background-repeat","no-repeat");
+	jQuery(".topMenuDiv_top .slideItemText").addClass("slideItemTextExpand");
+	if(isIE() && document.documentMode==5){
+		jQuery("#topMenuContr").css("height",parseInt(TOP_MENU_MAX_HEIGHT));
+	}else{
+		jQuery("#topMenuContr").css("height",parseInt(TOP_MENU_MAX_HEIGHT)-2);
+	}	
+	jQuery("#topMenuContr").parent().addClass("menuNavSpan_Contraction").addClass("leftcolor");
+	jQuery(".topItemSelect").addClass("topItemSelectBorder").addClass("logobordercolor");
+	/*var angle = 0;
+	var timer = setInterval(function(){
+	angle+=5;
+	isAdd = false;
+	jQuery("#closeTop").rotate(angle);
+	if (angle==135) clearInterval(timer);
+	},5);*/
+	jQuery(".topMenuDiv_top").each(function() {jQuery.dequeue(this, "fx")}).animate({
+   		height: TOP_MENU_MAX_HEIGHT
+		//height:"100px"
+   	} , 0);
+}
+
+/**
+* 点击菜单项时触发，会统计菜单点击的次数，并打开子项（左侧）
+*/
+function clickstatictics(_this) {
+	
+	topMenuContraction();
+	isAdd = true;
+	jQuery("#drillcrumb").text(jQuery(_this).text());
+	//jQuery(".slideDivHidden").hide();//animate({opacity: "hide", height: "hide"}, 0);
+	dymlftenu(_this);
+	var ajaxUrl = "/wui/theme/ecology8/page/topMenuClickStatictics.jsp";
+	ajaxUrl += "?mid=";
+	ajaxUrl += jQuery(_this).attr("levelid");
+	ajaxUrl += "&token=";
+	ajaxUrl += new Date().getTime();
+	
+	jQuery.ajax({
+	    url: ajaxUrl,
+	    dataType: "text", 
+	    contentType : "charset=UTF-8", 
+	    error:function(ajaxrequest){}, 
+	    success:function(content){
+	    }  
+    });
+}
+</script>
+								
+                            </div>
+                            <div style="position:absolute;right:0px;">
+                                <!--放置搜索按钮框-->
+                                
+                                <!--放常用按钮区域-->
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+<script language="javascript">
+function signInOrSignOut(signType){
+    if(signType != 1){
+	    var ajaxUrl = "/wui/theme/ecology8/page/getSystemTime.jsp";
+		ajaxUrl += "?field=";
+		ajaxUrl += "HH";
+		ajaxUrl += "&token=";
+		ajaxUrl += new Date().getTime();
+		
+		jQuery.ajax({
+		    url: ajaxUrl,
+		    dataType: "text", 
+		    contentType : "charset=UTF-8", 
+		    error:function(ajaxrequest){}, 
+		    success:function(content){
+		    	var isWorkTime = jQuery.trim(content);
+		    	if (isWorkTime == "true") {
+		       window.top.Dialog.confirm('现在是工作时间，您确定要签退吗？',function(){
+		       	writeSignStatus(signType);
+		       },function(){
+		       	return;
+		       })     
+		      }else{
+		      	writeSignStatus(signType);
+		      }
+		    }  
+	    });
+    } else {
+    	writeSignStatus(signType);
+    }
+}
+
+function writeSignStatus(signType) {
+	var ajax=ajaxInit();
+    ajax.open("POST", "/hrm/schedule/HrmScheduleSignXMLHTTP.jsp?t="+Math.random(), true); 
+    ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    ajax.send("signType="+signType);
+    //获取执行状态
+    ajax.onreadystatechange = function() {
+        //如果执行状态成功，那么就把返回信息写到指定的层里
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            try{
+            	jQuery("#sign_dispan").text("签退");
+               
+                
+                jQuery("#sign_dispan").prev().attr("src","/wui/theme/ecology8/page/images/signOut_wev8.png")
+                
+                showPromptForShowSignInfo(ajax.responseText, signType);
+                jQuery("#sign_dispan").attr("_signFlag", 2);
+                if(navigator.userAgent.indexOf("MSIE")>0 && navigator.userAgent.indexOf("MSIE 6.0") > 0){  
+					DD_belatedPNG.fix('.tbItm,#toolbarMoreBlockTop,.searchBlockBgDiv,#sign_dispan,.topBlockDateBlock,.toolbarTopRight,background');
+				}
+            }catch(e){
+            }
+        }
+    }
+}
+
+//type  1:显示提示信息
+//      2:显示返回的历史动态情况信息
+function showPromptForShowSignInfo(content, signType){
+    var targetSrc = "";
+	content = jQuery.trim(content).replace(/&nbsp;/g, "");
+	var confirmContent = "<div style=\"margin-left:5px;margin-right:5px;\">" + content.substring(content.toUpperCase().indexOf('<TD VALIGN="TOP">') + 17, content.toUpperCase().indexOf("<BUTTON"));
+	
+    var checkday="";
+	if(signType==1) checkday="prevWorkDay";
+	if(signType==2) checkday="today";
+	jQuery.post("/blog/blogOperation.jsp?operation=signCheck&checkday="+checkday,"",function(data){
+		var dataJson=eval("("+data+")");
+		if (dataJson.isSignRemind==1){
+		    if(!dataJson.prevWorkDayHasBlog&&signType==1){
+				confirmContent += "<br><br><span style=\"color:red;\">你上个工作日没有提交工作微博,是否补交？</span>";
+				targetSrc = "/blog/blogView.jsp?menuItem=myBlog";
+			}else if(!dataJson.todayHasBlog&&signType==2){
+				confirmContent += "<br><br><span style=\"color:red;\">你今天还没有提交工作微博,是否提交?</span>";
+				targetSrc = "/blog/blogView.jsp?menuItem=myBlog";
+			}
+			
+			confirmContent += "</div>";
+			if (targetSrc != undefined && targetSrc != null && targetSrc != "") {
+				Dialog.confirm(
+					confirmContent, function (){
+						window.open(targetSrc);
+					}, function () {}, 520, 90,false
+			    );
+			} else {
+				Dialog.alert(confirmContent, function() {}, 520, 60,false);
+			}
+			
+		    return ;
+		}
+		confirmContent += "</div>";
+		Dialog.alert(confirmContent, function() {}, 520, 60,false);
+    });
+}
+
+
+function onCloseDivShowSignInfo(){
+    var showTableDiv  = document.getElementById('divShowSignInfo');
+    var oIframe = document.createElement('iframe');
+    
+    divShowSignInfo.style.display='none';
+    message_Div.style.display='none';
+    if (document.all.HelpFrame && document.all.HelpFrame.style) {
+        document.all.HelpFrame.style.display='none'
+    }
+}
+
+function ajaxInit(){
+    var ajax=false;
+    try {
+        ajax = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+        try {
+            ajax = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (E) {
+            ajax = false;
+        }
+    }
+    if (!ajax && typeof XMLHttpRequest!='undefined') {
+    ajax = new XMLHttpRequest();
+    }
+    return ajax;
+}
+function getNowTime(){
+        //取得当前时间
+        var now= new Date();
+        var hour=now.getHours();
+        
+        if (hour < 18) {
+            return false;
+        }
+        return true;
+}
+</script>
+<script type="text/javascript">
+<!--
+    jQuery(document).ready(function() {
+        /*jQuery(".tbItm").hover(function() {
+			/** by zfh 2011-09-20
+			*由于IE用jQuery无法获取background-position的值，支持background-position-y，background-position-x，
+			*而Safri，firefox，chrome正好相反，先使用下面方法获取background-position的值
+			*//*
+        	var bp=jQuery(jQuery(this)[0]).css("background-position");
+			if(bp===undefined  ){
+				jQuery(jQuery(this)[0]).css("background-position-y","-25px");
+			}else{
+				bp=bp.split(" ","1")[0];
+				jQuery(jQuery(this)[0]).css("background-position",bp+"  -25px");
+			}
+        }, function() {
+            var bp=jQuery(jQuery(this)[0]).css("background-position");
+			if(bp===undefined  ){
+				jQuery(jQuery(this)[0]).css("background-position-y","0px");
+			}else{
+				bp=bp.split(" ","1")[0];
+				jQuery(jQuery(this)[0]).css("background-position",bp+" 0px");
+			}
+        });*/
+        
+        jQuery(".dropdown img.flag").addClass("flagvisibility");
+
+        jQuery(".selectTile a").click(function() {
+        	hideOtherHoverDiv('search');
+		 	
+            jQuery(".selectContent ul").toggle();
+            if(jQuery(".selectContent ul").css("display")=="none"){
+            	jQuery(this).closest("div#sample").removeClass("sampleSelected");
+            }else{
+            	jQuery(this).closest("div#sample").addClass("sampleSelected");
+            }
+        });
+                    
+        jQuery(".selectContent ul li a").click(function() {
+            //获得元素信息
+            var sibling = jQuery(this).nextAll();
+            if(sibling.length > 0){
+	            for(var i=0; i<sibling.length;i++){
+	                if($(sibling[i]).attr("name") == "mainid"){
+	                    $("#mainid").val($(sibling[i]).html());
+	                }else if($(sibling[i]).attr("name") == "stype"){
+	                    $("#stype").val($(sibling[i]).html());
+	                }else{
+	                    $("#fieldname").val($(sibling[i]).html());
+	                }
+	            }
+            }
+            var text = jQuery(this).children("span").html();
+            jQuery(".selectTile a").children("span").html(text);
+            jQuery("input[name='searchtype']").val(jQuery(this).children("span").attr("searchType"));
+            jQuery(".selectContent ul").hide();
+            jQuery(this).closest("div#sample").removeClass("sampleSelected");
+        });
+                    
+        function getSelectedValue(id) {
+            return jQuery("#" + id).find("selectContent a span.value").html();
+        }
+
+        jQuery(document).bind('click', function(e) {
+            var $clicked = jQuery(e.target);
+            if (! $clicked.parents().hasClass("dropdown")){
+                jQuery(".selectContent ul").hide();
+				jQuery(".selectContent ul").closest("div#sample").removeClass("sampleSelected");
+			}
+        });
+
+
+        jQuery("#flagSwitcher").click(function() {
+            jQuery(".dropdown img.flag").toggleClass("flagvisibility");
+        });
+        
+        jQuery("#searchbt").hover(function() {
+			var bp=jQuery(jQuery(this)[0]).css("background-position");
+			if(bp===undefined  ){
+				//jQuery(jQuery(this)[0]).css("background-position-x","-27px");
+			}else{
+				bp=bp.split(" ","2")[1];
+				//jQuery(jQuery(this)[0]).css("background-position","-27px "+bp);
+			}
+        }, function() {
+            var bp=jQuery(jQuery(this)[0]).css("background-position");
+			if(bp===undefined  ){
+				jQuery(jQuery(this)[0]).css("background-position-x","-0px");
+			}else{
+				bp=bp.split(" ","2")[1];
+				jQuery(jQuery(this)[0]).css("background-position","-0px "+bp);
+			}
+        });
+        
+        //更多按钮
+       // jQuery(".toolbarMore").bind("click", function() {
+        	//jQuery("#toolbarMore").hide();
+       // });
+        
+        jQuery("#toolbarMoreBtn").hover(function(){
+        },function(){
+        	window.setTimeout(function(){
+        		if(jQuery("#toolbarMoreBtn").data("isOpen")){
+        			jQuery("#toolbarMore").hide();
+        			jQuery("#toolbarMoreBtn").removeClass("moreBtnSel");
+        			jQuery("#toolbarMoreBtn").data("isOpen",false);
+        		}
+        	},600);
+        });
+        
+        jQuery("#toolbarMore").hover(function() {
+        	jQuery("#toolbarMoreBtn").data("isOpen",false);
+        }, function() {
+        	jQuery("#toolbarMore").hide();
+        	jQuery("#toolbarMoreBtn").removeClass("moreBtnSel");
+        	jQuery("#toolbarMoreBtn").data("isOpen",false);
+        });
+        
+        jQuery(".moreBtn_option").hover(function(){
+		 	jQuery(this).addClass("moreBtn_optionSelect");
+		 },function(){
+		 	jQuery(this).removeClass("moreBtn_optionSelect");
+		 });
+        
+        //为了兼容ie6，收藏夹iframe动态载入
+        //jQuery("#navFav").css("position", "relative");
+		//jQuery("#navFav").load("/wui/theme/ecology8/page/FavouriteShortCut.jsp")
+		 	/**页面加载时不加载菜单，改为点击时才加载，以保证每次打开都是最新的收藏夹快捷菜单*/
+		jQuery("td.fav").css("cursor","pointer").bind("click",function(){
+			/*
+			 var subMenus = $mt("subMenusContainer");  //下拉菜单
+			 if(subMenus)   //已存在，先销毁
+			 {
+			     subMenus.destroy();
+			 }
+			 jQuery("#navFav").load("/wui/theme/ecology8/page/FavouriteShortCut.jsp?t=" + Math.random(),function(){
+			 	 if(myMenu)
+			 	 {
+			 	 	 $mt(myMenu.options.subMenusContainerId).getFirst().fireEvent('show');  //默认展开第一级菜单
+			 	 }	
+			 })*/
+			 var url = "/favourite/MyFavourite.jsp";
+			var dialog = new window.top.Dialog();
+			dialog.currentWindow = window;
+			dialog.Title = "我的收藏";
+			dialog.Width = 657;
+			dialog.Height = 565;
+			dialog.Drag = true;
+			dialog.URL = url;
+			dialog.show();
+		});
+		//ie6下下拉菜单被select遮盖
+		//jQuery("#searchBlockUl iframe").css("height", jQuery("#searchBlockUl").height());
+		//console.log(jQuery("#searchBlockUl").height());
+		jQuery("#searchBlockUl").hover(function () {
+		}, function () {
+			jQuery("#searchBlockUl").hide();
+			jQuery("#searchBlockUl").closest("div#sample").removeClass("sampleSelected");
+		});
+		
+		jQuery("#searchBlockUl li a").hover(function(){
+			var src = jQuery(this).find("img").attr("src");
+			src = src.replace(/\_wev8.png$/,"_sel_wev8.png");
+			jQuery(this).find("img").attr("src",src);
+		},function(){
+			var src = jQuery(this).find("img").attr("src");
+			src = src.replace(/_sel_wev8\.png$/,"_wev8.png");
+			jQuery(this).find("img").attr("src",src);
+		});
+		
+		jQuery(".selectTile").hover(function () {
+		}, function () {
+			var clientx = event.clientX;
+			var clienty = event.clientY;
+			
+			var elex = jQuery(this).offset().left;
+			var eley = jQuery(this).offset().top;
+		
+			if (clientx < elex || elex > jQuery(this).offset().right || clienty < eley) {
+				jQuery("#searchBlockUl").hide();
+				jQuery("#searchBlockUl").closest("div#sample").removeClass("sampleSelected");
+			} else {
+				return;
+			}
+		});
+		
+    });
+    
+function toolbarMore() {
+	hideOtherHoverDiv('toolbar');
+	
+	jQuery("#toolbarMore").toggle();
+	if(jQuery("#toolbarMore").css("display")=="none"){
+		jQuery("#toolbarMoreBtn").removeClass("moreBtnSel");
+		jQuery("#toolbarMoreBtn").data("isOpen",false);
+	}else{
+		jQuery("#toolbarMoreBtn").addClass("moreBtnSel");
+		jQuery("#toolbarMoreBtn").data("isOpen",true);
+		jQuery("#toolbarMoreTD").css({"right":"19px","top":"40px"})
+	}
+}
+
+//function goopenWindow(url){
+//    var chasm = screen.availWidth;
+//    var mount = screen.availHeight;
+//    if(chasm<650) chasm=650;
+//    if(mount<700) mount=700;
+//    window.open(url,"PluginCheck","scrollbars=yes,resizable=no,width=690,Height=650,top="+(mount-700)/2+",left="+(chasm-650)/2);
+//}
+
+function goopenWindow(title,url){	
+	var dlg=new window.top.Dialog();//定义Dialog对象
+	var title = title;
+	dlg.currentWindow = window;
+	//var chasm = screen.availWidth;
+    //var mount = screen.availHeight;
+    //if(chasm<600) chasm=600;
+    //if(mount<500) mount=500;
+	dlg.Model=true;
+	dlg.Width=730;//定义长度
+	dlg.Height=600;
+	dlg.URL=url;
+	dlg.Title=title;
+	dlg.show();
+	}
+
+function goUrl(url){
+	document.getElementById("mainFrame").src = url;
+}
+
+function showCalendarDialog(){
+	var diag_xx = new Dialog();
+	diag_xx.Width = 600;
+	diag_xx.Height = 387;
+	
+	diag_xx.ShowCloseButton=true;
+	diag_xx.Title = "日历";
+	diag_xx.Modal = false;
+
+	diag_xx.URL = "/calendar/wnl2.jsp";
+	diag_xx.show();
+}
+
+function setSafeSite(){
+  jQuery("#downLoadReg").attr("src","/weaverplugin/EcologyPlugin.zip");
+}
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+function toolbarSearchIframeOnload(_this) {
+}
+//function showVersion(){
+//	 about=window.showModalDialog("/systeminfo/version.jsp","","dialogHeight:460px;dialogwidth:660px;help:no");
+//}
+
+function showVersion(){	
+var dlg=new window.top.Dialog();//定义Dialog对象
+var url = "/systeminfo/version.jsp";
+var title = "关于e-cology";
+dlg.currentWindow = window;
+dlg.Model=true;
+dlg.Width=630;//定义长度
+dlg.Height=400;
+dlg.URL=url;
+dlg.Title=title;
+dlg.show();
+}
+
+function clearVal(obj){
+	if(obj.value=='请输入关键词搜索'){
+		obj.value="";
+	}
+	//jQuery(obj).css("color","#fff");
+}
+
+function recoverVal(obj){
+	if(obj.value==''||obj.value==null){
+		obj.value="请输入关键词搜索";
+	 	//jQuery(obj).css("color","#429ce1");
+	}
+}
+
+
+
+
+//-->
+</script>
+
+<iframe id="downLoadReg" style="display: none;"></iframe>
+<div>
+<table align="right" style="height:50px;" cellpadding="0px" cellspacing="0px">
+	<tbody><tr width="100%">
+       
+		<td width="100%">
+    	    <table style="height:100%;" cellpadding="0px" cellspacing="0px" width="100%" align="right">
+    	    	<tbody><tr align="left">
+    	    		<!-- 主页 -->
+			       <!-- <td onClick="javascript:dymlftenu(this);" title="主页">
+						<span style="background-position:0 0;display:block;" class="tbItm"></span>
+			        </td>-->
+			         <!--<td style="width:10px;height:20px;" align="center">
+			        	<table cellpadding="0px" cellspacing="0px"><tr><td width="2px">-->
+						<!--background:url(/wui/theme/ecology8/skins//page/ecologyShellImg_wev8.png);-->
+			        	<!--	<span style="margin-right:7px;display:block;width:2px;height:20px;background-position:0 -50;" class="toolbarSplitLine"></span>
+			        	</td></tr></table>
+			        </td>-->
+					
+			        <!-- Line -->
+			        <!--<td style="width:10px;height:20px;" align="center">
+			        	<table cellpadding="0px" cellspacing="0px"><tr><td width="2px">
+			        		<span style="background:url(/wui/theme/ecology8/skins//page/ecologyShellImg_wev8.png);margin-right:7px;display:block;width:2px;height:20px;background-position:0 -50;" class="toolbarSplitLine"></span>
+			        	</td></tr></table>
+			        </td>-->
+					 <!-- 待办 
+			        <td style="background:url(/wui/theme/ecology8/page/images/unhandlerequest_wev8.png) no-repeat scroll center top;"  class="backgroundPosition"  title="待办事宜">
+			        	<a style="display:block;" class="tbItm" href="/workflow/request/RequestView.jsp" target="mainFrame" ></a>
+			        </td>-->
+			        
+			       
+					<!-- 邮件 -->
+				
+				<td id="tdSignInfo" style="display: none">
+				<div style="position: relative;width:60px;height: 40px;cursor: pointer;">
+					<img onclick="jQuery(this).next().trigger('click')" src="/wui/theme/ecology8/page/images/signIn_wev8.png" style="position:absolute;left:0px;top:13px;cursor:pointer;">
+					<div class="leftColor" onclick="signInOrSignOut(jQuery(this).attr('_signFlag'))" style="position:absolute;left:25px;top:13px;overflow:hidden;text-overflow:ellipsis;cursor:pointer;" _signflag="1" id="sign_dispan">
+					签到
+					</div>
+				</div>
+				</td>
+				<td id="tdSignInfoLine" style="display: none">
+					<div style="width: 1px;background: #ffffff;opacity:0.2;margin-top:10px;margin-bottom: 10px;height: 20px">
+					</div>
+				</td>
+			       
+				
+                   
+			         	
+			        <!-- emessage -->
+			        <td onclick="window.open('https://emobile.weaver.com.cn/customerproduce.do?serverVersion=Ni4w')" title="E-Mobile" class="emobile" style="width:40px;background:url(/wui/theme/ecology8/page/images/info_wev8.png) no-repeat scroll center 50%;">
+			        	<span style="display:block;" class="tbItm"></span>
+			        </td>
+			        
+					
+					
+						
+			        <!-- emessage -->
+			        <td onclick="javascript:window.open('/messager/installm3/emessageproduce.jsp')" title="E-Message" class="emessage" style="width:40px;background:url(/wui/theme/ecology8/page/images/info_wev8.png) no-repeat scroll center 50%;">
+			        	<span style="display:block;" class="tbItm"></span>
+			        </td>
+			       
+					
+					
+			        
+			        <!-- 收藏夹 -->
+			        <td class="fav" onclick="" title="收藏夹" style="width: 40px; background: url(&quot;/wui/theme/ecology8/page/images/favorite_wev8.png&quot;) center 50% no-repeat scroll; cursor: pointer;">
+			        	 <span><ul id="navFav"> </ul></span>
+			        </td>
+			       
+                     
+			        
+			        <!--<td style="width:10px;height:20px;" align="center">
+			        	<table cellpadding="0px" cellspacing="0px"><tr><td width="2px">
+			        		<span style="margin-right:7px;display:block;width:2px;height:20px;background-position:0 -50;" class="toolbarSplitLine"></span>
+			        	</td></tr></table>
+			        </td>-->
+			         
+			        <td id="toolbarMoreBtn" class="toolbarmore" onclick="javascript:toolbarMore();" title="更多" style="width:40px;background:url(/wui/theme/ecology8/page/images/more_wev8.png) no-repeat scroll center 50%;position:relative;"> 
+			        	<span style="display:block;" class="tbItm"></span>
+				   </td>
+					<td style="position:absolute;right:15px!important;top:40px;" id="toolbarMoreTD">
+					<!--background-image:url(/wui/theme/ecology8/skins/default/page/top/toolbarMoreTop_wev8.png);-->
+						<div id="toolbarMore" class="moreBtn">
+			        		<div id="toolbarMoreBlockTop" style="background-repeat:no-repeat;height:11px;overflow:hidden;width:184px;"></div>
+			        				<!-- modified by wcd 2014-09-24 -->
+    					
+						<div class="moreBtn_option" style="margin-top:-11px;background-color: #d5ecff;color:#228ade;" onclick="javascript:window.open('/middlecenter/index.jsp')">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/back-end_wev8.png" style="vertical-align:middle;"></span>
+							<span>后端应用中心</span>
+						</div>
+						
+    					<div class="moreBtn_option" style="" onclick="javascript:goUrl('/hrm/HrmTab.jsp?_fromURL=OrgChartHRM')">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/com_wev8.png" style="vertical-align:middle;"></span>
+							<span>组织图表</span>
+							</div>
+							
+							<div class="moreBtn_option" style="" onclick="javascript:goopenWindow('插件下载','/weaverplugin/PluginMaintenance.jsp')">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/download_wev8.png" style="vertical-align:middle;"></span>
+							<span>插件下载</span>
+							</div>
+							<div class="moreBtn_option" onclick="javascript:setSafeSite()">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/plugin_wev8.png" style="vertical-align:middle;"></span>
+							<span>控件设置</span></div>
+							<div class="moreBtn_option" onclick="javascript:goopenWindow('授权信息','/hrm/HrmTab.jsp?_fromURL=licenseInfo')">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/license_wev8.png" style="vertical-align:middle;"></span>
+							<span>授权信息</span></div>
+							<div class="moreBtn_option" onclick="javascript:showVersion()">
+							<span class="moreBtn_optionSpan"><img width="17" src="/wui/theme/ecology8/page/images/version_wev8.png" style="vertical-align:middle;"></span>
+							<span>版本</span></div>
+						</div>
+					</td>
+						
+			        <td class="logout" style="width:40px;background:url(/wui/theme/ecology8/page/images/more_wev8.png) no-repeat scroll center 50%;" onclick="logout()" title="退出">
+			        	<div class="tbItm f12 quit">
+			        	</div>
+					</td>
+    	    	</tr>
+    		</tbody></table> 
+    	</td>
+    </tr>
+    
+	<!--<tr>
+		<td height="2px;"></td>
+	</tr>-->
+	
+</tbody></table>
+</div>
+
+<script language="javascript">
+var voteids = "";//网上调查的id
+var voteshows = "";//网上调查是否弹出
+var votefores = "";//网上调查---> 强制调查
+</script>
+
+
+ 
+
+<script type="text/javascript" src="/appres/hrm/js/mfcommon_wev8.js"></script>
+<script language="javascript">  
+
+function showVote(){
+     if(voteids !=""){
+	     var arr = voteids.split(",");
+	     var autoshowarr = voteshows.split(",");
+	     var forcevotearr = forcevotes.split(",");
+		 for(i=0;i<arr.length;i++){
+		    //判断是否弹出调查
+		    if(autoshowarr[i] !='' || forcevotearr[i] !=''){//弹出
+			    var diag_vote = new Dialog();
+				diag_vote.Width = 960;
+				diag_vote.Height = 800;
+				diag_vote.Title = "网上调查";
+				diag_vote.URL = "/voting/VotingPoll.jsp?votingid="+arr[i];
+				if(forcevotearr[i] !=''){//强制调查
+				  diag_vote.ShowCloseButton=false; 
+				}
+				diag_vote.show();
+			}
+		 }
+	 }
+  }
+  
+  var _signType = "1";
+	var _signStartTime = "";
+	var common = new MFCommon();
+	function uper() {
+	
+	return false;
+	
+		common.ajax("cmd=compareTime&arg0="+_signType+"&arg1="+_signStartTime, false, function(result){
+			changeSignInfo(result);
+			window.setTimeout(uper, 1000 * 60);
+		});
+	}
+	function changeSignInfo(sType) {
+		if(sType != 1 && sType != 2) {
+			jQuery("#tdSignInfo").hide();
+			jQuery("#tdSignInfoLine").hide();
+		} else {
+			jQuery("#tdSignInfo").show();
+			jQuery("#tdSignInfoLine").show();
+			jQuery("#sign_dispan").attr("_signFlag", sType);
+			if(sType == 1) {
+				jQuery("#sign_dispan").text("签到");
+			} else {
+				jQuery("#sign_dispan").text("签退");
+				jQuery("#sign_dispan").prev().attr("src","/wui/theme/ecology8/page/images/signOut_wev8.png");
+			}
+			try{
+				if(navigator.userAgent.indexOf("MSIE")>0 && navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+					DD_belatedPNG.fix('.tbItm,#toolbarMoreBlockTop,.searchBlockBgDiv,#sign_dispan,.topBlockDateBlock,.toolbarTopRight,background');
+				}
+			}catch(e){}
+		}
+	}
+
+var needRemind = true;
+function canSign(){
+	if(!needRemind)return;
+	try{
+		jQuery.ajax({
+			url:"/hrm/ajaxData.jsp",
+			type:"POST",
+			dataType:"json",
+			async:false,
+			data:{
+				cmd:"isNeedSign",
+			},
+			success:function(data){
+				if(data.isNeedSign){
+					window.top.Dialog.confirm("今天是工作日，现在要签到吗？",function(){
+						signInOrSignOut(data.signType);
+						needRemind = false;
+						jQuery("#tdSignInfo").show();
+						jQuery("#tdSignInfoLine").show();
+					},function(){
+						needRemind = false;
+					  try{
+					  	jQuery("#tdSignInfo").show();
+					  	jQuery("#tdSignInfoLine").show();
+            	jQuery("#sign_dispan").text("签到");
+                showPromptForShowSignInfo(ajax.responseText, signType);
+                jQuery("#sign_dispan").attr("_signFlag", 1);
+                if(navigator.userAgent.indexOf("MSIE")>0 && navigator.userAgent.indexOf("MSIE 6.0") > 0){  
+									DD_belatedPNG.fix('.tbItm,#toolbarMoreBlockTop,.searchBlockBgDiv,#sign_dispan,.topBlockDateBlock,.toolbarTopRight,background');
+								}
+            }catch(e){}
+					})
+				}else{
+					setTimeout('canSign()', 60*5*1000);
+				}
+			}
+		});
+	}catch(e){}
+}
+</script> 
+
+
+<script language="javascript">  
+jQuery(document).ready(function() {
+	showVote();
+	var isNeedSign = "false";
+	var signType = "1";
+	if(isNeedSign == "true" && signType == "1") {
+		window.top.Dialog.confirm("今天是工作日，现在要签到吗？",function(){
+			signInOrSignOut(1);
+		}, function() {
+			setTimeout('canSign()', 60*5*1000);
+		});
+	}
+	setTimeout('uper()', 60*1000);
+});
+
+function logout(){
+	top.Dialog.confirm("确定要退出系统吗？",function(){
+		window.location='/login/Logout.jsp';
+	})
+}
+</script> 
+
+
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                     </div>  
+                </div>
+                <!--中-->
+                <div style="">
+                    <div id="contentcontainer" style="width:100%;height:100%;">
+                                <div id="content">
+                               		<div id="e8rightContentDiv" style="background-color:#fff;height:100%;margin-left:225px;">
+	                                            	<div style="width: 100%; height: 2950px;">
+	                                                   <iframe name="mainFrame" id="mainFrame" border="0" frameborder="no" noresize="noresize" width="100%" height="100%" scrolling="auto" src="/homepage/Homepage.jsp?hpid=2&amp;subCompanyId=1&amp;isfromportal=1&amp;isfromhp=0&amp;e71566912103796=" style="height: 2950px; overflow-y: hidden;"></iframe> 
+	                                        <!--&nbsp;/hrm/resource/HrmResource_frm.jsp-->
+	                                        </div>
+	                                           
+	                                     </div>
+                                    <div id="leftBlockTd" style="width:225px;float:left;">
+										
+                                        <!--放置左侧菜单区overflow:hidden;-->
+                                        <div id="leftmenucontainer" class="leftcolor" style="width: 225px; height: 2950px;"> 
+                                            <div>
+                                                    	<div>
+                                                    		<div class="leftMenuTop hrmcolor">
+                                                    			<div style="position:relative;">
+                                                    				<div id="leftmenu-top" style="">
+                                                    					<div class="leftBlockHrmInfoLeft"></div>
+                                                        				<div id="leftBlockHrmInfoCenter" class="leftBlockHrmInfoCenter"></div>
+                                                        				<div class="leftBlockHrmInfoRight"></div>
+                                                    				</div>
+                                                    				<div id="leftBlock_HrmDiv">
+	                                                    				<!--放置即时通讯相关的东西-->
+	                                                        			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/js/jquery/jquery_dialog_wev8.css" type="text/css" rel="STYLESHEET">
+<script type="text/javascript" src="/wui/common/jquery/jquery.min_wev8.js"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery/jquery_dialog_wev8.js"></script>
+
+<script src="/social/js/drageasy/drageasy.js"></script>
+<script type="text/javascript" src="/social/js/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="/social/im/js/IMUtil_wev8.js"></script>
+
+<script type="text/javascript" src="/social/js/imcarousel/imcarousel.js"></script>
+<script type="text/javascript" language="javascript">
+function ReloadOpenerByDialogClose() {
+    document.location="/login/VerifyRtxLogin.jsp?para=309E8BC1C22704EC492584DB74590E0F46935E31BF5D9843615D29FFD937E2D65A0A8FDCF036954FA28CA24C228A27AEEFCFE3F15C7B97ABD6D2CDBA3506A7A1783833BABAF4F1022EFE556551D1C0C388004F20AD7C5482A2B033A52D706E0C9E80AD536240F008F7590D1EE7EC0068";
+        return;
+
+
+}
+
+function doScannerEscape(ev, obj){
+	IMCarousel.doScannerEscape(ev, obj);
+}
+
+function scaleImg(obj, tag){
+	IMCarousel.scaleImg(obj, tag);
+}
+
+function rotateImg(obj){
+	IMCarousel.rotateImg(obj);
+}
+
+function downloadImg(obj){
+	IMCarousel.downloadImg(obj);
+}
+
+function slideImg(obj, direction){
+	IMCarousel.slideImg(obj, direction);
+}
+
+function showImgScanner(ev, isShow, id){
+	IMCarousel.showImgScanner(ev, isShow, id);
+}
+
+function downloads(id){
+	document.location.href="/weaver/weaver.file.FileDownload?fileid="+id+"&download=1";
+}
+</script>
+
+
+
+
+
+
+<script language="javascript"> 
+//------------------------------------
+//多账号 Start
+//------------------------------------
+function onCheckTime(obj){
+	window.location = "/login/IdentityShift.jsp?shiftid="+obj.value;
+}
+
+function changeAccount(obj){
+	window.location = "/login/IdentityShift.jsp?shiftid="+$(obj).attr("userid");
+}
+
+var firstTime = new Date().getTime();
+function setAccountSelect(){
+    var nowTime = new Date().getTime();
+    if((nowTime-firstTime) < 10000){
+    	setTimeout(function(){setAccountSelect();},1000);
+    }else{
+        try{
+            document.getElementById("accountSelect").disabled = false;
+            jQuery("#accountText").html(jQuery("#accountSelect").find("option:selected").text());
+			jQuery("#accountText").attr("title", jQuery("#accountSelect").find("option:selected").text());
+			jQuery("#accountSelect").hide();
+			jQuery("#accountText").show();
+        }catch(e){}
+    }
+}
+setAccountSelect();
+
+jQuery(document).ready(function () {
+	
+	if (jQuery("#accountSelect")[0]) {
+		jQuery("#leftBlockHrmDep").hover(function () {
+			jQuery("#accountText").html("");
+			jQuery("#accountText").hide();
+			jQuery("#accountSelect").show();
+			jQuery("#accountSelect").focus();
+		}, function () {
+		});
+		jQuery("#accountSelect").bind("blur", function () {
+			jQuery("#accountText").html(jQuery("#accountSelect").find("option:selected").text());
+			jQuery("#accountText").attr("title", jQuery("#accountSelect").find("option:selected").text());
+			jQuery("#accountSelect").hide();
+			jQuery("#accountText").show();
+		});
+	}
+});
+
+//设置个人头像
+var userIconDialog;
+function setUserIcon(){
+    userIconDialog = new Dialog();
+	userIconDialog.Width = 600;
+	userIconDialog.Height = 450;
+	userIconDialog.Title = "设置个人头像";//设置个人头像
+	userIconDialog.Modal  = false;
+	userIconDialog.URL = "/messager/GetUserIcon.jsp?loginid=61309011&requestFrom=homepage";
+	userIconDialog.show();
+   
+}
+
+</script> 
+
+
+<div style="position:relative;height:100%">
+
+    <!-- 更换皮肤设置 Start -->
+    <div style="position:absolute;left:63px;top:16px;font-size:12px;height:16px;right:0px;">
+       <span style="float:right;">
+      
+       </span>
+    </div>
+    <!-- 更换皮肤设置 End -->
+    
+	<div title="王炼" class="hrminfo_fontcolor leftColor hand" style="max-width:100px;float: left;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;" onclick="window.open('/hrm/HrmTab.jsp?_fromURL=HrmResource','mainFrame')">
+	   王炼
+	   
+	</div>
+	
+
+	<div id="leftBlockHrmDep" style="float:left;cursor:default;overflow:hidden;width: 100px;" class="leftBlockHrmDep leftColor" title="信息科">信息科</div>
+
+	
+		
+
+	<div style="position:absolute;width:41px;height:41px;left:14px;top:17px;display:none;">
+		
+		
+		<img src="/messager/usericon/loginid20181018113741.jpg" border="0" width="38" height="37" onclick="setUserIcon()" title="设置个人头像" id="userIcon" style="cursor: pointer;">
+		
+	</div>
+	<script type="text/javascript">
+	 jQuery(document).ready(function(){
+        if("141"=="1"){
+        	jQuery(userIcon).removeAttr("onclick");
+        	jQuery(userIcon).removeAttr("title");
+        }
+
+    });
+	</script>
+	<div class="more" style="display:none;">
+		<table cellpadding="0px" cellspacing="0px" id="tblHrmToolbr" align="left">
+			<tbody><tr>
+				<!-- 解决因ie6下png透明引起img图片空白显示的bug -->
+				<td><a href="/newportal/contactslist.jsp" title="通讯录" target="mainFrame" style=""><span class="quickImg" style="background:url(/wui/theme/ecology8/page/images/hrminfo/address_wev8.png) no-repeat;"></span></a></td>
+				<td><a href="/workflow/request/RequestView.jsp" title="待办事宜" target="mainFrame" style=""><span class="quickImg" style="background:url(/wui/theme/ecology8/page/images/request/unhandle_wev8.png) no-repeat;"></span></a></td>
+				
+				<td><a href="#" title="未读邮件" target="mainFrame" style=""><span class="quickImg" style="background:url(/wui/theme/ecology8/page/images/email/email_wev8.png) no-repeat;"></span></a></td>
+				<td><a href="#" title="皮肤中心" target="mainFrame" style=""><span class="quickImg" style="background:url(/wui/theme/ecology8/page/images/theme_wev8.png) no-repeat;"></span></a></td>
+				<!--<td width="24px"><a  href="/hrm/resource/HrmResource.jsp?id=141"title='我的卡片'    target="mainFrame" style><span style="cursor:pointer;height:16px;width:16px;display:block;overflow:hidden;background:url(/wui/theme/ecology8/page/images/hrminfo/card_wev8.png) no-repeat;"></span></a></td>-->
+				<td width="24px"><a href="/hrm/resource/HrmResourcePassword.jsp?id=141" title="修改密码" target="mainFrame" style=""><span class="quickImg" style="background:url(/wui/theme/ecology8/page/images/hrminfo/psw_wev8.png) no-repeat;"></span></a></td>
+					
+				<td><div class="quickImg" id="tdMessageState" style="cursor:pointer;font-size:11px;color:#666;position:relative;background:url(/wui/theme/ecology8/page/images/request/info_wev8.png) no-repeat;"><img src="/messager/images/e-message_wev8.png" id="imgMsgStateBar" align="absmiddle" width="16px" title="E-Message"><div id="flashContent"></div></div>	</td>
+				
+				<!--<td width="24px"><a  href="/org/OrgChartHRM.jsp" title='组织结构'  target="mainFrame" style><span style="cursor:pointer;height:16px;width:16px;display:block;overflow:hidden;background:url(/wui/theme/ecology8/page/images/hrminfo/org_wev8.png) no-repeat;"></span></a></td>-->
+				<!--  <td width="24px"><a  href="/workplan/data/WorkPlan.jsp" title='日程'  target="mainFrame" style><img  src="/wui/theme/ecology8/page/images/hrminfo/cal_wev8.gif" border="0"></a></td>-->
+				<!--<td  align="left">
+										
+						<div id="tdMessageState" style="cursor:pointer;font-size:11px;color:#666;position:relative;"></div>	
+					
+				</td>-->
+			</tr>
+		</tbody></table>
+
+		
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$('.accoutListBox').perfectScrollbar();
+</script>
+
+
+                                                        			</div>
+                                                    			</div>
+                                                    		</div>
+                                                    	</div>
+                                                        
+                                                        <!--放置左侧菜单区-->
+                                                        <div style="position: relative; top: 0px; visibility: visible;" id="leftmenucontentcontainer">
+															
+                                                        	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function Map() {    
+    var struct = function(key, value) {    
+        this.key = key;    
+        this.value = value;    
+    }    
+     
+    var put = function(key, value){    
+        for (var i = 0; i < this.arr.length; i++) {    
+            if ( this.arr[i].key === key ) {    
+                this.arr[i].value = value;    
+                return;    
+            }    
+        }    
+        this.arr[this.arr.length] = new struct(key, value);    
+    }    
+         
+    var get = function(key) {    
+        for (var i = 0; i < this.arr.length; i++) {    
+            if ( this.arr[i].key === key ) {    
+                return this.arr[i].value;    
+            }    
+        }    
+        return null;    
+    }    
+         
+    var remove = function(key) {    
+        var v;    
+        for (var i = 0; i < this.arr.length; i++) {    
+            v = this.arr.pop();    
+            if ( v.key === key ) {    
+                continue;    
+            }    
+            this.arr.unshift(v);    
+        }    
+    }    
+         
+    var size = function() {    
+        return this.arr.length;    
+    }    
+         
+    var isEmpty = function() {    
+        return this.arr.length <= 0;    
+    }    
+       
+    this.arr = new Array();    
+    this.get = get;    
+    this.put = put;    
+    this.remove = remove;    
+    this.size = size;    
+    this.isEmpty = isEmpty;    
+}
+
+</script>
+
+<script type="text/javascript">var menuMap = new Map();menuMap.put('-9999', "<ul><li><div> <a id=portal2 class='lfMenuItem' href='/homepage/Homepage.jsp?hpid=2&subCompanyId=1&isfromportal=1&isfromhp=0' _bgPosition='0 -84' target='mainFrame' title='医院门户'><div class='leftMenuItemLeft' style='background-position:0 -84;'></div><div class='leftMenuItemCenter' style=''><span class='e8text'>医院门户</span><span style='display:none;' class='iconImage'></span><span class='e8_number' id='num_0_portal'></span></div><div class='leftMenuItemRight' style=''></div><div style='width:4px;display:none;'></div></a></div></li><li><div> <a id=portal21 class='lfMenuItem' href='/homepage/Homepage.jsp?hpid=21&subCompanyId=1&isfromportal=1&isfromhp=0' _bgPosition='0 0' target='mainFrame' title='个人门户'><div class='leftMenuItemLeft' style='background-position:0 0;'></div><div class='leftMenuItemCenter' style=''><span class='e8text'>个人门户</span><span style='display:none;' class='iconImage'></span><span class='e8_number' id='num_1_portal'></span></div><div class='leftMenuItemRight' style=''></div><div style='width:4px;display:none;'></div></a></div></li></ul>");</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/wui/common/jquery/plugin/jquery.scrollTo_wev8.js"></script>
+
+
+
+<div class="leftMenuTopNavDiv">
+	<div id="drillcrumb">门户</div>
+</div>
+<div id="leftMenu" style="position: relative; height: 2821px; overflow-y: hidden; outline: none;" tabindex="5000">
+	<div id="drillmenu" class="drillmenu content" style="height: 80px;">
+		<ul>
+			<li class="liCss2 liSelected">
+				<div class="divCss" style="padding-left: 20px;"> 
+					<a id="portal2" class="lfMenuItem" href="/homepage/Homepage.jsp?hpid=2&amp;subCompanyId=1&amp;isfromportal=1&amp;isfromhp=0" _bgposition="0 -84" target="mainFrame" title="医院门户" isfirstlevel="true">
+						<div class="leftMenuItemLeft aSelected" style="background-position:0 -84;"></div>
+						<div class="leftMenuItemCenter aSelected" style="">
+							<span class="bzCls  defaulticon num_0_portal"></span>
+							<span class="nameDiv" style="width: 164px;">
+								<span>
+									<span class="e8text">医院门户</span>
+									<span style="display:none;" class="iconImage"></span>
+									<span class="e8_number" id="num_0_portal"></span>
+								</span>
+							</span>
+						</div>
+						<div class="leftMenuItemRight aSelected" style="left: 235px;"></div>
+						<div style="width:4px;display:none;" class="aSelected"></div>
+					</a>
+				</div>
+			</li>
+			<li class="liCss2">
+				<div class="divCss" style="padding-left: 20px;"> 
+					<a id="portal21" class="lfMenuItem" href="/homepage/Homepage.jsp?hpid=21&amp;subCompanyId=1&amp;isfromportal=1&amp;isfromhp=0" _bgposition="0 0" target="mainFrame" title="个人门户" isfirstlevel="true">
+						<div class="leftMenuItemLeft" style="background-position:0 0;"></div>
+						<div class="leftMenuItemCenter" style="">
+							<span class="bzCls  defaulticon num_1_portal"></span>
+							<span class="nameDiv" style="width: 164px;">
+								<span>
+									<span class="e8text">个人门户</span>
+									<span style="display:none;" class="iconImage"></span>
+									<span class="e8_number" id="num_1_portal"></span>
+								</span>
+							</span>
+						</div>
+						<div class="leftMenuItemRight" style="left: 235px;"></div>
+						<div style="width:4px;display:none;"></div>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!--<div class="navclass leftMenuBottomNavDiv">
+	<table align="center" height="27px" cellpadding="0px" cellspacing="0px" width="100%" class="leftMenuBottomNavTbl">
+		<tr>
+			<td align="center" id="navTd">
+			<td>
+		</tr>
+	</table>
+</div>-->
+
+
+<script type="text/javascript">
+
+/**
+ * 左侧菜单最多显示菜单项数目
+ */
+var leftMenuMaxItem = 7;
+/**
+ * 菜单滚动速度
+ */
+var leftMenuScrollSpeed = 200;
+
+/**
+ * 菜单每页显示的高度
+ */
+var leftMenuScrollHeight = leftMenuMaxItem * 28;
+//---------------------------------------------------------------
+//左侧菜单最多显示菜单高度,由系统自动算出
+var LEFT_MENU_MAX_HEIGHT = leftMenuMaxItem * 28;
+//左侧菜单显示的菜单项黑度
+var LEFT_MENU_ITEM_HEIGHT = 28;
+//菜单宽度
+var leftMenuItemWidth = 175;
+//---------------------------------------------------------------
+
+var defaultHpid="2";
+function setLeftMenuItemFontLt() {
+	jQuery(".drillmenu li a").css("padding", "5px 5px 4px 20px");
+	
+}
+
+function setLeftMenuHeight(size) {
+	//jQuery(".drillmenu").css("width", size + "px");//    175
+	
+	if (size < 150) {
+		setLeftMenuItemFontLt();
+	}
+}
+
+//-------------------------------------
+// 20110526 自适应宽度 start
+//-------------------------------------
+function setLeftMenuItemANavHeight(size) {
+	jQuery(".leftMenuItemRight").css("left", size -  5 + "px");
+	//jQuery(".leftMenuItemCenter").css("width", size - 16 + "px");
+	
+	jQuery(".leftMenuItemNavRight").css("left", size + 1 + "px");
+	jQuery(".leftMenuItemNavCenter").css("width", size - 10 + "px");
+}
+
+function leftMenuInit() {
+	
+	var clientScreenHeight = window.screen.height;
+	var clientScreenWidth = window.screen.width;
+	if (clientScreenWidth < 1280) {
+		clientScreenWidth = 1280;
+	}
+    var tpLeftMenuMaxHeight = Math.round(clientScreenHeight / 2.8);
+    var tpLeftMenuMaxWidth = Math.round(clientScreenWidth / 8); //8
+    
+    
+    leftMenuMaxItem = Math.round(tpLeftMenuMaxHeight/28);
+    //alert(tpLeftMenuMaxWidth);
+    leftMenuItemWidth = tpLeftMenuMaxWidth;
+	
+	setLeftMenuHeight(leftMenuItemWidth);
+	setLeftMenuItemANavHeight(leftMenuItemWidth);
+	
+    
+    leftMenuScrollSpeed = 200;
+    leftMenuScrollHeight = leftMenuMaxItem * 28;
+    LEFT_MENU_MAX_HEIGHT = leftMenuMaxItem * 28;
+}
+
+leftMenuInit();
+
+var shiftKeyFlag = false;
+var leftcontainmenuWidth = 0;
+jQuery(document).ready(function(event) {
+ 	//设置左侧菜单高度
+    //jQuery("#leftMenu").height(LEFT_MENU_MAX_HEIGHT);
+    //左侧菜单导航
+   /* var myLftMenu = new drilldownmenu(
+        {menuid: 'drillmenu',menuheight: 'auto',breadcrumbid: 'drillcrumb',persist: {enable: false, overrideselectedul: false},speed:0,homeDir:'门户'}
+    );*/
+	 jQuery(".arrowclass").css("position","").css("position","absolute"); 
+    //--------------------------------------------------------
+    // 绑定事件
+    //--------------------------------------------------------
+    jQuery(".drillmenu ul li a").bind("click", function() {
+		
+		//alert(jQuery(this).get(0));
+		//jQuery(this).get(0).onclick();
+		
+        currMObj = this;
+        if(!selFlg) {
+            selFlg = true;
+            jQuery("#leftMenu").scrollTo( {top:'0px',left:+'0px'}, 0 );
+        } else {
+		   jQuery("#drillmenu").find("li.liSelected").removeClass("liSelected");
+		 
+		    jQuery("#drillmenu").find("div").removeClass("aSelected");
+		    jQuery("#freqUseBlk").find(".aSelected").removeClass("aSelected");
+		   jQuery("#drillmenu").css("width",jQuery("#leftmenucontainer").css("width"));
+		  jQuery(this).closest("li").addClass("liSelected");
+		  jQuery(this).children("div").addClass("aSelected");
+		
+		  
+        }
+        lMOpenUrl(jQuery(this));
+        if(!isJSOpen(jQuery(this)))
+           return false;
+    });
+    //-------------------------------------------------------
+    lMNavBindClick();
+	
+    syncLMHeight();
+    if(jQuery("#mainFrame").attr("src")==""){
+    	
+    	if(defaultHpid!=0){
+        	isOpenFirstMenu = false;
+        }else{
+        	isOpenFirstMenu=true;
+        }
+        if("1"!="1"){
+        	isOpenFirstMenu=true;
+        }
+        updateScroll("#leftMenu","#drillmenu");
+    	lMnavToFirstNav(isOpenFirstMenu);
+		jQuery("#drillcrumb").html(jQuery("div#head").find("div.slideItemText").eq(0).text());
+		jQuery("div#head").find("div.slideItemText").eq(0).addClass("topItemSelect");
+		
+    }else{
+		updateScroll("#leftMenu","#drillmenu");
+    	
+		jQuery("#drillcrumb").html(jQuery("div#head").find("div.slideItemText").eq(0).text());
+		jQuery("div#head").find("div.slideItemText").eq(0).addClass("topItemSelect");
+	}
+    //
+});
+
+//---------------------------------------------------------------
+// 以下变量为菜单的相关设置
+// currSubMParent      :  当前子菜单所属父菜单
+// selFlg              :  目前的位置：是否在父菜单是否在父亲那里
+// parentMCntLinked    :  保存层级菜单子菜单的个数，用于计算菜单高度.
+// parentMObjLinked    :  保存层级菜单,确保点击url返回时,有正确的动作
+// parentMLinkedIndex  :  保存层级菜单当前位置
+// currMObj            :  当前点击菜单项
+var currSubMParent;
+var selFlg = true;
+var parentMCntLinked = new Array();
+var parentMObjLinked = new Array();
+var parentMLinkedIndex = 0;
+var currMObj = null;
+// END
+//---------------------------------------------------------------
+
+//---------------------------------------------------------------
+// 菜单隐藏时，保持最后点击的菜单
+//---------------------------------------------------------------
+var recentlyClickTopMenuObj = null;
+var lyClickTopmenuStatictics = 0;
+/**
+ * 动态改变左侧菜单项
+ * 点击顶部菜单时，调用此函数
+ * @param ele 当前点击的一级(顶级)菜单
+ */
+function dymlftenu(ele, isOpenFirstMenu) {
+	jQuery("#leftBlockTd").show();
+	jQuery("#e8rightContentDiv").css("margin-left","225px");
+	jQuery(".e8_leftToggle").removeClass("e8_leftToggleShow");
+	recentlyClickTopMenuObj = ele;
+	lyClickTopmenuStatictics++;
+    var paramValue = "";
+    var levelid = jQuery(ele).attr("levelid");
+    jQuery("#drillcrumb").text(jQuery(ele).text());
+	jQuery("#head").find("div.topItemSelect").removeClass("topItemSelect");
+	jQuery(ele).children("div").addClass("topItemSelect");
+    if(levelid != undefined && levelid != null && levelid != "") {
+        paramValue = levelid;
+    } else {
+        paramValue = "-9999";
+    }
+    
+    var reg=new RegExp("####","g"); 
+    
+    $(".leftMenuTopNavDiv").css("border-bottom-width","1px");
+    if(paramValue==536){
+    	$(".leftMenuTopNavDiv").css("border-bottom-width","0px");
+	   	jQuery("#navTd").html("");
+	   	jQuery("#drillcrumb").html($(ele).find(".slideItemText").text());
+	   	jQuery("#drillmenu").html("");
+	   	//syncLMHeightForMail();
+	    //syncLMHeight();
+	   	jQuery("#drillmenu").load("/email/new/leftmenu8.jsp?"+new Date().getTime(),function(){
+	   		//jQuery(".leftMenuItemRight").css("left", leftMenuItemWidth -  5); 
+	   		//jQuery(".leftMenuItemCenter").css("width", leftMenuItemWidth - 11 - 5);
+            jQuery("#leftMenu").scrollTo( {top:'0px',left:+'0px'}, 0 ); 
+            $("#drillmenu").height($("#emailCenter").height());
+            //$("#autoHight").height($("#leftMenu").height()-30);
+            
+             //同步菜单高度
+        	syncLMHeight();
+        	updateHandleRequest();
+            //syncLMHeight();
+            //updateScroll("#leftMenu","#drillmenu");
+           
+   	});
+   }else if (menuMap.get(paramValue) != undefined && menuMap.get(paramValue) != null && menuMap.get(paramValue) != "" && paramValue != "111") {
+        //清空滚动导航项
+        jQuery("#navTd").html("");
+        currMObj = null;
+    
+        var leftMenuHtml = menuMap.get(paramValue).replace(reg, "\"");
+        jQuery(leftMenuHtml).hide();
+        jQuery("#drillmenu").html(leftMenuHtml);
+		//$('#drillmenu').perfectScrollbar("update");
+        //-------------------------------------
+        // 20110526 自适应宽度 start
+        //-------------------------------------
+        jQuery(".leftMenuItemRight").css("left", leftMenuItemWidth -  5); 
+		//jQuery(".leftMenuItemCenter").css("width", leftMenuItemWidth - 11 - 5);
+		if (leftMenuItemWidth < 150) {
+			setLeftMenuItemFontLt();
+		}
+        //-------------------------------------
+        // 20110526 自适应宽度 end
+        //-------------------------------------
+        
+        jQuery("#leftMenu").scrollTo( {top:'0px',left:+'0px'}, 0 );
+         updateScroll("#leftMenu","#drillmenu",paramValue);
+        //第一个菜单项
+        var lfirst = jQuery("#drillmenu ul li a").get(0);
+        
+        var isPortal = false;
+        if (paramValue == "-9999") {
+            isPortal = true;
+        }
+        //重新绑定菜单项onclick事件
+        lMNavEventRebind(jQuery(ele).children(".slideItemText").html(), isPortal);
+        //对通信菜单进行特殊处理
+        if(paramValue==107){
+        	var firstLevels = jQuery("#drillmenu").children("ul").children("li.liCss");
+        	firstLevels.each(function(index,obj){
+        		if(index==0){
+        			jQuery("#drillcrumb").text(jQuery(obj).children("div").find("span.e8text").text());
+        			jQuery(obj).children("div").hide();
+        		}
+        		jQuery(obj).css("background-color","transparent");
+        		jQuery(obj).children("div").css("padding-left","0px").css("margin-left","10px");
+        		//jQuery(obj).children("div").css("border-bottom","1px solid #565656");
+        		jQuery(obj).children("div").find("span.bzCls").hide();
+        		jQuery(obj).children("div").children("a").click();
+        		//jQuery(obj).children("div").find(".leftMenuItemCenter").css("color","#A19E9E");
+        		jQuery(obj).children("div").children("a").removeAttr("oldclick");
+        		jQuery(obj).children("ul").children("li.liCss2").children("div.divCss").addClass("e8comLevel1");
+        	});
+        }
+        //同步菜单高度
+        syncLMHeight();
+        //左侧菜单onclick事件
+        lMNavBindClick();
+        jQuery(leftMenuHtml).show();
+        //选中第一个菜单项
+        
+        if(isPortal&&defaultHpid!=0){
+        	isOpenFirstMenu = false;
+        }else{
+        	isOpenFirstMenu=true;
+        }
+        if("1"!="1"){
+        	isOpenFirstMenu=true;
+        }
+        
+        lMnavToFirstNav(isOpenFirstMenu);
+       updateHandleRequest();
+        
+    } else if (paramValue == "110" || paramValue == "114" || paramValue == "111") {
+        //清空滚动导航项
+        jQuery("#navTd").html("");
+        currMObj = null;
+        //隐藏导航
+        //loadding...
+        jQuery("#drillmenu").html("<span style=\"align:center;padding-top:50px;padding-left:50px;\"><img src=\"/wui/theme/ecology8/page/images/leftmenu/loader_wev8.gif\"></span>");
+        
+        jQuery("#drillcrumb").html(paramValue == "114" ? "设置" : (paramValue == "110" ? "报表" : "新闻"));
+        jQuery.ajax({
+            url: "/wui/theme/ecology8/page/ajaxGetMenu.jsp?typeid=" + paramValue + "&parentid=" + (paramValue == "114" ? "" : "10") + "&lftmn" + new Date().getTime() + "=",
+            dataType: "text", 
+            contentType : "charset=UTF-8", 
+            error:function(ajaxrequest){}, 
+            success:function(content){ 
+                jQuery(content).hide();
+                jQuery("#drillmenu").html(content);
+				updateScroll("#leftMenu","#drillmenu");
+                //-------------------------------------
+		        // 20110526 自适应宽度 start
+		        //-------------------------------------
+		        jQuery(".leftMenuItemRight").css("left", leftMenuItemWidth -  5); 
+				//jQuery(".leftMenuItemCenter").css("width", leftMenuItemWidth - 11 - 5);
+				if (leftMenuItemWidth < 150) {
+					setLeftMenuItemFontLt();
+				}
+		        //-------------------------------------
+		        // 20110526 自适应宽度 end
+		        //-------------------------------------
+				if (paramValue != "111") {
+                	menuMap.put(paramValue, content);
+                }
+                jQuery("#leftMenu").scrollTo( {top:'0px',left:+'0px'}, 0 );
+                //重新绑定菜单项onclick事件
+                lMNavEventRebind(jQuery(ele).children(".slideItemText").html());
+                //同步菜单高度
+                syncLMHeight();
+                lMNavBindClick();
+                jQuery(content).show();
+                //选中第一个菜单项
+                lMnavToFirstNav(isOpenFirstMenu);
+				updateHandleRequest();				
+            }  
+        });
+    }
+} 
+
+
+
+function dymLMNav() {
+    var navCnt = 0;
+    var flag = (jQuery("#leftMenu")[0].scrollHeight/leftMenuScrollHeight + "").indexOf("."); 
+    if (flag != -1 ) {
+        navCnt = parseInt(jQuery("#leftMenu")[0].scrollHeight/leftMenuScrollHeight);
+    } else {
+        navCnt = parseInt(jQuery("#leftMenu")[0].scrollHeight/leftMenuScrollHeight) - 1;
+    }
+    
+    var navSpan = "";
+    if (navCnt > 0) {
+        navSpan = "<span navIndex=\"0\" style=\"display:inline-block;margin-left:3px;margin-right:3px;margin-top:1px;height:25px;width:25px;cursor:pointer;background:url(/wui/theme/ecology8/page/images/leftmenu/1_wev8.png);background-repeat: no-repeat;background-position: center center;\">&nbsp;</span>";
+    }
+    
+    for (var i=1; i<=navCnt; i++) {
+        navSpan += "<span navIndex=\"" + i + "\" style=\"display:inline-block;margin-left:3px;margin-right:3px;margin-top:1px;height:25px;width:25px;cursor:pointer;background:url(/wui/theme/ecology8/page/images/leftmenu/lm_nav_wev8.png);background-repeat: no-repeat;background-position: center center;\">&nbsp;</span>";                
+    }
+    
+    jQuery("#navTd").html(navSpan)
+}
+
+
+var currentNav = 0;
+function lMNavBindClick() {
+    dymLMNav();
+    jQuery("#navTd span").bind("click", function() {lMNavClick(jQuery(this));});
+    
+    jQuery("#navTd span").hover(function(){
+        $this = jQuery(this);
+        var navIndex = $this.attr("navIndex");
+        if (currentNav != navIndex) {
+            $this.css("background", "url(/wui/theme/ecology8/page/images/leftmenu/" + (parseInt(navIndex) + 1) + ".png) no-repeat ");
+			$this.css("background-position","center center")
+        }
+        
+    }, function() {
+        $this = jQuery(this);
+        var navIndex = $this.attr("navIndex");
+        if (currentNav != navIndex) {
+            $this.css("background", "url(/wui/theme/ecology8/page/images/leftmenu/lm_nav_wev8.png) no-repeat");
+			$this.css("background-position","center center")
+        }
+        
+    });
+}
+
+function lMNavClick($this) {
+    var navIndex = $this.attr("navIndex");
+    currentNav = navIndex;
+    $this.parent().children('span').css("background", "url(/wui/theme/ecology8/page/images/leftmenu/lm_nav_wev8.png) no-repeat");
+	$this.parent().children('span').css("background-position","center center")
+    
+    $this.css("background", "url(/wui/theme/ecology8/page/images/leftmenu/" + (parseInt(navIndex) + 1) + ".png) no-repeat");
+    $this.css("background-position","center center")
+    jQuery("#leftMenu").scrollTo( {top: navIndex * leftMenuScrollHeight + 'px',left:+'0px'}, leftMenuScrollSpeed );
+}
+
+/**
+ * 移动第一个菜单的导航位置
+ */
+function navMoveFstIfrmClk(_this) {
+        
+        var abg = jQuery(_this).attr("_bgPosition");        
+		var htmText = jQuery(_this).find(".leftMenuItemCenter").text();
+		//取得菜单项的多级标志（箭头图片）
+        var htmImg = jQuery(jQuery(_this)[0]).html().substring(0, jQuery(jQuery(_this)[0]).html().toUpperCase().indexOf("<DIV"));
+		jQuery(".leftMenuItemNavLeft").css("background-position", abg);
+		jQuery(".leftMenuItemNavRight").css("background-position", abg);
+		jQuery(".leftMenuItemNavCenter").css("background-position", abg).html("<span title='" + htmText + "' >" + htmText + "</span>");
+		
+}
+
+function lMnavToFirstNav(isOpenFirstMenu) {
+	var first ;
+	  
+	if(isOpenFirstMenu!=false){
+		first = jQuery("#drillmenu ul li a").get(0);
+	}else{
+		//alert(jQuery("#portal"+defaultHpid).attr("href"))
+		first = jQuery("#portal"+defaultHpid).get(0);
+		//alert($(first).attr("isfirstlevel"))
+		if($(first).attr("isfirstlevel")==undefined||$(first).attr("isfirstlevel")=="false"){
+			
+			var parent = $(first).parents("li").find("a[isfirstlevel='true']");
+			//alert('do'+parent.length)
+			toggleMenu(parent);
+		}
+	}
+    var parentid = jQuery(first).find("span.e8_number").attr("id");
+    if(parentid && (parentid=="num_11"||parentid=="num_583")){//通信菜单特殊处理
+    	jQuery(".aSelected").removeClass("aSelected");
+    	first = jQuery(first).closest("li").children("ul").children("li").find("a").get(0);
+    }
+    var openFlag = jQuery(jQuery("#drillmenu ul li")[0]).children(".drillmenu").length;
+   //alert(openFlag);
+    var hphf = jQuery(first).attr("href");
+
+    if((hphf != undefined && hphf != null && hphf != "" && hphf.indexOf("Homepage.jsp") != -1) || openFlag == 0 ) {
+
+       if (first != undefined && first != null && first != "") {
+            navMoveFstIfrmClk(first);
+            if (checkHref(hphf)) {
+
+            	lMOpenUrl(jQuery(first));
+            	//jQuery("#mainFrame").attr("src", jQuery(first).attr("href"));
+            }
+			//jQuery("#drillmenu").css("width",jQuery("#leftmenucontainer").css("width"));
+		  jQuery(first).closest("li").addClass("liSelected");
+		  jQuery(first).children("div").addClass("aSelected");
+		  /*window.setTimeout(function(){
+			  var dest = jQuery(first).find("span.bzCls");
+			  var destImage = dest.css("background-image");
+			  try{
+			  	  if(destImage.indexOf("_sel")==-1){
+				  	destImage = destImage.replace(".png","_sel_wev8.png");
+				  }
+				  dest.css("background-image",destImage);
+				}catch(e){}
+			},100);*/
+		  try{
+				//eval(jQuery(first).attr("oldClick"));
+		  }catch(e){}
+			//lMOpenUrl(jQuery(first));
+        } 
+    }
+}
+
+function checkHref(mhref){
+	if(mhref != undefined && mhref != null && mhref != "" && mhref.indexOf("void(0)") != -1)
+		return false;
+	return true;
+}
+
+function lMNavEventRebind(fnavUrlName, isPortal) {
+    //取消事件绑定
+    jQuery(".drillmenu ul li a").unbind("click");
+    //重新绑定事件
+    jQuery(".drillmenu ul li a").bind("click", function() {
+        currMObj = this;
+        
+        if ((jQuery(this) != undefined 
+                && jQuery(this).attr("href") != undefined
+                && jQuery(this).attr("href") != ""
+                && jQuery(this).attr("href") != "#"
+                )
+                || isPortal == true) {
+			jQuery("#drillmenu").find("li.liSelected").removeClass("liSelected");
+			 if(jQuery(this).attr("isfirstlevel")=="true"){
+				/*var src = jQuery("#drillmenu").find("div.aSelected").find("span.bzCls");
+				 var srcImage  = src.css("background-image");
+				 try{
+					 srcImage = srcImage.replace(/_sel/g,"");
+				     src.css("background-image",srcImage);
+				  }catch(e){}*/
+			}
+			//jQuery("#drillmenu").css("width",jQuery("#leftmenucontainer").css("width"));
+		   jQuery("#drillmenu").find("div").removeClass("aSelected");
+		   jQuery("#freqUseBlk").find(".aSelected").removeClass("aSelected");
+		  jQuery(this).closest("li").addClass("liSelected");
+		  jQuery(this).children("div").addClass("aSelected");
+		  if(jQuery(this).attr("isfirstlevel")=="true"){
+			  /*var dest = jQuery(this).find("span.bzCls");
+			  var destImage = dest.css("background-image");
+			  try{
+			  	if(destImage.indexOf("_sel")==-1){
+				  destImage = destImage.replace(".png","_sel_wev8.png");
+				}
+				  dest.css("background-image",destImage);
+				}catch(e){}*/
+			}
+		eval(jQuery(this).attr("oldclick"));
+			lMOpenUrl(jQuery(this));
+			navMoveIfrmClk(this);
+			if(!isJSOpen(jQuery(this)))
+               return false;
+        }
+    });
+    
+    jQuery("#drillmenu").unbind();
+    jQuery("#drillcrumb").unbind();
+
+	try{
+		if(fnavUrlName == undefined || fnavUrlName == null || fnavUrlName== ""){
+			fnavUrlName="门户";
+		}
+	}catch(e){
+	}
+       
+}
+
+function navMoveIfrmClk(_this) {
+        
+        var abg = jQuery(_this).attr("_bgPosition");        
+		var htmText = jQuery(_this).find(".leftMenuItemCenter").text();;
+		var htmImg = jQuery(jQuery(_this)[0]).html().substring(0, jQuery(jQuery(_this)[0]).html().toUpperCase().indexOf("<DIV"));
+		jQuery(".leftMenuItemNavLeft").css("background-position", abg);
+		jQuery(".leftMenuItemNavRight").css("background-position", abg);
+		jQuery(".leftMenuItemNavCenter").css("background-position", abg).html("<span title='" + htmText + "' >" + htmText + "</span>");
+}
+
+
+
+function syncLMHeight() {
+     //同步菜单高度
+       //jQuery("#drillmenu").height(jQuery("#drillmenu ul").height());
+	   //jQuery("#drillmenu").height(jQuery("#leftmenucontainer").height()-jQuery("#lftop").height()-jQuery("#drillcrumb").closest("div").height()-jQuery("#leftBlock_HrmDiv").closest("table").height()+21);
+       /* if (jQuery("#drillmenu ul").height() < LEFT_MENU_MAX_HEIGHT) {
+            //jQuery("#leftMenu").height(jQuery("#drillmenu").height());
+			jQuery("#leftMenu").height(jQuery("#leftmenucontainer").height()-jQuery("#lftop").height()-jQuery("#drillcrumb").closest("div").height()-jQuery("#leftBlock_HrmDiv").closest("table").height()-jQuery("#lftop").height()+68);
+            setMainElementHeight(jQuery("#drillmenu").height());
+        } else {
+            //jQuery("#leftMenu").height(LEFT_MENU_MAX_HEIGHT);
+			jQuery("#leftMenu").height(jQuery("#leftmenucontainer").height()-jQuery("#lftop").height()-jQuery("#drillcrumb").closest("div").height()-jQuery("#leftBlock_HrmDiv").closest("table").height()+68);
+            setMainElementHeight(LEFT_MENU_MAX_HEIGHT);
+        }*/
+		jQuery("#leftmenucontainer").height(jQuery(window).height()-jQuery("#lftop").height());
+		if(isIE()){
+			setBodyScroll();
+			jQuery("#leftMenu").height(jQuery("#leftmenucontainer").height()-jQuery("#lftop").height()-jQuery("#drillcrumb").closest("div").height()-jQuery("#leftBlock_HrmDiv").closest("div").height()-jQuery("#freqUseBlk").height()-jQuery("#lftop").height()+39);
+		}else {
+			setBodyScroll();
+			jQuery("#leftMenu").height(jQuery("#leftmenucontainer").height()-jQuery("#lftop").height()-jQuery("#drillcrumb").closest("div").height()-jQuery("#leftBlock_HrmDiv").closest("div").height()-jQuery("#freqUseBlk").height()-jQuery("#lftop").height()+42);
+		}
+            setMainElementHeight(jQuery("#drillmenu").height());
+}
+
+function syncLMHeightForMail() {
+    //同步菜单高度
+    var clientScreenHeight = document.body.clientHeight;
+    tpLeftMenuMaxHeight = clientScreenHeight-290
+    jQuery("#leftMenu").height(tpLeftMenuMaxHeight);
+    jQuery("#drillmenu").height(tpLeftMenuMaxHeight);
+    
+    setMainElementHeight(tpLeftMenuMaxHeight);
+     
+}
+
+
+function lMOpenUrl($this) {
+	var _target = $this.attr("target");
+	
+	try{		
+		if (getEvent().shiftKey || shiftKeyFlag) {
+			_target = "_blank";
+			shiftKeyFlag = false;
+		}
+	}catch(e){}
+	
+	var linksrc = $this.attr("href");
+	var host = document.location.host;
+	var flag = false;
+	if(linksrc.indexOf("javascript")==-1){
+		if(linksrc.substring(linksrc.lastIndexOf("/"))!="/"){
+			if(linksrc.indexOf(".html")==-1){
+				if(linksrc.indexOf(host)>-1){
+					flag = true;
+				}else if(linksrc.charAt(0)=='/'){
+					flag = true;
+				}
+			}
+		}
+		if(flag){
+			if (linksrc.indexOf("?") != -1) {
+				linksrc += "&";
+			} else {
+				linksrc += "?";
+			}			
+			linksrc += "e7" + new Date().getTime() + "=";
+		}
+		try{
+		if(linksrc.toLowerCase().indexOf("ftp")!=-1){
+			linksrc = $this.attr("href");
+		}
+		if(_target=="mainFrame"){
+			$("#mainFrame").attr("src",linksrc)
+		}else{
+		  window.open(linksrc, _target);
+		}
+		}catch(e){}
+	}
+} 
+
+function isJSOpen($this){
+   var linksrc = $this.attr("href");
+   if(linksrc.indexOf("javascript")==-1)
+      return false;
+   else 
+      return true;   
+}
+
+function randomChar(l) {
+    var x="123456789poiuytrewqasdfghjklmnbvcxzQWERTYUIPLKJHGFDSAZXCVBNM";
+    var tmp="";
+    for(var i=0; i< l; i++) {
+        tmp += x.charAt(Math.ceil(Math.random()*100000000)%x.length);
+    }
+  return tmp;
+}
+
+
+
+function getEvent() {
+	if (window.ActiveXObject) {
+		return window.event;// 如果是ie
+	}
+	func = getEvent.caller;
+	while (func != null) {
+		var arg0 = func.arguments[0];
+		if (arg0) {
+			if ((arg0.constructor == Event || arg0.constructor == MouseEvent)
+					|| (typeof (arg0) == "object" && arg0.preventDefault && arg0.stopPropagation)) {
+				return arg0;
+			}
+		}
+		func = func.caller;
+	}
+	return null;
+}
+</script>
+
+<script type="text/javascript" src="/wui/theme/ecology8/page/js/treeMenu_wev8.js"></script> 
+															
+                                                        </div>
+															<div class="lfFoot leftMenuBottom" id="lfFoot" style="z-index:99">
+																
+																<div class="lfootitem resourcesetting" style="width:56px;" overclass="resourcesettingOver" title="个性化设置">
+																	
+																</div>
+																<div class="lfootitem passwordsetting" style="left:56px;width:56px;" overclass="passwordsettingOver" title="修改密码">
+																	
+																</div>
+																<div class="lfootitem skinsetting " onclick="showSkinListDialog()" style="left:112px;width:56px;" overclass="skinsettingOver" title="主题中心">
+																	
+																</div>
+																<div class="lfootitem remindsetting lfootitemlast" overclass="remindsettingover" style="left:168px;width:56px;" title="消息提醒">
+																	
+																</div>
+															</div>
+                                                </div>
+                                            </div>
+                                        </div>
+	                                     <div style="clear:both;"></div>
+              </div>
+              </div>
+              </div>
+              </div>
+            
+            
+            <!-- 版本信息 -->
+            <div class="versiontype"></div>
+            <!-- 左侧区域隐藏 -->
+            <div class="e8_leftToggle" style="z-index:99;" title="收缩"></div>   
+            <!-- 上部区域隐藏 -->
+            
+        <div class="remindcontent" style="">   
+        	<div class="title">
+        		<div class="icon"></div>
+        		
+        		<div class="name">
+        			新到达消息提醒
+        		</div>
+        		<div class="closebtn"></div>
+        		<div style="clear: both;"></div>
+        	</div>
+	        <ul class="remindcontentul"><span class="nodata">没有可以显示的数据</span>
+
+
+
+</ul>  
+			<div class="bottomfoot"></div>
+		</div>   
+        <div class="commonmenu leftcolor">   
+        	<div class="commonmenucontent" style="overflow: hidden; position: relative; height: 0px; outline: none;" tabindex="5001">
+				<ul style="list-style-type: none" class="commonmenuul">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+			</div>
+			<div class="menuToolBar">
+				<div class="">
+					<span style="float:left;padding-left:10px;" id="addMenu">+&nbsp;添加</span>
+					
+					<span style="float:right;padding-right:10px;" id="clearMenu">×&nbsp;清空</span>
+					<span style="clear: both;"></span>
+				</div>
+			</div>  
+			
+		</div>
+		
+		  	
+		<style type="text/css">
+				.menuToolBar{
+					
+				}
+				.menuToolBar{
+					background-color: rgba(255, 255, 255, 0.2);
+					
+					height: 25px!important;
+					line-height: 25px!important;
+					color:#ebebeb!important;
+					cursor: pointer;
+				}
+				.commonmenu .menuname{
+					width: 80px;
+					display: block;
+					float: left;
+					overflow: hidden;
+					word-break:keep-all;
+					white-space:nowrap;
+					text-overflow:ellipsis;
+				}
+				.commonmenu .icon{
+					display: block;
+					float: left;
+				}
+				.remindcontent{
+					position: absolute;
+					left: 10px;
+					bottom: 50px;
+					z-index: 999999;
+					width: 204px;
+					display: none;
+					height: 0px;
+					
+				}
+				
+				.remindcontentul{
+					background: #ffffff;
+					padding-top:3px;
+					padding-bottom: 3px;
+				}
+				
+				.remindcontentul .nodata{
+					line-height: 30px;
+					text-align: center;
+					display: block;
+				}
+				.remindcontentul li{
+					background: #ffffff;
+					color:#919191;
+					height: 35px;
+					line-height: 35px;
+					padding-left:12px;
+					cursor: pointer;
+				}
+				
+				.remindcontentul li span{
+					float: right;
+					margin-right: 20px;
+					color:#fe9348;
+				}
+				
+				.remindcontentul .liOver{
+					background: #f0f0f0!important;
+				}
+				
+				.remindcontent .title{
+					height:33px;
+					
+					background: #33a3ff;
+				}
+				.remindcontent .title .name{
+					color:#ffffff;
+					float:left;
+					line-height: 33px;
+					width: 130px;
+					height: 100%;
+				}
+				.remindcontent .title .icon{
+					float:left;
+					width: 36px;
+					height: 100%;
+					background: url('/wui/theme/ecology8/page/images/remind/icon_wev8.png');
+					background-position: center center;
+					background-repeat: no-repeat;
+				}
+				.remindcontent .title .closebtn{
+					float:right;
+					width: 36px;
+					height: 100%;
+					background: url('/wui/theme/ecology8/page/images/remind/close_wev8.png');
+					background-position: center center;
+					background-repeat: no-repeat;
+					cursor: pointer;
+				}
+				
+				.remindcontent .bottomfoot{
+					width: 100%;
+					height: 12px;
+					background: url('/wui/theme/ecology8/page/images/remind/d_wev8.png');
+					background-position: 180px -6px;
+					background-repeat: no-repeat;
+				}
+				
+				span.e8_number{
+					border-radius: 8px; 
+					display:inline-block;
+					text-align:right;
+					width:auto!important;
+					float: right;
+					
+				
+				}
+				
+				.commonmenu{
+					display: none;
+				}
+			</style>
+		
+    
+
+
+<script languange="javascript">
+//左侧区域宽度（根据分辨率自动解析）
+var LeftBlock_Max_Width = 0;
+/**
+ * 初始化左侧区域各个块得大小
+ * 自动执行
+ */
+function leftBlockSizeInit() {
+	var clientScreenHeight = window.screen.height;
+	var clientScreenWidth = window.screen.width;
+	if (clientScreenWidth < 1280) {
+		clientScreenWidth = 1280;
+	}
+    var tpLeftMenuMaxHeight = Math.round(clientScreenHeight / 2.8);
+    var tpLeftMenuMaxWidth = Math.round(clientScreenWidth / 8)+20;
+    setLeftBlockSize(tpLeftMenuMaxWidth, tpLeftMenuMaxHeight);
+    LeftBlock_Max_Width = tpLeftMenuMaxWidth;
+}
+
+/**
+ * 设置左侧区域各个块得大小
+ */
+function setLeftBlockSize(tpLeftMenuMaxWidth, tpLeftMenuMaxHeight) {
+	//jQuery("#leftBlockTd").css("width", tpLeftMenuMaxWidth + 3);
+	/*jQuery("#leftBlockTd").css("width", tpLeftMenuMaxWidth + 25);*/
+	//jQuery("#leftmenucontainer").css("width", tpLeftMenuMaxWidth + 45);
+	//jQuery("#lftop").css("width",tpLeftMenuMaxWidth + 45);
+	//jQuery("#lfFoot").css("width",tpLeftMenuMaxWidth + 45);
+	//jQuery("#popMenu").css("left",tpLeftMenuMaxWidth + 45);
+	//jQuery("#topCenterTable").css("width",jQuery("#topCenter").width());
+	//jQuery(".topMenuDiv").css("width",jQuery("#topCenter").width()-18);
+	/*jQuery("#leftBlockTopBgCenter").css("width", tpLeftMenuMaxWidth + 14);
+	jQuery("#leftBlockTopBgCenter").css("background", "url('/wui/theme/ecology8/skins/default/page/left/leftBlockTopBgCenter_wev8.jpg')");
+	
+	//td 126px
+	jQuery("#leftmenu-top").css("width", tpLeftMenuMaxWidth + 3);
+	jQuery("#leftmenu-top").css("height", 86);
+	
+	jQuery("#leftBlockHrmInfoCenter").css("width", tpLeftMenuMaxWidth - 63);
+	/*jQuery("#leftBlockHrmInfoCenter").css("background", "url('/wui/theme/ecology8/skins/default/page/left/leftBlockHrmInfoBgCenter_wev8.png')");*/
+	//jQuery("#leftBlockHrmInfoCenter").css("background-repeat", "repeat-x");	
+	
+	//jQuery("#leftmenu-bottom").css("height", tpLeftMenuMaxHeight + 124 - 61);
+	/*setMainElementHeight(27);
+	
+	if(jQuery.client.browser=="Explorer"){
+		jQuery("#leftmenu-bottom").css("width", tpLeftMenuMaxWidth + 3);
+	}else{
+		jQuery("#leftmenu-bottom").css("width", tpLeftMenuMaxWidth + 1);
+	}
+	jQuery("#leftBlock_HrmDiv").css("height", 86);
+	jQuery("#leftmenu-bottom-bottom").css("width", tpLeftMenuMaxWidth + 3);
+	
+	jQuery("#leftMenuBottomCenter").css("width", tpLeftMenuMaxWidth - 8);
+	
+	
+	
+	setHrmInfoDep(tpLeftMenuMaxWidth - 62);*/
+}
+
+function isIE(){
+	var brow=jQuery.browser;
+	return brow.msie;
+}
+/**
+ * 自动调用
+ */
+leftBlockSizeInit();
+
+
+function  setMainElementHeight(height) {
+	if(jQuery.client.browser=="Explorer"){
+		jQuery("#leftmenu-bottom").css("height", height + jQuery("#drillcrumb").height() + 71);
+	}else{
+		jQuery("#leftmenu-bottom").css("height", height + jQuery("#drillcrumb").height() + 71);
+	}
+} 
+
+/**
+ * 显示或者隐藏左侧区域
+ */
+function leftBlockContractionOrExpand(_this) {
+	if (jQuery("#leftmenucontainer").css("display") == 'none') {
+		jQuery("#leftmenucontainer").show();
+		jQuery("#e8rightContentDiv").css("margin-left","225px");
+		//jQuery("#leftBlockTd").css("width", LeftBlock_Max_Width + 25);
+		jQuery("#shadown-y").hide();
+		if (tmpLyTopmenu != lyClickTopmenuStatictics) {
+			dymlftenu(recentlyClickTopMenuObj, false);
+		}
+		
+		jQuery("#leftBlockHiddenContr").css("background", "");
+		jQuery("#leftHiddenTR").hide();
+		
+		leftBlockHiddenContrFlag = 0;
+	} else {
+		jQuery("#leftBlockTd").hide();
+		jQuery("#e8rightContentDiv").css("margin-left","0px");
+		//jQuery("#leftBlockTd").css("width", 0);
+		//jQuery("#shadown-y").show();
+		if (recentlyClickTopMenuObj != null && recentlyClickTopMenuObj != undefined) {
+			recentlyClickTopMenuObjId = jQuery(recentlyClickTopMenuObj).attr("levelid");
+			if (recentlyClickTopMenuObjId == "" || recentlyClickTopMenuObjId == undefined || recentlyClickTopMenuObjId == null) {
+				recentlyClickTopMenuObjId = "-9999";
+			} 
+		}
+		
+		tmpLyTopmenu = lyClickTopmenuStatictics;
+		//jQuery("#leftBlockHiddenContr").css("background", "url(/wui/theme/ecology8/skins/default/page/main/leftBlockExpand_wev8.png) no-repeat");
+		leftBlockHiddenContrFlag = -1;
+		//jQuery("#leftHiddenTR").show();
+		jQuery(".e8_leftToggle").addClass("e8_leftToggleShow").show();
+	}
+}
+
+jQuery(document).ready(function(){
+
+	
+	$("body").bind("click",function(){
+		jQuery(".commonmenu").hide();
+		jQuery("#freqUse").removeClass("freqUseOver").removeClass("leftcolor");
+	})
+	
+	var leftTime = null;
+	//左侧区域隐藏
+	/*jQuery("#leftmenucontainer").hover(function(){
+		var _top = (jQuery(this).height()-jQuery(".e8_leftToggle").height())/2;
+		jQuery(".e8_leftToggle").css("top",_top);
+		jQuery(".e8_leftToggle").show();
+		jQuery(".e8_leftToggle").data("isOpen",true);
+		if(leftTime)
+			clearTimeout(leftTime);
+	},function(){
+		leftTime = window.setTimeout(function(){
+			if(jQuery(".e8_leftToggle").data("isOpen")){
+				jQuery(".e8_leftToggle").hide();
+				jQuery(".e8_leftToggle").data("isOpen",false);
+			}
+		},500);
+	});*/
+	
+	
+	
+	jQuery(".e8_leftToggle").click(function(){
+		jQuery("#leftBlockTd").toggle();
+		jQuery(".e8_leftToggle").removeClass("e8_leftToggleHover");
+		jQuery(".e8_leftToggle").removeClass("e8_leftToggleShowHover");
+		if(jQuery("#leftBlockTd").css("display")=="none"){
+			jQuery(".e8_leftToggle").addClass("e8_leftToggleShow").show();
+			jQuery("#e8rightContentDiv").css("margin-left","0px");
+			jQuery(".e8_leftToggle").attr("title","展开");
+		}else{
+			jQuery(".e8_leftToggle").removeClass("e8_leftToggleShow");
+			jQuery("#e8rightContentDiv").css("margin-left","225px");
+			jQuery(".e8_leftToggle").attr("title","收缩");
+		}
+		if(leftTime)
+			clearTimeout(leftTime);
+	}).hover(function(){
+		//jQuery(".e8_leftToggle").data("isOpen",false);
+		if(jQuery(".e8_leftToggle").hasClass("e8_leftToggleShow")){
+			jQuery(".e8_leftToggle").addClass("e8_leftToggleShowHover");
+		}else{
+			jQuery(".e8_leftToggle").addClass("e8_leftToggleHover");
+		}
+		if(leftTime)
+			clearTimeout(leftTime);
+	},function(){
+		if(!jQuery(".e8_leftToggle").hasClass("e8_leftToggleShow")){
+			jQuery(".e8_leftToggle").removeClass("e8_leftToggleHover");
+			//jQuery(".e8_leftToggle").hide();
+		}else{
+			jQuery(".e8_leftToggle").removeClass("e8_leftToggleShowHover");
+		}
+		if(leftTime)
+			clearTimeout(leftTime);
+		//jQuery(".e8_leftToggle").data("isOpen",false);
+	});
+	
+	var topTime = null;
+	//上侧区域隐藏
+	jQuery("#mainTopBlockTr").hover(function(){
+		var _left = (jQuery(this).width()-jQuery(".e8_topToggle").width())/2;
+		jQuery(".e8_topToggle").css("left",_left);
+		jQuery(".e8_topToggle").show();
+		jQuery(".e8_topToggle").data("isOpen",true);
+		if(topTime)
+			clearTimeout(topTime);
+	},function(){
+		topTime = window.setTimeout(function(){
+			if(jQuery(".e8_topToggle").data("isOpen")){
+				jQuery(".e8_topToggle").hide();
+				jQuery(".e8_topToggle").data("isOpen",false);
+			}
+		},500);
+	});
+	
+	jQuery(".e8_topToggle").click(function(){
+		jQuery("#mainTopBlockTr").toggle();
+		jQuery(".e8_topToggle").removeClass("e8_topToggleHover");
+		jQuery(".e8_topToggle").removeClass("e8_topToggleShowHover");
+		if(jQuery("#mainTopBlockTr").css("display")=="none"){
+			jQuery(".e8_topToggle").addClass("e8_topToggleShow").show();
+			jQuery(".e8_topToggle").attr("title","展开");
+		}else{
+			jQuery(".e8_topToggle").removeClass("e8_topToggleShow");
+			jQuery(".e8_topToggle").attr("title","收缩");
+		}
+		if(topTime)
+			clearTimeout(topTime);
+		syncLMHeight();
+	}).hover(function(){
+		jQuery(".e8_topToggle").data("isOpen",false);
+		if(jQuery(".e8_topToggle").hasClass("e8_topToggleShow")){
+			jQuery(".e8_topToggle").addClass("e8_topToggleShowHover");
+		}else{
+			jQuery(".e8_topToggle").addClass("e8_topToggleHover");
+		}
+		if(topTime)
+			clearTimeout(topTime);
+	},function(){
+		if(!jQuery(".e8_topToggle").hasClass("e8_topToggleShow")){
+			jQuery(".e8_topToggle").removeClass("e8_topToggleHover");
+			jQuery(".e8_topToggle").hide();
+		}else{
+			jQuery(".e8_topToggle").removeClass("e8_topToggleShowHover");
+		}
+		jQuery(".e8_topToggle").data("isOpen",false);
+		if(topTime)
+			clearTimeout(topTime);
+	});
+});
+
+/**
+ * 显示或者隐藏顶部区域
+ */
+function topBlockContractionOrExpand(_this) {
+	if (jQuery("#mainTopBlockTr").css("display") == 'none') {
+		jQuery("#mainTopBlockTr").show();
+		//jQuery("#topBlockHiddenContr").css("background", "");
+		jQuery("#logo").show();
+		jQuery("#topHiddenTR").hide();
+		jQuery(".versiontype").show();
+		topBlockHiddenContrFlag = 0;
+		setLeftMenuHeight(-50);
+	} else {
+		jQuery("#mainTopBlockTr").hide();
+		jQuery("#logo").hide();
+		jQuery(".versiontype").hide();
+		jQuery("#topHiddenTR").show();
+		//jQuery("#topBlockHiddenContr").css("background", "url(/wui/theme/ecology8/skins/default/page/main/topBlockExpand_wev8.png) no-repeat");
+		topBlockHiddenContrFlag = -1;
+		setLeftMenuHeight(50);
+	}
+	
+}
+/**
+ * 设置左侧区域内hrmInfo的大小
+ */
+function setHrmInfoDep(tpLeftMenuMaxWidth) {
+	jQuery("#leftBlockHrmDep").css("width", tpLeftMenuMaxWidth);
+	jQuery("#tdMessageState").css("left", tpLeftMenuMaxWidth - 60);
+}
+
+function showSelectNav(){
+	jQuery('#e8NavDH').toggle();
+	if(jQuery("#e8NavDH").css("display")=="none"){
+		jQuery(".qzhNavSpanImg").removeClass("qzhNavSpanImgup");
+		jQuery(".qzhNavSpanImg").data("isOpen",false);
+	}else{
+		jQuery(".qzhNavSpanImg").addClass("qzhNavSpanImgup");
+		jQuery(".qzhNavSpanImg").data("isOpen",true);
+	}
+}
+function showAccoutList(){
+	jQuery('#accoutList').toggle();
+	if(jQuery("#accoutList").css("display")=="none"){
+		jQuery(".accoutSelect").removeClass("accoutBg");
+	}else{
+		jQuery(".accoutSelect").addClass("accoutBg");
+	}
+}
+
+jQuery("#accoutList").hover(function(){
+ },function(){
+ 	jQuery('#accoutList').toggle();
+ 	jQuery(".accoutSelect").removeClass("accoutBg");
+ });
+ 
+ jQuery("#accoutImg").hover(function(){
+ 	$(this).attr("src","/wui/theme/ecology8/page/images/hrminfo/accoutOver_wev8.png")
+ },function(){
+ 	$(this).attr("src","/wui/theme/ecology8/page/images/hrminfo/accout_wev8.png")
+ });
+
+jQuery(".qzhNavSpanImg").hover(function(){
+ },function(){
+ 	window.setTimeout(function(){
+ 		if(jQuery(".qzhNavSpanImg").data("isOpen")){
+ 			jQuery("#e8NavDH").hide();
+ 			jQuery(".qzhNavSpanImg").removeClass("qzhNavSpanImgup");
+ 			jQuery(".qzhNavSpanImg").data("isOpen",false);
+ 		}
+ 	},600);
+ });
+
+//jQuery("#leftBlockHiddenContr").css("background", "");
+//jQuery("#topBlockHiddenContr").css("background", "");
+
+/**
+ * 最近一次点击左侧菜单的id
+ * 用于当左侧菜单隐藏，并且点击了顶部菜单的情况下，更新用。
+ */
+var recentlyClickTopMenuObjId = "";
+var tmpLyTopmenu = -1;
+
+/**
+ * 记录左侧区域的状态：0：隐藏   -1：正常显示
+ * 作用：是否持续显示隐藏/显示左侧的按钮
+ */
+var leftBlockHiddenContrFlag = 0;
+var topBlockHiddenContrFlag = 0;
+jQuery(document).ready(function() {
+
+	$(".passwordsetting").bind("click",function(){
+		$("#mainFrame").attr("src","/hrm/HrmTab.jsp?_fromURL=HrmResourcePassword");
+	})
+	
+	
+	$(".resourcesetting").bind("click",function(){
+		$("#mainFrame").attr("src","/systeminfo/menuconfig/CustomSetting.jsp");
+	})
+	
+	//左侧区域隐藏按钮点击时触发
+	jQuery("#leftBlockHiddenContr").bind("click", function() {
+		leftBlockContractionOrExpand();
+	});
+	
+	//顶部区域隐藏按钮点击时触发
+	jQuery("#topBlockHiddenContr").bind("click", function() {
+		topBlockContractionOrExpand();
+	});
+	
+	//左侧区域隐藏按钮
+	jQuery("#leftBlockHiddenContr").hover(function() {
+		if (leftBlockHiddenContrFlag != -1) {
+			//jQuery(this).css("background", "url(/wui/theme/ecology8/skins/default/page/main/leftBlockContraction_wev8.png) no-repeat");
+		}
+	}, function() {
+		if (leftBlockHiddenContrFlag != -1) {
+			//jQuery(this).css("background", "none");
+		}
+	});
+	
+	jQuery("#lfFoot .lfootitem").hover(function(){
+		jQuery(this).addClass($(this).attr("overclass"));
+	},function(){
+		jQuery(this).removeClass($(this).attr("overclass"));
+	});
+	
+	//顶部区域隐藏按钮
+	jQuery("#topBlockHiddenContr").hover(function() {
+		if (topBlockHiddenContrFlag != -1) {
+			//jQuery(this).css("background", "url(/wui/theme/ecology8/skins/default/page/main/topBlockContraction_wev8.png) no-repeat");
+		
+		}
+	}, function() {
+		if (topBlockHiddenContrFlag != -1) {
+			//jQuery(this).css("background", "none");
+		}
+	});
+	
+	//前中后端切换
+		 jQuery("#e8NavDH").hover(function(){
+		 	jQuery(".qzhNavSpanImg").data("isOpen",false);
+		 },function(){
+		 	jQuery("#e8NavDH").hide();
+		 	jQuery(".qzhNavSpanImg").removeClass("qzhNavSpanImgup");
+		 	jQuery(".qzhNavSpanImg").data("isOpen",false);
+		 });
+		 jQuery(".optionNormal").hover(function(){
+		 	jQuery(this).addClass("colorfff").addClass("optionSelect");
+		 	var fsrc = jQuery(this).find("#e8Current").attr("src");
+		 	if(fsrc && fsrc.indexOf("_sel")==-1){
+		 		fsrc = fsrc.replace(/\.png/,"_sel_wev8.png");
+		 		jQuery(this).find("#e8Current").attr("src",fsrc);
+		 	}
+		 	var src = jQuery(this).find("img:last").attr("src");
+		 	if(src.indexOf("_sel")==-1){
+		 		src = src.replace(/\.png/,"_sel_wev8.png");
+		 	}
+		 	jQuery(this).find("img:last").attr("src",src);
+		 },function(){
+		 	var fsrc = jQuery(this).find("#e8Current").attr("src");
+		 	if(fsrc && fsrc.indexOf("_sel")!=-1){
+		 		fsrc = fsrc.replace(/_sel\.png/,".png");
+		 		jQuery(this).find("#e8Current").attr("src",fsrc);
+		 	}
+		 	var src = jQuery(this).find("img:last").attr("src");
+		 	src = src.replace(/_sel\.png/,".png");
+		 	jQuery(this).find("img:last").attr("src",src);
+		 	jQuery(this).removeClass("colorfff").removeClass("optionSelect");
+		 });
+		 
+		 //更多菜单
+		 jQuery("#toolbarMore").hover(function(){
+		 	
+		 },function(){
+		 	jQuery("#toolbarMore").hide();
+		 	jQuery("#toolbarMore").removeClass("moreBtnSel");
+		 });
+		 
+	jQuery("#freqUse").parent().bind("click",function(event){
+		hideOtherHoverDiv('common');
+    	var left = jQuery(this).offset().left
+    	var top = jQuery(this).offset().top
+    	jQuery(".commonmenu").css("top",(top+35)+"px")
+    	jQuery(".commonmenu").css("left",left+"px")
+    	jQuery(".commonmenu").show();
+    	
+    	jQuery("#freqUse").addClass("freqUseOver").addClass("leftcolor")
+    	event.stopPropagation();
+    })
+   
+     jQuery(".commonmenu").find("#addMenu").bind("click",function(event){
+	  		var theme_imp = new window.top.Dialog();
+			theme_imp.currentWindow = window;   //传入当前window
+		 	theme_imp.Width = 800;
+		 	theme_imp.Height = 600;
+		 	theme_imp.maxiumnable=true;
+		 	theme_imp.Modal = true;
+		 	theme_imp.Title = "系统使用菜单"; 
+		 	theme_imp.URL ="/wui/theme/ecology8/page/commonmenuSetting.jsp?type=left&isCustom=true&resourceType=3&resourceId=141";
+		 	theme_imp.show();
+		 	event.stopPropagation();
+	  })
+	  
+	  jQuery(".commonmenu").find("#clearMenu").bind("click",function(event){
+	  		$this = jQuery(this)
+		 	top.Dialog.confirm("确定要清空常用菜单吗？",function(){
+			 	
+			 	
+			 	 jQuery.post("/wui/theme/ecology8/page/commonmenuoperation.jsp?method=clear",
+				 function(data){
+				 	loadCommonMenu();
+				 })
+			 });
+			  event.stopPropagation();
+			
+	  })
+  loadCommonMenu();
+  updateRemindInfo();
+    
+});
+
+function hideOtherHoverDiv(current){
+	if(current != 'top'){
+		topMenuContraction();
+	}
+	if(current != 'common'){
+		jQuery(".commonmenu").hide();
+	 	jQuery("#freqUse").removeClass("freqUseOver").removeClass("leftcolor");
+	}
+	if(current != 'search'){
+		jQuery("#searchBlockUl").hide();
+		jQuery("#searchBlockUl").closest("div#sample").removeClass("sampleSelected");
+	}
+	if(current != 'toolbar'){
+		jQuery("#toolbarMore").hide();
+    	jQuery("#toolbarMoreBtn").removeClass("moreBtnSel");
+    	jQuery("#toolbarMoreBtn").data("isOpen",false);
+	}
+}		
+
+function loadCommonMenu(){
+	 jQuery(".commonmenuul").load("/wui/theme/ecology8/page/commonmenu.jsp?t="+new Date().getTime(),function(){
+    	initCommonMenu();
+    	var ulheight = $('.commonmenuul').children().length*30;
+    	if(ulheight>300){
+    		ulheight = 300;
+    	}
+    	$('.commonmenucontent').height(ulheight);
+    	if($('.commonmenucontent').hasClass("ps-container")){
+    		$('.commonmenucontent').perfectScrollbar("update");
+    	}else{
+    		$('.commonmenucontent').perfectScrollbar();
+    	}
+    	
+    });
+    
+}
+
+function initCommonMenu(){
+	 jQuery(".commonmenu").hover(function(){
+		 	
+		 },function(){
+		 	jQuery(".commonmenu").hide();
+		 	jQuery("#freqUse").removeClass("freqUseOver").removeClass("leftcolor");
+		 });
+	   jQuery(".commonmenu li").hover(function(){
+		 	$(this).find(".closemenu").show();
+		 	$(this).addClass("over");
+		 	$(this).find(".icon").addClass("logocolor")
+		 },function(){
+		 	$(this).find(".closemenu").hide();
+		 	$(this).removeClass("over");
+		 	$(this).find(".logocolor").removeClass("logocolor")
+		 });
+		 
+		 jQuery(".commonmenu li").click(function(){
+			if(!jQuery(this).hasClass("addMenu")){
+				jQuery(".commonmenu").hide();
+				window.open($(this).attr("url"),$(this).attr("target"))
+			}
+		 });
+		 
+	 jQuery(".closemenu").bind("click",function(event){
+		$this = jQuery(this)
+	 	top.Dialog.confirm("确认删除吗",function(){
+		 	
+		 	var menuid = $this.attr("menuid")
+		 	 jQuery.post("/wui/theme/ecology8/page/commonmenuoperation.jsp?method=del&menuid="+menuid,
+			 function(data){
+			 	$this.parent().remove();
+			 	var ulheight = $('.commonmenuul').children().length*30;
+		    	if(ulheight>300){
+		    		ulheight = 300;
+		    	}
+		    	$('.commonmenucontent').height(ulheight);
+		    	if($('.commonmenucontent').hasClass("ps-container")){
+		    		$('.commonmenucontent').perfectScrollbar("update");
+		    	}else{
+		    		$('.commonmenucontent').perfectScrollbar();
+		    	}
+			 })
+		 });
+		 event.stopPropagation();
+	 	
+	 });
+}
+window.document.onkeydown = function () {
+	try{
+	if (window.event.ctrlKey &&window.event.shiftKey && window.event.keyCode == 13) {
+		if (topBlockHiddenContrFlag == leftBlockHiddenContrFlag) {
+			topBlockContractionOrExpand();
+			leftBlockContractionOrExpand();
+		} else if (topBlockHiddenContrFlag != -1) {
+			topBlockContractionOrExpand();
+		} else if (leftBlockHiddenContrFlag != -1) {
+			leftBlockContractionOrExpand();
+		}
+	}}catch(e){}
+}
+
+function addCookie(objName,objValue,objHours){//添加cookie
+	var str = objName + "=" + escape(objValue);
+	if(objHours > 0){//为0时不设定过期时间，浏览器关闭时cookie自动消失
+		var date = new Date();
+		var ms = 10*365*24*60*60*1000;
+		date.setTime(date.getTime() + ms);
+		str += "; expires=" + date.toGMTString();
+	}
+	document.cookie = str;
+}
+
+function getCookie(objName){//获取指定名称的cookie的值
+	var arrStr = document.cookie.split("; ");
+	for(var i = 0;i < arrStr.length;i ++){
+		var temp = arrStr[i].split("=");
+		if(temp[0] == objName) return unescape(temp[1]);
+ 	}
+}
+				
+</script>
+<script>   
+  var con=null;
+  window.onbeforeunload=function(){	
+	  if(typeof(isMesasgerUnavailable) == "undefined") {
+		     isMesasgerUnavailable = true; 
+	  }  
+	  if(!isMesasgerUnavailable){
+	  	return "当前即时聊天在线,是否继续退出系统？";
+	  }	 
+	  var e=getEvent();
+	  var n = e.screenX - window.screenLeft;
+	  var b = n > document.documentElement.scrollWidth-20;  
+	  if(b && e.clientY < 0 || e.altKey){
+	  	  e.returnValue = "确定要退出系统吗？"; 
+	  }
+  }  
+  </script>
+
+
+	
+
+<!--<div id="divMessagerState"/>-->
+
+
+<script type="text/javascript" src="/messager/flex/swfobject.js"></script>
+
+
+<script type="text/javascript">	
+   	
+	
+	//flex调用
+	function install(){
+		jQuery("#tdMessageState").attr("title","下载E-Message");
+	}
+
+	//flex调用
+	function hasmessage(){
+		jQuery("#tdMessageState").attr("title","E-Message有未读消息");
+	}
+	
+	//flex调用
+	function showinstall(){
+		if (jQuery("#mainFrame")[0]) {
+			jQuery("#mainFrame").attr("src","/messager/installm3/emessageproduce.jsp");
+		} else {
+			jQuery("#leftFrame")[0].contentWindow.document.getElementById("mainFrame").src = "/messager/installm3/emessageproduce.jsp";
+		}
+	}
+	
+	function unsurport(){
+		jQuery("#tdMessageState").empty();
+		jQuery("#tdMessageState").click(function(){
+			showinstall();
+		}).append("<img src='/messager/images/e-message_wev8.png' id='imgMsgStateBar' align='absmiddle'  width='16px' title='安装E-Message'/>");
+		
+	}
+
+	jQuery(function() {
+		jQuery("#tdMessageState").empty();
+		jQuery("#tdMessageState").click(function(){
+			showinstall();
+		}).append("<img src='/messager/images/e-message_wev8.png' id='imgMsgStateBar' align='absmiddle'  width='16px' title='E-Message'/>");
+		jQuery("#tdMessageState").append("<div id='flashContent'></div>");
+		if("false"=="true"){
+			jQuery("#tdMessageState").attr("title","E-Message有未读消息");
+		}//else{
+		//	jQuery("#tdMessageState").attr("title","打开E-Message");
+		//}
+		
+		// For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. 
+//		var swfVersionStr = "10.2.0";
+		// To use express install, set to playerProductInstall.swf, otherwise the empty string. 
+//		var xiSwfUrlStr = "/messager/flex/playerProductInstall.swf";
+//		var flashvars = {'unread':'false'};
+//		var params = {};
+//		params.quality = "high";
+		//params.bgcolor = "#ffffff";
+//		params.wmode = "transparent";
+//		params.allowscriptaccess = "sameDomain";
+		//params.allowfullscreen = "true";
+//		var attributes = {};
+//		attributes.id = "Main";
+//		attributes.align = "middle";
+//		swfobject.embedSWF(
+//			"/messager/install/messagestatus.swf", "flashContent", 
+//			"16px", "16px", 
+//			swfVersionStr, xiSwfUrlStr, 
+//			flashvars, params, attributes);
+		// JavaScript enabled so display the flashContent div in case it is not replaced with a swf object.
+//		swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+		
+	});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+	 var clearOut = null;
+	 $(function() {
+        $('#leftMenu').perfectScrollbar();
+    });
+
+	$(window).resize(function() {
+			setLeftMenuHeight();
+			setBodyScroll();
+		});
+
+
+function setLeftMenuHeight(detaheight){
+	if(detaheight){
+		jQuery("#leftMenu").height(jQuery("#leftMenu").height()+(detaheight));
+	}else{
+		syncLMHeight();
+	}
+	jQuery('#leftMenu').perfectScrollbar("update");
+}
+
+function showPopMenu(){
+	if(clearOut){
+		clearInterval(clearOut);
+	}
+	jQuery("#popMenu").show("slow");
+}
+
+function hiddenPopMenu(){
+	jQuery("#popMenu").hide("slow");
+}
+
+function setBodyScroll(){
+	try{
+		jQuery("#mainFrame").parent().height(jQuery("#leftmenucontainer").height());
+	}catch(e){
+	}
+}
+
+jQuery("#frequseContent").children("div").bind("click",function(){
+	jQuery(".aSelected").removeClass("aSelected");
+	jQuery(this).addClass("aSelected");
+});
+
+function updateHandleRequest(){
+	var levelid = "";
+	var isPortal = false;
+	jQuery("span[id^='num_']").each(function(){
+		if( jQuery(this).attr("id").indexOf("_portal")>0){
+			isPortal = true;
+			return;
+		}
+		if(levelid == ""){
+			levelid = jQuery(this).attr("id").replace(/\D/g,"");
+		}else{
+			levelid = levelid + ","+jQuery(this).attr("id").replace(/\D/g,"");
+		}
+	});
+	if(isPortal){
+		return;
+	}
+	jQuery.ajax({
+            url: "/workflow/request/menuCount.jsp?levelid="+levelid+"&userid=141&usertype=0&lftmn" + new Date().getTime() + "=",
+            dataType: "json", 
+            contentType : "charset=UTF-8", 
+            error:function(ajaxrequest){
+				
+			}, 
+            success:function(content){
+            	try{
+					var json = content; 
+					for(var key in json){
+						jQuery("#"+key).html("<span style='padding-left:5px;padding-right:5px;'>"+json[key]+"</span>");
+						//jQuery("#"+key).css("margin-left",-jQuery("#"+key).closest("li").width()+jQuery("#"+key).closest("div").width()-7);
+					}
+				}catch(e){
+					if(window.console)console.log(e);
+				}
+			}
+	});
+	
+	
+}
+function updateRemindInfo(flag){
+	jQuery.ajax({
+            url: "/wui/theme/ecology8/page/getRemindInfo.jsp?1=" + new Date().getTime() + "=",
+            dataType: "text", 
+            contentType : "charset=UTF-8", 
+            error:function(ajaxrequest){
+				
+			}, 
+            success:function(content){
+            	//alert(content)
+            	if($.trim(content)!=""&&content.indexOf("nodata")==-1){
+            		if(!flag){
+            			$(".remindsetting").addClass("remindsettingOver");
+            		}
+            		$(".remindcontentul").html(content);
+            		$(".remindcontentul").find("li").hover(function(){
+            			$(this).addClass("liOver")
+            		},function(){
+            			$(this).removeClass("liOver")
+            		})
+            		$(".remindcontentul").find("li").bind("click",function(){
+            			window.open($(this).attr("url"),"mainFrame")
+            			$(".remindcontent").animate({height:"0px"})
+						$(".remindcontent").hide();
+            		})
+            		
+            	}else{
+            		$(".remindcontentul").html(content);
+            		$(".remindsetting").removeClass("remindsettingOver");
+            	}
+			}
+	});
+}
+
+$(".remindsetting").bind("click",function(){
+	if($(".remindcontent").is(":hidden")){
+		updateRemindInfo(true)
+		var height;
+		if($(".remindcontentul").find("li").length>0){
+			height= $(".remindcontentul").find("li").length*35+45;
+		}else{
+			height = 75
+		}
+		$(".remindcontent").show();
+		$(".remindcontent").animate({height:height+"px"})
+		$(this).removeClass("remindsettingOver")
+	}else{
+		$(".remindcontent").animate({height:"0px"})
+		$(".remindcontent").hide();
+	}
+	
+})
+
+$(".closebtn").bind("click",function(){
+	$(".remindcontent").animate({height:"0px"})
+	$(".remindcontent").hide();
+	
+})
+</script>
+
+
+
+
+<script type="text/javascript">
+
+	  	
+</script>
+<div id="_DialogDiv_1566912103759" style="position: absolute; left: 761px; top: 1425px; z-index: 99999;">    <div id="_LoadDiv_1566912103759" style="position:absolute;display:none;width: 100%;height: 100%;"></div>  <table id="_DialogTable_1566912103759" width="398" cellspacing="0" cellpadding="0" style=" font-size:12px; line-height:1.4;">    <tbody><tr id="_Draghandle_1566912103759" style="cursor: move;" class="zDialogTitleTRClass">      <td height="30px;" style="background-color:#4f81bd;"><div style="float: left;color:#fff;"><span style="width:10px;display:inline-block;"></span><span id="_Title_1566912103759" style="font-size:13px;height:30px;line-height:30px;"> 系统提示</span></div>        <div onclick="Dialog.getInstance('1566912103759').cancelButton.onclick.apply(Dialog.getInstance('1566912103759').cancelButton,[]);" onmouseout="this.style.backgroundImage='url(/images/ecology8/16_close_wev8.png)'" onmouseover="this.style.backgroundImage='url(/images/ecology8/16_close2_wev8.png)'" style="font-family:Verdana!important;        				margin: 10px 8px 0; font-size:8px!important;position: relative; cursor: pointer; float: right; height: 16px; width: 16px;background-image: url(/images/ecology8/16_close_wev8.png);"></div></td>    </tr>    <tr valign="top">      <td align="center" style="border:1px solid #BCBCBC;"><table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff">          <tbody><tr id="_MessageRow_1566912103759" style="display:none">            <td valign="top" height="50"><table width="100%" cellspacing="0" cellpadding="0" border="0" id="_MessageTable_1566912103759">                <tbody><tr>                  <td width="50" height="50" align="center"></td>                  <td align="left" style="line-height: 16px;"><div id="_MessageTitle_1566912103759" style="font-weight:bold"></div>                    <div id="_Message_1566912103759"></div></td>                </tr>              </tbody></table></td>          </tr>          <tr>            <td valign="top" align="center">            <div id="_Container_1566912103759" style="position: relative; width: 396px; height: 70px; overflow-y: auto;">                <div style="position: absolute; height: 100%; width: 100%; display: none; background-color:#fff; opacity: 0.5;" id="_Covering_1566912103759">&nbsp;</div>	<table height="100%" border="0" align="center" cellpadding="10" cellspacing="0">			<tbody><tr><td align="right"><img id="Icon_undefined" src="/wui/theme/ecology8/skins/default/rightbox/icon_alert_wev8.png" style="margin-right:10px;" width="26" height="26" align="absmiddle"></td>				<td align="left" id="Message_undefined" style="font-size:9pt">您已经登录系统!<br>上次登录信息:172.1.2.3 2019-08-27 21:20:41</td></tr>		</tbody></table>              </div></td>          </tr>          <tr id="_ButtonRow_1566912103759" style="">            <td height="36"><div id="_DialogButtons_1566912103759" style="border-top: 1px solid #DADEE5; padding: 8px 20px; text-align:center ; background-color:#f6f6f6;">            	                <input type="button" class="zd_btn_submit" style="padding: 0px 18px; display: none;" value="确定" id="_ButtonOK_1566912103759">                <span id="_e8SepLine_1566912103759" class="e8_sep_line" style="display: none;">|</span>                <input type="button" class="zd_btn_cancle btn_submit" style="padding: 0px 18px 0px 18px;" value="确定" onclick="Dialog.getInstance('1566912103759').closeByHand();" id="_ButtonCancel_1566912103759">              </div></td>          </tr>        </tbody></table></td>    </tr>  </tbody></table></div><div id="_DialogBGDiv" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 1001; display: none;"><div style="position:relative;width:100%;height:100%;"><div id="_DialogBGMask" style="position:absolute;background-color:#333;opacity:0.4;filter:alpha(opacity=40);width:100%;height:100%;"></div></div></div><div id="ascrail2000" style="width: 8px; z-index: 10003; position: absolute; top: 132px; left: 217px; height: 2821px; display: none; opacity: 0;"><div style="position: relative; top: 0px; float: right; width: 8px; height: 2821px; background-color: rgb(153, 153, 153); border: none; background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2001" style="width: 8px; z-index: 10003; position: absolute; top: 0px; left: -8px; height: 0px;"><div style="position: relative; top: 0px; float: right; width: 8px; height: 0px; background-color: rgb(153, 153, 153); border: none; background-clip: padding-box; border-radius: 5px;"></div></div><div class="highslide-container" style="padding: 0px; border: none; margin: 0px; position: absolute; left: 0px; top: 0px; width: 100%; z-index: 3000; direction: ltr;"><a class="highslide-loading" title="单击取消" href="javascript:;" style="position: absolute; top: -9999px; opacity: 0.75; z-index: 1;"></a><div style="display: none;"></div><table cellspacing="0" style="padding: 0px; border: none; margin: 0px; visibility: hidden; position: absolute; border-collapse: collapse; width: 0px;"><tbody style="padding: 0px; border: none; margin: 0px;"><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td><td class="rounded-white" style="padding: 0px; border: none; margin: 0px; position: relative;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td></tr><tr style="padding: 0px; border: none; margin: 0px; height: auto;"><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td><td style="padding: 0px; border: none; margin: 0px; line-height: 0; font-size: 0px;"></td></tr></tbody></table><img src="/js/messagejs/highslide/graphics/outlines/rounded-white_wev8.png" style="padding: 0px; border: none; margin: 0px; position: absolute; left: -9999px; top: -9999px;"></div></body></html>

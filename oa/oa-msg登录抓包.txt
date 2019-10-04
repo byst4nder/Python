@@ -1,0 +1,329 @@
+
+OA MSG 主页  转跳 地址
+http://10.1.2.36/social/im/epcforword.jsp?from=pc&external=true&sessionkey=abc_JPFfLfj5WaERgI0Zw&language=7&url=%2Fwui%2Fmain.jsp&d=1568256661007
+
+http://10.1.2.36/social/im/epcforword.jsp?from=pc&external=true&sessionkey=abcwHcPIM7-uQfmEkCJ0w&language=7&url=%2Fwui%2Fmain.jsp&d=1568257740428
+
+
+
+http://10.1.2.36/social/im/epcforword.jsp?
+from: pc
+external: true
+sessionkey: abc_JPFfLfj5WaERgI0Zw
+language: 7
+url: /wui/main.jsp
+d: 1568256661007
+
+
+from: pc
+external: true
+sessionkey: abcwHcPIM7-uQfmEkCJ0w
+language: 7
+url: /wui/main.jsp
+d: 1568257740428
+
+
+http://10.1.2.36/social/im/epcforword.jsp?sessionkey=abcwHcPIM7-uQfmEkCJ0w&url=%2Fwui%2Fmain.jsp
+
+
+http://10.1.2.36/social/im/epcforword.jsp?sessionkey=abcDhLa0bK9Hv7KUaOJ0w&url=%2Fwui%2Fmain.jsp
+
+# 登录第一个请求
+http://10.1.2.36/login/LoginOperation.jsp?method=checkTokenKey&loginid=61309011
+http://10.1.2.36/login/LoginOperation.jsp?method=checkTokenKey&loginid=61309011
+0
+
+http://10.1.2.36/social/SocialVerifyLogin.jsp?method=getPubKey&_=1568259110357
+
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQNa7EgaK3LpSs1jqchWs0VGXLCxcpGSDE0qrfYTHXoI14vMyLbRlE3cCtPzZZVFCNb0o2J/ur32tmnjofoOFBrYZGkTwwt/KcVnezlHY4KyTmsqgNbqHBNNI+1vomXAtvyasouaS2/AvClb3/e4k4umPRfkb52yr09wCjAF7obwIDAQAB
+
+
+#登录验证请求
+http://10.1.2.36/social/SocialVerifyLogin.jsp?method=login&loginid=61309011&password=ZvoinP%2B7NGKB5gj94mk4J%2BzFT50WOZguKeMiJnVQQrsRV3hE%2BomXV7pok9WYqVNe6w7WS3TG%2Bu1z3D3lY1NintoSifNEdOS7JNszbeXKIQSZtk3T2PfGo1bvCMrs1%2BosJfYHpcilkrRkqhr%2FB4kgI2%2B%2BX1GjI8N6Cpb544VJTOI%3D&language=7&validCode=&userUsbType=0&pubkey=1&_=1568259110372
+
+{"buildversion":"17","osxBuildVersion":"12","xpbuildVersion":"3","runtimeVersion":"1.6.10.1","isNew":0,"userName":"王炼","userHead":"/messager/usericon/loginid20181018113741.jpg","status":1,"errorMsg":"登录成功","sessionkey":"abcXqMQboC5Db5ZUvIJ0w","isAllowNewWin":0,"user_token":"54f0ca05ad6346dfa12c89d863c8d987_random_"}
+
+http://10.1.2.36/social/SocialVerifyLogin.jsp?loginid=61309011&sessionKey=abcARYzEPeCL4cps9HJ0w&method=checkPwd&_=1568259110437
+
+{"passwdReminder":"0","isUpPswd":"0","isAdmin":"0","isAdaccount":"0","canremind":"0","canpass":"0","passwdelse":"0"}
+
+
+http://10.1.2.36/social/im/SocialIMMain.jsp?frommain=yes&from=pc&isAero=false&pcOS=Windows&sessionkey=abcARYzEPeCL4cps9HJ0w&language=7
+下载js
+
+
+http://10.1.2.36/mobile/plugin/hrm/hrminterface.jsp?cmd=getResourceInfo&date=Thu%20Sep%2012%202019%2011:31:51%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)
+
+{"resourcelist":{"id":"21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37,38,39,42,106,107,108,109,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,43,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84,86,87,85,88,89,90,91,92,93,94,95,96,97,98,99,101,102,103,104,105,273,274,275,276,277,278,279,280,281,282,283,284,285,287,288,289,290,291,292,293,126,127,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,195,199,200,201,202,203,204,206,207,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,266,267,268,269,270,271,272,315,316,317,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,419,420,421,422,423,424,425,426,427,429,430,431,432,433,434,435,436,437,438,400,401,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,439,440,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,370,371,372,373,375,376,377,378,379,380,294,295,297,299,300,301,302,303,304,305,306,307,308,309,310,311,314,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,526,529,530,531,532,533,534,535,536,537,538,539,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,559,560,561,562,563,564,565,566,568,569,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,460,461,731,732,733,734,735,736,737,738,739,740,741,743,744,745,746,747,748,749,750,751,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,658,659,660,661,662,663,664,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,752,753,754,755,689,690,691,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,712,714,715,716,717,719,720,721,722,723,724,725,726,727,728,729,730,756,757,758,759,760,761,762,763,764,765,766,767,768,769,771,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900,902,903,904,905,906,907,908,910,911,912,913,914,915,916,917,918,919,920,921,922,923,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,790,791,792,793,794,795,796,797,798,799,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,822,823,824,825,826,827,828,829,830,831,832,833,834,835,837,838,839,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874,875,876,945,946,947,949,950,951,952,953,954,955,956,957,958,959,961,960,924,925,926,927,928,929,930,931,932,933,934,935,936,937,938,939,940,941,942,943,944,968,970,971,972,975,976,977,997,1007,1014,1021,1027,1035,128,1039,1048,962,965,979,983,986,988,995,1002,1003,1010,1012,1020,1022,1028,1034,31,1043,981,984,1000,1001,1004,1006,1011,1013,1030,1037,1045,1046,1047,1049,296,1050,963,969,980,985,987,990,991,992,993,1008,1009,1016,1017,1019,1023,1031,966,967,974,978,982,994,996,998,999,1005,1015,1018,1026,1038,1040,1044,1052,1061,1062,1069,1076,1080,1088,1091,1096,1058,1070,1084,1089,1095,1097,1099,1054,1071,1077,1079,1087,1060,1063,1073,1056,1081,1090,1065,1067,1074,1086,1093,1098,428,1051,1053,1064,1066,1072,1075,1078,1094,1055,1059,665,1068,1085,402","name":"21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37,38,39,42,106,107,108,109,110,111,112,113,114,115,116,117,119,120,121,122,123,124,125,43,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84,86,87,85,88,89,90,91,92,93,94,95,96,97,98,99,101,102,103,104,105,273,274,275,276,277,278,279,280,281,282,283,284,285,287,288,289,290,291,292,293,126,127,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,195,199,200,201,202,203,204,206,207,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,266,267,268,269,270,271,272,315,316,317,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,419,420,421,422,423,424,425,426,427,429,430,431,432,433,434,435,436,437,438,400,401,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,439,440,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,370,371,372,373,375,376,377,378,379,380,294,295,297,299,300,301,302,303,304,305,306,307,308,309,310,311,314,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,526,529,530,531,532,533,534,535,536,537,538,539,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,559,560,561,562,563,564,565,566,568,569,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,460,461,731,732,733,734,735,736,737,738,739,740,741,743,744,745,746,747,748,749,750,751,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,658,659,660,661,662,663,664,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,752,753,754,755,689,690,691,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,712,714,715,716,717,719,720,721,722,723,724,725,726,727,728,729,730,756,757,758,759,760,761,762,763,764,765,766,767,768,769,771,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900,902,903,904,905,906,907,908,910,911,912,913,914,915,916,917,918,919,920,921,922,923,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,790,791,792,793,794,795,796,797,798,799,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,822,823,824,825,826,827,828,829,830,831,832,833,834,835,837,838,839,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874,875,876,945,946,947,949,950,951,952,953,954,955,956,957,958,959,961,960,924,925,926,927,928,929,930,931,932,933,934,935,936,937,938,939,940,941,942,943,944,968,970,971,972,975,976,977,997,1007,1014,1021,1027,1035,128,1039,1048,962,965,979,983,986,988,995,1002,1003,1010,1012,1020,1022,1028,1034,31,1043,981,984,1000,1001,1004,1006,1011,1013,1030,1037,1045,1046,1047,1049,296,1050,963,969,980,985,987,990,991,992,993,1008,1009,1016,1017,1019,1023,1031,966,967,974,978,982,994,996,998,999,1005,1015,1018,1026,1038,1040,1044,1052,1061,1062,1069,1076,1080,1088,1091,1096,1058,1070,1084,1089,1095,1097,1099,1054,1071,1077,1079,1087,1060,1063,1073,1056,1081,1090,1065,1067,1074,1086,1093,1098,428,1051,1053,1064,1066,1072,1075,1078,1094,1055,1059,665,1068,1085,402","count":"1019"}}
+
+
+
+http://10.1.2.36/social/im/SocialIMOperation.jsp?operation=getSunkey
+{"sunid":"","sunkey":""}
+
+
+http://10.1.2.36/social/im/SocialIMChatTp.jsp?from=pc&pcOS=Windows&isOpenVote=1&isOpenDisk=1&isWfShareForbit=0&isDocShareForbit=0&ifForbitFolderTransfer=1&isFileTransForbit=0&isImgSendCutForbit=0&ifForbitShake=1&isForbitPrivateChat=1&ifForbitCustomer=1&hasRemoteRight=0
+
+
+http://10.1.2.36/social/i18n/strings.properties?_=1568259111931
+
+Member=Member
+SysSettings=SysSettings
+GroupAddFail=Discussion group creation failed, please create again later
+Exceed=More than ${1} person limit
+GroupMM=Group member management
+MoveToGroupTip=Whether to confirm grouping ${1} to group group ${2}
+GroupQuitConfirm=Confirm exit group?
+GroupNameInvalid=Group name contains special characters
+GroupSubDelConfirm=The selected group chat group will be deleted and the group chat will move to the system default group "My group chat". Are you sure you want to delete the group chat group?
+Rename=Rename
+GroupSubAdd=Add Group Chat Group
+GroupSubTooMany=Group chat group too many, can not create a new group
+SystemAlert=System Alert
+SystemComfirm=Info Comfirm
+AppManagement=Application management
+BlogCheckTip=Did you submit a job log for the last business day?
+Confirm=Confirm
+Cancel=Cancel
+Favourite=My favourite
+Bing=Bing
+BlogCheckTip1=Have you submitted your work log today, are you submitting?
+SignOnTip=Today is a working day, now to sign it?
+SignOffTip=Is it time to work, are you sure you want to sign back?
+SignatureErr1=Personal signature does not support special characters
+SignatureErr2=Individual signature length is too long
+SignatureTip1=Personalized signature saved successfully
+SignatureTip2=No personality signature
+SignatureErr3=Personal signatures do not support special characters \\ 'and \\\\, \\ "
+HeadChange=Set a personal avatar
+AccountSwitFailed=Primary account switching failed
+SignOn=SignOn
+SignOff=SignOff
+GroupNewChat=New group chat
+GroupAddMember=Add group members
+ChatSetting=Chat settings
+GroupSetting=Group settings
+AccTip=No attachments
+AccTip1=Here you can share knowledge files for everyone
+BroadCast=Broadcast
+ColorLightBlue=Blue
+ColorYellow=Yellow
+Default=Default
+ColorLightRed=Red
+ColorPink=Pink
+ColorPurple=Purple
+ColorLightGreen=Green
+Receive=Receive
+Resume=Resume
+Pause=Pause
+SaveAs=Save as
+Open=Open
+File=File
+Folder=Folder
+ChatWinCloseTip=Do you close all chat windows?
+ChatWinCloseTip1=Is the current window operating, is it forced to close?
+ScreenShot=screenshot
+Info=Info
+Yes=Yes
+No=No
+Dltip1=File does not exist, please re-download
+Dltip2=File does not exist, do you continue to open the folder?
+Quit=Quit
+Dltip3=Files with the same file name are being downloaded
+Dltip4=Is the file already in existence, is it overwriting the local file?
+Dltip5=Do you set the current directory as the default download directory?
+Dltip6=Downloading files
+Dltip7=The file is downloaded
+Dltip8=File download failed
+Dltip9=The file download was canceled
+Dltip10=Download error
+Dltip11=You do not have permission to run this directory
+RelinkTip=The connection to the e-message server is faulty
+RelinkTip1=Seconds after\uFF0Cdo 
+RelinkTip2=\ time to reconnect
+RelinkErr=Connection failure
+HideTray=Minimize to the tray
+Remember=Remember choose
+Reconnect=Reconnect
+ReadStatus1=Unread
+ReadStatus2=Read
+ReadStatus3=All read
+ReadStatus4=${1} unread
+ReadStatus5=Read status
+ChatRecord=Chat message records
+None=None
+WithdrawTip=${1}withdrew a message
+You=You
+FloatNotice1=You still have not read the news, please click to read
+FloatNotice2=Not yet connected to the message server, click here to refresh
+FloatNotice3=Can not get the discussion group
+FloatNotice4=Get history message failed, please try again later
+FloatNotice5=The connection has been closed, click to reconnect\!
+AddGroupAlert=Please confirm that you created the group chat
+GroupMemberLimit=Over 500 people
+CreateGroup=Add Group
+CopySuccess=Copy Success
+Uploading=uploading
+UploadFail=upload failed
+PrivateChat=PrivateChat
+PrivateOneToOne=Only support one-to-one private chat
+NewMessages=New Messages
+Back=Back
+Offline=Offline
+OfflineTip=The person is not online, and the system will send off the offline message
+BusyTip=The person is currently busy and may not be able to reply to your message in time
+AwayTip=The person is out and may not be able to reply to your message in time
+PCMAX=Maximization
+PCRETURN=Restore
+All=all
+UpdateTip0=Has been detected 
+UpdateTip1=\ version , is it updated now?
+UpdateTip2=The e-message you are currently using is the latest version
+UpdateTip3=Update successfully, is it immediately restarted?
+
+NetTimeout=Network Timeout
+NetInt=Network interruption
+UserAbort=User cancelled
+Copy=Copy
+Paste=Paste
+CopyPureText=Copy pure text
+DirNoAccess=No permission to operate this directory
+
+http://10.1.2.36/social/i18n/strings_zh-CN.properties?_=1568259111938
+
+Member=\u4EBA\u5458
+SysSettings=\u7CFB\u7EDF\u8BBE\u7F6E
+GroupAddFail=\u8BA8\u8BBA\u7EC4\u521B\u5EFA\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u518D\u521B\u5EFA
+Exceed=\u8D85\u8FC7${1}\u4EBA\u7684\u4E0A\u9650
+GroupMM=\u7FA4\u6210\u5458\u7BA1\u7406
+MoveToGroupTip=\u662F\u5426\u786E\u8BA4\u5C06\u7FA4\u804A${1}\u79FB\u52A8\u81F3\u7FA4\u5206\u7EC4${2}
+GroupQuitConfirm=\u786E\u5B9A\u9000\u51FA\u7FA4\uFF1F
+GroupSubDelConfirm=\u9009\u5B9A\u7684\u7FA4\u804A\u5206\u7EC4\u5C06\u88AB\u5220\u9664\uFF0C\u7EC4\u5185\u7684\u7FA4\u804A\u5C06\u4F1A\u79FB\u81F3\u7CFB\u7EDF\u9ED8\u8BA4\u5206\u7EC4 \u201C\u6211\u7684\u7FA4\u804A\u201D\u3002\u786E\u8BA4\u8981\u5220\u9664\u8BE5\u7FA4\u804A\u5206\u7EC4\u5417\uFF1F
+Rename=\u91CD\u547D\u540D
+GroupSubAdd=\u6DFB\u52A0\u7FA4\u804A\u5206\u7EC4
+GroupSubTooMany=\u7FA4\u804A\u5206\u7EC4\u8FC7\u591A\uFF0C\u65E0\u6CD5\u521B\u5EFA\u65B0\u5206\u7EC4
+GroupNameInvalid=\u7FA4\u7EC4\u540D\u79F0\u5305\u542B\u7279\u6B8A\u5B57\u7B26
+SystemAlert=\u7CFB\u7EDF\u63D0\u793A
+SystemComfirm=\u4FE1\u606F\u786E\u8BA4
+GroupNewChat=\u53D1\u8D77\u7FA4\u804A
+ChatSetting=\u804A\u5929\u8BBE\u7F6E
+GroupSetting=\u7FA4\u8BBE\u7F6E
+Receive=\u63A5\u6536
+Resume=\u7EE7\u7EED
+Pause=\u6682\u505C
+SaveAs=\u53E6\u5B58\u4E3A
+Open=\u6253\u5F00
+File=\u6587\u4EF6
+Folder=\u6587\u4EF6\u5939
+GroupAddMember=\u6DFB\u52A0\u7FA4\u6210\u5458
+AccTip=\u6682\u65E0\u9644\u4EF6
+AccTip1=\u5728\u8FD9\u91CC\uFF0C\u4F60\u53EF\u4EE5\u5206\u4EAB\u77E5\u8BC6\u6587\u4EF6\u7ED9\u5927\u5BB6
+AppManagement=\u5E94\u7528\u7BA1\u7406
+BlogCheckTip=\u4F60\u4E0A\u4E2A\u5DE5\u4F5C\u65E5\u6CA1\u6709\u63D0\u4EA4\u5DE5\u4F5C\u65E5\u5FD7,\u662F\u5426\u8865\u4EA4\uFF1F
+BlogCheckTip1=\u4F60\u4ECA\u5929\u8FD8\u6CA1\u6709\u63D0\u4EA4\u5DE5\u4F5C\u65E5\u5FD7,\u662F\u5426\u63D0\u4EA4?
+SignOnTip=\u4ECA\u5929\u662F\u5DE5\u4F5C\u65E5\uFF0C\u73B0\u5728\u8981\u7B7E\u5230\u5417\uFF1F
+SignOffTip=\u73B0\u5728\u662F\u5DE5\u4F5C\u65F6\u95F4\uFF0C\u60A8\u786E\u5B9A\u8981\u7B7E\u9000\u5417\uFF1F
+Confirm=\u786E\u8BA4
+Cancel=\u53D6\u6D88
+Bing=\u5FC5\u8FBE
+Favourite=\u6211\u7684\u6536\u85CF
+SignatureErr1=\u4E2A\u6027\u7B7E\u540D\u4E0D\u652F\u6301\u7279\u6B8A\u5B57\u7B26
+SignatureErr2=\u4E2A\u6027\u7B7E\u540D\u957F\u5EA6\u8FC7\u957F
+SignatureTip1=\u4E2A\u6027\u7B7E\u540D\u4FDD\u5B58\u6210\u529F
+SignatureTip2=\u6682\u65E0\u4E2A\u6027\u7B7E\u540D
+SignatureErr3=\u4E2A\u6027\u7B7E\u540D\u4E0D\u652F\u6301\u7279\u6B8A\u5B57\u7B26\\'\u548C\\\\,\\"
+BroadCast=\u5E7F\u64AD
+ColorLightBlue=\u6D45\u84DD
+ColorYellow=\u9EC4\u8272
+Default=\u9ED8\u8BA4
+ColorLightRed=\u6D45\u7EA2
+ColorPink=\u7C89\u8272
+ColorPurple=\u7D2B\u8272
+ColorLightGreen=\u6D45\u7EFF
+HeadChange=\u8BBE\u7F6E\u4E2A\u4EBA\u5934\u50CF
+AccountSwitFailed=\u4E3B\u6B21\u8D26\u53F7\u5207\u6362\u5931\u8D25
+SignOn=\u7B7E\u5230
+SignOff=\u7B7E\u9000
+Info=\u63D0\u793A
+Yes=\u662F
+No=\u5426
+Dltip1=\u6587\u4EF6\u4E0D\u5B58\u5728\uFF0C\u8BF7\u91CD\u65B0\u4E0B\u8F7D
+Dltip2=\u6587\u4EF6\u4E0D\u5B58\u5728\uFF0C\u662F\u5426\u7EE7\u7EED\u6253\u5F00\u6587\u4EF6\u5939\uFF1F
+Quit=\u9000\u51FA
+Dltip3=\u6709\u4E2A\u76F8\u540C\u6587\u4EF6\u540D\u7684\u6587\u4EF6\u6B63\u5728\u4E0B\u8F7D
+Dltip4=\u6587\u4EF6\u5DF2\u5B58\u5728\uFF0C\u662F\u5426\u8986\u76D6\u672C\u5730\u6587\u4EF6\uFF1F
+Dltip5=\u662F\u5426\u8BBE\u7F6E\u5F53\u524D\u76EE\u5F55\u4E3A\u9ED8\u8BA4\u4E0B\u8F7D\u76EE\u5F55\uFF1F
+Dltip6=\u6B63\u5728\u4E0B\u8F7D\u6587\u4EF6
+Dltip7=\u6587\u4EF6\u4E0B\u8F7D\u5B8C\u6210
+Dltip8=\u6587\u4EF6\u4E0B\u8F7D\u5931\u8D25
+Dltip9=\u6587\u4EF6\u4E0B\u8F7D\u88AB\u53D6\u6D88
+Dltip10=\u4E0B\u8F7D\u51FA\u9519
+Dltip11=\u60A8\u6CA1\u6709\u8BE5\u76EE\u5F55\u7684\u64CD\u4F5C\u6743\u9650
+RelinkTip=\u8FDE\u63A5e-message\u670D\u52A1\u5668\u6545\u969C
+RelinkTip1=\u79D2\u4E4B\u540E\u8FDB\u884C\u7B2C
+RelinkTip2=\u6B21\u8FDE\u63A5
+RelinkErr=\u8FDE\u63A5\u6545\u969C
+ChatWinCloseTip=\u662F\u5426\u5173\u95ED\u6240\u6709\u804A\u5929\u7A97\u53E3?
+ChatWinCloseTip1=\u5F53\u524D\u7A97\u53E3\u6B63\u5728\u64CD\u4F5C\uFF0C\u662F\u5426\u5F3A\u5236\u5173\u95ED?
+ScreenShot=\u622A\u56FE
+HideTray=\u6700\u5C0F\u5316\u5230\u6258\u76D8
+Remember=\u8BB0\u4F4F\u9009\u62E9\uFF0C\u4E0D\u518D\u63D0\u9192
+Reconnect=\u91CD\u8FDE
+ReadStatus1=\u672A\u8BFB
+ReadStatus2=\u5DF2\u8BFB
+ReadStatus3=\u5168\u90E8\u5DF2\u8BFB
+ReadStatus4=${1}\u4EBA\u672A\u8BFB
+ReadStatus5=\u9605\u8BFB\u72B6\u6001
+ChatRecord=\u6D88\u606F\u8BB0\u5F55
+None=\u6682\u65E0
+WithdrawTip=${1}\u64A4\u56DE\u4E86\u4E00\u6761\u6D88\u606F
+You=\u4F60
+FloatNotice1=\u60A8\u8FD8\u6709\u5C1A\u672A\u9605\u8BFB\u7684\u6D88\u606F\uFF0C\u8BF7\u70B9\u51FB\u9605\u8BFB
+FloatNotice2=\u5C1A\u672A\u8FDE\u4E0A\u6D88\u606F\u670D\u52A1\u5668,\u70B9\u8FD9\u91CC\u5237\u65B0
+FloatNotice3=\u83B7\u53D6\u4E0D\u5230\u8BA8\u8BBA\u7EC4\u5BF9\u8C61
+FloatNotice4=\u83B7\u53D6\u5386\u53F2\u6D88\u606F\u5931\u8D25\uFF0C\u8BF7\u7A0D\u540E\u91CD\u8BD5
+FloatNotice5=\u94FE\u63A5\u5DF2\u65AD\u5F00\uFF0C\u70B9\u51FB\u91CD\u8FDE
+AddGroupAlert=\u8BF7\u786E\u8BA4\u662F\u5426\u521B\u5EFA\u8BE5\u7FA4\u804A
+GroupMemberLimit=\u8D85\u8FC7500\u4EBA\u9650\u5236
+CreateGroup=\u53D1\u8D77\u7FA4\u804A
+CopySuccess=\u590D\u5236\u6210\u529F
+Uploading=\u4E0A\u4F20\u4E2D
+UploadFail=\u4E0A\u4F20\u5931\u8D25
+PrivateChat=\u5BC6\u804A
+PrivateOneToOne=\u53EA\u652F\u6301\u4E00\u5BF9\u4E00\u7684\u79C1\u5BC6\u804A\u5929
+NewMessages=\u65B0\u6D88\u606F
+Back=\u8FD4\u56DE
+Offline=\u79BB\u7EBF
+OfflineTip=\u5BF9\u65B9\u4E0D\u5728\u7EBF\uFF0C\u7CFB\u7EDF\u5C06\u53D1\u9001\u79BB\u7EBF\u6D88\u606F
+BusyTip=\u5BF9\u65B9\u5F53\u524D\u4E3A\u5FD9\u788C\u72B6\u6001\uFF0C\u53EF\u80FD\u65E0\u6CD5\u53CA\u65F6\u56DE\u590D\u60A8\u7684\u6D88\u606F
+AwayTip=\u5BF9\u65B9\u5F53\u524D\u4E3A\u79BB\u5F00\u72B6\u6001\uFF0C\u53EF\u80FD\u65E0\u6CD5\u53CA\u65F6\u56DE\u590D\u60A8\u7684\u6D88\u606F
+PCMAX=\u6700\u5927\u5316
+PCRETURN=\u8FD8\u539F
+All=\u5168\u4F53\u6210\u5458
+UpdateTip0=\u5DF2\u68C0\u6D4B\u5230
+UpdateTip1=\u7248\u672C\uFF0C\u662F\u5426\u73B0\u5728\u66F4\u65B0?
+UpdateTip2=\u60A8\u5F53\u524D\u7528\u7684e-message\u662F\u6700\u65B0\u7248\u672C
+UpdateTip3=\u5DF2\u66F4\u65B0\u5230\u6700\u65B0\u7248\u672C\uFF0C\u662F\u5426\u7ACB\u5373\u91CD\u542F\u5E94\u7528\uFF1F
+
+NetTimeout=\u7F51\u7EDC\u8D85\u65F6
+NetInt=\u7F51\u7EDC\u4E2D\u65AD
+UserAbort=\u7528\u6237\u53D6\u6D88
+Copy=\u590D\u5236
+Paste=\u7C98\u8D34
+CopyPureText=\u590D\u5236\u4E3A\u7EAF\u6587\u672C
+DirNoAccess=\u6CA1\u6709\u8BE5\u76EE\u5F55\u64CD\u4F5C\u6743\u9650
+
+
+http://10.1.2.36/social/im/SocialImPcUtils.jsp
+
+
+http://10.1.2.36/social/im/SocialHrmOrgTree.jsp?operation=hrmGroup&from=pc&sessionkey=abcARYzEPeCL4cps9HJ0w&language=7&root=source
+
+
+http://10.1.2.36/social/im/ServerStatus.jsp?p=socketstatus&socketstatus=0&websessionkey=
+
+http://10.1.2.36
+http://10.1.2.36
+
+http://10.1.2.36
+http://10.1.2.36

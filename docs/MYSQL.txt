@@ -1,0 +1,188 @@
+import mysql.connector as MySQLdb
+import requests
+from pyquery import PyQuery as pq
+from tkinter import ttk
+from tkinter import scrolledtext
+import tkinter as tk
+import tkinter.messagebox
+import operator
+from datetime import datetime
+
+class MySqlDatabase:
+
+    host = 'localhost'
+    user = 'root'
+    password = 'password'
+    database = 'movies'
+    auth_plugin = 'mysql_native_password'
+
+    def __init__(self):
+        self.connection = MySQLdb.connect(host=self.host, user=self.user, passwd=self.password, auth_plugin=self.auth_plugin,database=self.database)
+        self.cursor = self.connection.cursor()
+
+    def truncate(self):
+        self.cursor.execute('TRUNCATE TABLE top100')
+
+    def iud_record(self, query):
+        try:
+            self.cursor.execute(query)
+            self.connection.commit()
+        except:
+            self.connection.rollback()
+
+    def query(self, query):
+
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+
+    def __del__(self):
+        self.connection.close()
+
+class MyTk:
+    def __init__(self,root,db,sp):
+        self.mapping={'1-演员名字':'star',
+                      '3-电影分数(大于)':'score>',
+                      '4-电影分数(小于)': 'score<',
+                      '5-电影分数(等于)': 'score=',
+                      '2-电影名字':'name'}
+
+        self.mysqldb = db
+        self.myspider =sp
+        self.init_gui(root)
+
+    def init_gui(self,root):
+        # 提示lable
+        self.lbl = tk.Label(root, text="搜索内容:").grid(column=1, row=1)
+
+        # 输入搜索内容
+        input_text = tk.StringVar()
+        self.enter = tk.Entry(root, width=20, textvariable=input_text)
+        self.enter.grid(column=1, row=2)
+
+        # 提示搜索类型
+        tk.Label(root, text="搜索类别").grid(column=0, row=1)
+        movie_type = tk.StringVar()
+
+        # 多选框
+        self.chosen = ttk.Combobox(root, textvariable=movie_type, width=12, state='readonly')
+        self.chosen['values'] = tuple(sorted(self.mapping.keys()))
+        self.chosen.current(0)
+        self.chosen.grid(column=0, row=2)
+
+        # 搜索按钮
+        action = tk.Button(root, text="搜索",command=self.search)
+        action.grid(column=2, row=2)
+
+        # 富文本框
+        self.scr = scrolledtext.ScrolledText(root,bg='yellow', width=70, height=20, wrap=tk.WORD)
+        self.scr.grid(column=0, row=4, columnspan=3)
+
+        self.lbl_cral = tk.Label(root)
+        self.lbl_cral.grid(column=0, row=5)
+        self.lbl_cral['text'] = self.get_cralinof()
+        
+
+        self.btn_crawl = tk.Button(root, text='开始爬取,100部电影', command=self.start_crawl)
+        self.btn_crawl.grid(column=1, row=5, columnspan=24)
+
+    def get_cralinof(self):
+        search_cmd = "SELECT updatedate FROM top100 LIMIT 1"
+        items = self.mysqldb.query(search_cmd)
+        if(len(items)==0):
+            return "数据库无电影信息，请先爬取！"
+        else:
+            tmp_date = "最新爬取时间：" + items[0][0].strftime('%Y-%m-%d')
+            return tmp_date
+
+    def search(self):
+        if self.chosen.get() == "":
+            tkinter.messagebox.showinfo('提示',"选择搜索类别")
+            return None
+
+        if self.enter.get() == "":
+            tkinter.messagebox.showinfo('提示',"填写搜索内容")
+            return None
+
+        col_name = self.mapping[self.chosen.get()]
+        col_val = self.enter.get()
+        search_cmd = "SELECT name,star,releasetime,score FROM top100 WHERE "
+
+        if (col_name == "name" or col_name =="star"):
+            search_cmd = search_cmd + col_name + " LIKE '%" + col_val + "%'"
+        else:
+            search_cmd = search_cmd + col_name + col_val
+        search_cmd = search_cmd + " ORDER BY id"
+        
+        self.get_data(search_cmd)
+
+    def get_data(self, search_cmd):
+        movies = self.mysqldb.query(search_cmd)
+        self.write_scrtext(movies)
+
+    def write_scrtext(self,items):
+        #先清除富文本框
+        self.scr.delete(1.0, tk.END)
+        if(len(items)==0):
+            self.scr.insert(tk.INSERT, 'Nothing found!')
+        else:
+            for index,i in enumerate(items):
+                self.scr.insert(tk.INSERT, str(index)+":"+ ';'.join(map(str, i)) + '\n')
+
+
+    def start_crawl(self):
+        self.mysqldb.truncate()
+        self.myspider.gettop100movies()
+        tkinter.messagebox.showinfo('提示','100部电影爬取完成！')
+
+        self.lbl_cral['text'] = self.get_cralinof()
+
+class spider:
+    
+    def __init__(self, db):
+        self.mysqldb = db
+
+    def download_html(self, url):
+        try:
+            res = requests.get(url)
+            if res.status_code == 200:
+                return res.text
+            else:
+                print('Reqeust {} failed, status is {}'.format(url,res.status_code))
+                return None
+        except Exception as e:
+            print(e)
+            return None
+
+    def decode_html(self, html_content):
+        doc = pq(html_content)
+        for item in doc.items('.board-wrapper dd'):
+            yield {
+                'name' : item.find('.name').text(),
+                'star' : item.find('.star').text()[3:],
+                'releasetime' : item.find('.releasetime').text()[5:],
+                'score' : item.find('.score').text()
+            }
+
+    def insertmovietodb(self, offset):
+        url = 'http://maoyan.com/board/4?offset={}'.format(offset)
+        html_content = self.download_html(url)
+        for each_movie in self.decode_html(html_content):
+            cmd_line = 'INSERT INTO top100(name,star,releasetime,score) VALUES("{}","{}","{}","{}")'.format(
+                each_movie['name'],each_movie['star'],each_movie['releasetime'],each_movie['score'])
+            self.mysqldb.iud_record(cmd_line)
+    
+    def gettop100movies(self):
+        for offset in range(0, 100, 10):
+            self.insertmovietodb(offset)
+
+if __name__=='__main__':
+
+    db = MySqlDatabase()
+    sp = spider(db)
+
+    root = tk.Tk()
+    root.title("数据库小实战 - MYSQL")
+    root.geometry("670x450")
+
+    myTk = MyTk(root, db, sp)
+    root.mainloop()

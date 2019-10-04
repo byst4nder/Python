@@ -1,0 +1,17 @@
+id:32d16d7a0342a8956bec0975f46527d3250ca6d1
+title:2019教师年终总结
+creater:IT无聊哥
+put_date:2019-02-16
+docType:txt
+docTypeNum:8
+totalPageNum:3
+qualityScore:3.22
+percentage:34.10
+payPrice:500
+downloadCoupons:
+isPaymentDoc:1
+freepagenum:1
+viewCount:4
+downloadCount:0
+conetent:
+url:https://wenku.baidu.com/view/32d16d7a0342a8956bec0975f46527d3250ca6d1.html?from=search 

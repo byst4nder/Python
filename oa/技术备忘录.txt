@@ -1,0 +1,22 @@
+requests cookies 保存与转换：
+
+#将CookieJar转为字典：
+cookies = requests.utils.dict_from_cookiejar(r.cookies)
+
+#将字典转为CookieJar：
+cookies = requests.utils.cookiejar_from_dict(cookie_dict, cookiejar=None, overwrite=True)
+
+#其中cookie_dict是要转换字典
+
+转换完之后就可以把它赋给cookies 并传入到session中了：
+
+s = requests.Session()
+s.cookies = cookies
+原文链接：https://blog.csdn.net/falseen/article/details/46962011
+
+
+JSON与字典转换：
+json.load() # 从文件中加载   json转dict
+json.loads() # 数据中加载    json转dict
+json.dump() # 转存到文件     dict转json
+json.dumps() # 转存到数据对象  dict转json

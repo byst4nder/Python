@@ -1,0 +1,184 @@
+from pymongo import MongoClient
+import requests
+from pyquery import PyQuery as pq
+from tkinter import ttk
+from tkinter import scrolledtext
+import tkinter as tk
+import tkinter.messagebox
+import operator
+from datetime import datetime
+
+class MongoDatabase:
+  def __init__(self):
+    self.conn = MongoClient('40.76.212.82', 27017)
+    self.db = self.conn.movies
+    self.movies_set = self.db.top100
+
+  def truncate(self):
+    self.movies_set.delete_many({})
+    
+  def insert(self,document):
+    self.movies_set.insert(document)
+
+  def query(self, query):
+    if (query==None):
+      return self.movies_set.find({})
+    else:
+      return self.movies_set.find(query).sort("id")
+
+  def __del__(self):
+    pass
+  
+class spider:
+    
+  def __init__(self, db):
+    self.mongodb = db
+
+  def download_html(self, url):
+    try:
+      res = requests.get(url)
+      if res.status_code == 200:
+        return res.text
+      else:
+        print('Reqeust {} failed, status is {}'.format(url,res.status_code))
+        return None
+    except Exception as e:
+      print(e)
+      return None
+
+  def decode_html(self, html_content,offset):
+    doc = pq(html_content)
+    id = offset
+    for item in doc.items('.board-wrapper dd'):
+      id = id + 1
+      yield {
+        'id' : id,
+        'name' : item.find('.name').text(),
+        'star' : item.find('.star').text()[3:],
+        'releasetime' : item.find('.releasetime').text()[5:],
+        'score' : float(item.find('.score').text()),
+        'updatedate': datetime.now().strftime('%Y-%m-%d')
+      }
+
+  def insertmovietodb(self, offset):
+    url = 'http://maoyan.com/board/4?offset={}'.format(offset)
+    html_content = self.download_html(url)
+    for each_movie in self.decode_html(html_content,offset):
+      self.mongodb.insert(each_movie)
+    
+  def gettop100movies(self):
+    for offset in range(0, 100, 10):
+      self.insertmovietodb(offset)
+
+class MyTk:
+    def __init__(self,root,db,sp):
+        self.mapping={'1-演员名字':'star',
+                      '3-电影分数(大于)':'score>',
+                      '4-电影分数(小于)': 'score<',
+                      '5-电影分数(等于)': 'score=',
+                      '2-电影名字':'name'}
+
+        self.mongodb = db
+        self.myspider =sp
+        self.init_gui(root)
+
+    def init_gui(self,root):
+        # 提示lable
+        self.lbl = tk.Label(root, text="搜索内容:").grid(column=1, row=1)
+
+        # 输入搜索内容
+        input_text = tk.StringVar()
+        self.enter = tk.Entry(root, width=20, textvariable=input_text)
+        self.enter.grid(column=1, row=2)
+
+        # 提示搜索类型
+        tk.Label(root, text="搜索类别").grid(column=0, row=1)
+        movie_type = tk.StringVar()
+
+        # 多选框
+        self.chosen = ttk.Combobox(root, textvariable=movie_type, width=12, state='readonly')
+        self.chosen['values'] = tuple(sorted(self.mapping.keys()))
+        self.chosen.current(0)
+        self.chosen.grid(column=0, row=2)
+
+        # 搜索按钮
+        action = tk.Button(root, text="搜索",command=self.search)
+        action.grid(column=2, row=2)
+
+        # 富文本框
+        self.scr = scrolledtext.ScrolledText(root,bg='yellow', width=70, height=20, wrap=tk.WORD)
+        self.scr.grid(column=0, row=4, columnspan=3)
+
+        self.lbl_cral = tk.Label(root)
+        self.lbl_cral.grid(column=0, row=5)
+        self.lbl_cral['text'] = self.get_cralinof()
+        
+
+        self.btn_crawl = tk.Button(root, text='开始爬取,100部电影', command=self.start_crawl)
+        self.btn_crawl.grid(column=1, row=5, columnspan=24)
+
+    def get_cralinof(self):
+        items = self.mongodb.query(None)
+        if(items.count()==0):
+            return "数据库无电影信息，请先爬取！"
+        else:
+            tmp_date = "最新爬取时间：" + items[0]['updatedate']
+            return tmp_date
+
+    def search(self):
+        if self.chosen.get() == "":
+            tkinter.messagebox.showinfo('提示',"选择搜索类别")
+            return None
+
+        if self.enter.get() == "":
+            tkinter.messagebox.showinfo('提示',"填写搜索内容")
+            return None
+
+        col_name = self.mapping[self.chosen.get()]
+        col_val = self.enter.get()        
+        search_dict={}
+
+        if (col_name == "name" or col_name =="star"):
+            search_dict = {col_name:{"$regex":col_val}}
+        else:
+            if(col_name == "score>"):
+              search_dict = {"score":{"$gt":float(col_val)}}
+            elif(col_name == "score<"):
+              search_dict = {"score":{"$lt":float(col_val)}}
+            else:
+              search_dict = {"score":{"$eq":float(col_val)}}
+        
+        self.get_data(search_dict)
+
+    def get_data(self, search_dict):
+        movies = self.mongodb.query(search_dict)
+        self.write_scrtext(movies)
+
+    def write_scrtext(self,items):
+        #先清除富文本框
+        self.scr.delete(1.0, tk.END)
+        if(items.count() == 0):
+            self.scr.insert(tk.INSERT, 'Nothing found!')
+        else:
+            for index,i in enumerate(items):
+              strval = i['name'] + ";" + i['star']+";" + i['releasetime'] + ";" + str(i['score'])
+              self.scr.insert(tk.INSERT, str(index)+":"+ strval+ '\n')
+
+    def start_crawl(self):
+        self.mongodb.truncate()
+        self.myspider.gettop100movies()
+        tkinter.messagebox.showinfo('提示','100部电影爬取完成！')
+
+        self.lbl_cral['text'] = self.get_cralinof()
+
+if __name__=='__main__':
+
+  db = MongoDatabase()
+  sp = spider(db)
+
+  root = tk.Tk()
+  root.title("数据库小实战 - MongoDB")
+  root.geometry("670x450")
+
+  myTk = MyTk(root, db, sp)
+  root.mainloop()

@@ -1,0 +1,26 @@
+
+爬虫用途：
+1、数据分析/人工智能数据采集
+2、社交软件冷启动
+3、舆情监测
+
+
+
+网站测试工具:
+httpbin.org
+
+curl
+windows下乱码：
+1.安装iconv
+1）下载地址：http://gnuwin32.sourceforge.net/packages/libiconv.htm
+2）使用：curl www.baidu.com | iconv -f utf-8 -t gbk
+2.修改cmd编码
+1）修改编码：通过 chcp命令改变代码页，UTF-8的代码页为65001 chcp 65001 执行该操作后，代码页就被变成UTF-8.
+chcp 65001   # 936 为简体中文
+2) 修改字体：选择"属性"->"字体"，将字体修改为True Type字体"Lucida Console"，然后点击确定将属性应用到当前窗口。
+参考地址：https://blog.csdn.net/tfs411082561/article/details/78416569
+
+wget
+httpie
+
+

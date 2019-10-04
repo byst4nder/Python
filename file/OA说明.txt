@@ -1,0 +1,11 @@
+					<td style="padding-top:5px;vertical-align:top;" id="tab_101" tabId=3 class='tab2selected' onclick="loadContent('101','/page/element/compatible/NewsTabContentData.jsp','ebaseid=7&eid=101&styleid=1390381555293&hpid=2&subCompanyId=1&tabsize=4',event)" title="行政文件"><span class="ellipsis">行政文件</span></td>
+				
+				
+					<td style="padding-top:5px;vertical-align:top;"  id="tab_101_4" tabId=4 class='tab2unselected' onclick="loadContent('101','/page/element/compatible/NewsTabContentData.jsp','ebaseid=7&eid=101&styleid=1390381555293&hpid=2&subCompanyId=1&tabsize=4',event)"  title="党委文件"><span class="ellipsis">党委文件</span></td>
+			
+				
+					<td style="padding-top:5px;vertical-align:top;"  id="tab_101_5" tabId=5 class='tab2unselected' onclick="loadContent('101','/page/element/compatible/NewsTabContentData.jsp','ebaseid=7&eid=101&styleid=1390381555293&hpid=2&subCompanyId=1&tabsize=4',event)"  title="工会文件"><span class="ellipsis">工会文件</span></td>
+			
+				
+					<td style="padding-top:5px;vertical-align:top;"  id="tab_101_6" tabId=6 class='tab2unselected' onclick="loadContent('101','/page/element/compatible/NewsTabContentData.jsp','ebaseid=7&eid=101&styleid=1390381555293&hpid=2&subCompanyId=1&tabsize=4',event)"  title="纪委文件"><span class="ellipsis">纪委文件</span></td>
+	
