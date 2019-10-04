@@ -1,0 +1,117 @@
+git 首次配置
+
+# 用户身份配置
+git config --global user.name "sowly"
+git config --global user.email "sowly@abc.com"
+
+# 配置文件
+/etc/gitconfig  通过--system选项，从该文件配置变量
+~/.gitconfig 或者 ~/.config/git/config  通过--global 选项使用git从该文件配置变量
+当前仓库的git目录（.git/config）中的config文件：针对当前单个仓库
+
+
+git 使用
+
+# 初始化  在该目录下新建.git文件夹
+git init
+
+# 将文件添加到暂存区 
+git add  <filename|filepath> 
+exec: git add *.c  git add license
+
+# 克隆仓库 可以是http https ssh git等协议
+git clone [url]
+exec： http://github.com/libgit2/libgit2    user@server:path/to/repo.git
+
+# 查看当前文件状态
+git status
+
+Untracked files 未跟踪文件
+Changes to be committed  等待提交的更改
+Changes not staged for commit 已修改但未添加到暂存区 
+
+# 显示更简洁的状态信息
+git status -s/--short  
+
+M 	已修改文件
+MM	已修改并添加到暂存区，之后又被修改过
+A	已暂存状态
+?？	未被跟踪的新文件
+
+# 忽略文件
+创建.gtiignore文件，在其中列出待匹配的文件的模式，将该文件放置到根目录下
+匹配模式的规则如下：
+空行或者以#开始的行会被忽悠
+支持标准的glob模式  *匹配0个或更多字符 ?匹配任意单个字符 []匹配范围  **匹配嵌套目录 
+以斜杠(/)开头的模式可用于禁止递归匹配
+以斜杠(/)结果的模式表示目录
+以感叹号(!)开始的模式表示取反
+
+
+
+# 提交变更
+git  commit
+git commit -m “注释”
+
+# 直接提交，跳过暂存区
+
+git commit -a -m "注释"
+
+# 移除文件
+git rm <filename>
+
+git rm --cached <filename> # 将文件从暂存区移除，保留在工作目录
+
+# 移动文件 
+git mv <filename> <newfilename>
+相当于
+mv  <filename> <newfilename>
+git rm  <filename>
+git add  <newfilename>
+
+# 历史记录查看
+
+git log
+
+git log -p -2
+git log --stat 
+
+
+# 远程仓库的使用
+1.显示远程仓库
+git clone [url]
+git remote
+git remote -v
+2.添加远程仓库
+git remote add [仓库名] [url]
+
+git remote add origin git@github.com:lysowly/python.git
+3.从远程仓库获取和拉取数据
+git fetch [remote-name]
+4.将数据推送到远程仓库
+git push -u origin master
+
+5.检查远程仓库
+git  remote show origin
+
+6.删除和重命名远程仓库
+git remote rename pb paul  # 重命名远程仓库
+git remote rm paul # 删除远程仓库地址
+
+7.远程仓库更新后本地仓库更新
+git fetch [remote-name]
+git pull
+
+# 标记
+1.查询标记
+git tag
+2.创建标记
+git tag -a v0.1 -m "version 0.1"
+
+3.补加标记
+git log --pretty=oneline
+git tag -a v1.2 9fceb02
+4.共享标记
+git push origin [tagname]
+
+

@@ -1,0 +1,18 @@
+https://github.com/pjialin/py12306
+12306 购票助手，支持集群，多账号，多任务购票以及 Web 页面管理
+
+https://github.com/testerSunshine/12306
+12306智能刷票，订票
+
+
+https://github.com/shengqiangzhang/examples-of-web-crawlers
+一些有趣的python爬虫例子,对新手比较友好,主要爬取淘宝、天猫、微信、豆瓣、QQ等网站。
+
+
+https://github.com/jobbole/awesome-python-cn
+http://jobbole.github.io/awesome-python-cn/
+Python资源大全中文版，包括：Web框架、网络爬虫、模板引擎、数据库、数据可视化、图片处理等，由伯乐在线持续更新。
+
+
+https://www.zhihu.com/question/24590883
+知乎：哪些 Python 库让你相见恨晚？
