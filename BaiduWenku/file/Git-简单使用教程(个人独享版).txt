@@ -1,0 +1,18 @@
+id:8ce9d8a7112de2bd960590c69ec3d5bbfc0ada79
+title:Git-简单使用教程(个人独享版)
+creater:口琴俊
+put_date:2018-08-20
+docType:doc
+docTypeNum:4
+totalPageNum:28
+qualityScore:4.4
+percentage:78.14
+payPrice:0
+downloadCoupons:
+isPaymentDoc:0
+freepagenum:
+viewCount:357
+downloadCount:24
+conetent:
+url:https://wenku.baidu.com/view/8ce9d8a7112de2bd960590c69ec3d5bbfc0ada79.html?from=search 
+Windows下Git和Gitlab简单教程---jack杨俊伟在使用之前，因为大家之前用的都是SVN集中式的版本控制系统，而git是分布式的，但在使用和功能上差异没有特别大，这里需要先简单了解它们的差异。1)最核心的区别Git是分布式的，而Svn不是分布的。Git跟Svn一样有自己的集中式版本库和Server端，但Git更倾向于分布式开发，因为每一个开发人员的电脑上都有一个LocalRepository,所以即使没有网络也一样可以Commit，查看历史版本记录，创建项目分支等操作，等网络再次连接上Push到Server端。2)Git把内容按元数据方式存储，而SVN是按文件：因为,.git目录是处于你的机器上的一个克隆版的版本库，它拥有中心版本库上所有的东西，例如标签，分支，版本记录等。.git目录的体积大小跟.svn比较，你会发现它们差距很大。3)Git没有一个全局版本号，而SVN有。Git的内容的完整性要优于SVN:GIT的内容存储使用的是SHA-1哈希算法。这能确保代码内容的完整性，确保在遇到磁盘故障和网络问题时降低对版本库的破坏。Git下载下来后，在OffLine状态下可以看到所有的Log,SVN不可以。4)SVN必须先Update才能Commit,忘记了合并时就会出现一些错误，git还是比较少的出现这种情况。5)克隆一份全新的目录以同样拥有五个分支来说，SVN是同时复製5个版本的文件,也就是说重复五次同样的动作。而Git只是获取文件的每个版本的元素6)提交（Commit）在SVN，当你提交你的完成品时，它将直接记录到中央版本库。当你发现你的完成品存在严重问题时，你已经无法阻止事情的发生了。如果网路中断，你根本没办法提交！而Git的提交完全属於本地版本库的活动。而你只需“推”（git push）到主要版本库即可。Git的“推”其实是在执行“同步”（Sync）。所以得出，SVN的特点是简单，只是需要一个放代码的地方时用是OK的。Git的特点版本控制可以不依赖网络做任何事情，对分支和合并有更好的支持。管理项目用SVN，管理代码用Git，这样可以取长补短。一、->在WIN10下开始安装GIT客户端（包括git和tortoiseGit）在使用教程中包含了必要的软件安装程序，版本是比较新的，可自行使用；操作系统：Windows 10git版本：git version 2.13.0.git客户端：TortoiseGit-2.4.0.2-64bit（官网下的）TortoiseGit语言包：汉化包，利于入门理解a.安装git环境软件（全部安装选项均采用默认，路径自行选择）基本一路默认next即可安装成功后，空白处右键可以发现git bashb.安装TortoiseGit（全部安装选项均采用默认，路径自行选择）此处安装完后点击finish会自动重启，请注意勾选安装后右键菜单可以发现当然，如果初学有需要，可以再安装language汉化包（./software目录下）进入tortoiseGit-设置-语言因为我们的项目代码是放在服务器或者版本仓库里的，所以接下来我们需要对tortoiseGit进行一些简单的配置使用；用过SVN的朋友应该不陌生在这里我们可以通过命令行git bash来简单设置打开后出现命令行，这里的gitbash里是可以写cmd命令也可以写linux命令的，这是非常号的地方，并且有高亮提示，习惯linux指令，命令行操作就会顺手输入以下内容（每行结束后，回车）：gitconfig--globaluser.name“用户名”gitconfig--globaluser.email“邮箱地址”这里注意要空格以上命令中，用户名为邮箱中的用户名(一般为姓名拼音首字母小写缩写)；邮箱地址为你的邮箱。设置好后，可以输入git config --list命令，来显示设置结果：

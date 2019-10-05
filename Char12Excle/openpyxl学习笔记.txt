@@ -1,0 +1,219 @@
+# 安装openpyxl模块
+pip install openpyxl
+
+# 导入包
+import openpyxl
+
+wb = openpyxl.load_workbook("example.xlsx")
+
+type(wb)   # wb类型
+openpyxl.workbook.workbook.Workbook
+#获取工作表名称 返回为列表
+wb.sheetnames
+['Sheet1', 'Sheet2', 'Sheet3']
+# 获取工作表对象，返回为工作表对象
+wb['Sheet1']
+<Worksheet "Sheet1">
+
+# 获取单元格对象
+In [11]: sheet['a1']
+Out[11]: <Cell 'Sheet1'.A1>
+# 获取单元格值
+In [12]: sheet['a1'].value
+Out[12]: '4/5/2015 01:34:02 PM'
+# 获取单元格行和列
+In [13]: c = sheet['b1']
+In [14]: c.value
+Out[14]: 'Apples'
+In [15]: c.row
+Out[15]: 1
+In [19]: c.column
+Out[19]: 2
+In [21]: 'Row ' + str(c.row) + ', Column ' + str(c.column) + ' is ' + c.value
+Out[21]: 'Row 1, Column 2 is Apples'
+# 指定行列
+In [22]: sheet.cell(row=1,column = 2)
+Out[22]: <Cell 'Sheet1'.B1>
+In [23]: sheet.cell(row=1,column = 2).value
+Out[23]: 'Apples'
+# 循环获取单元格值
+In [25]: for i in range(1,8,2):
+    ...:     print(i,sheet.cell(row=i,column=2).value)
+    ...:
+1 Apples
+3 Pears
+5 Apples
+7 Strawberries
+
+# 获取表大小，原get_highest_row() get_highest_column() 函数已经弃用
+In [31]: sheet.max_row
+Out[31]: 7
+In [32]: sheet.max_column
+Out[32]: 3
+# 列数字与字母转换  新版本有改写从openpyxl.cell包改到openpyxl.utils包。
+In [38]: from openpyxl.utils import get_column_letter, column_index_from_string
+In [39]: get_column_letter(1)
+Out[39]: 'A'
+In [40]: get_column_letter(2)
+Out[40]: 'B'
+In [41]: column_index_from_string('AA')
+Out[41]: 27
+
+# 从表中取得行和列
+
+In [42]: tuple(sheet['a1':'c3'])
+Out[42]:
+((<Cell 'Sheet1'.A1>, <Cell 'Sheet1'.B1>, <Cell 'Sheet1'.C1>),
+ (<Cell 'Sheet1'.A2>, <Cell 'Sheet1'.B2>, <Cell 'Sheet1'.C2>),
+ (<Cell 'Sheet1'.A3>, <Cell 'Sheet1'.B3>, <Cell 'Sheet1'.C3>))
+
+In [43]: for rowOfCellObjects in sheet['a1':'c3']:
+    ...:     for cellObj in rowOfCellObjects:
+    ...:         print(cellObj.coordinate,cellObj.value)
+    ...:     print('---------End Of Row-----------')
+    ...:
+A1 4/5/2015 01:34:02 PM
+B1 Apples
+C1 73
+---------End Of Row-----------
+A2 4/5/2015 03:41:23 AM
+B2 Cherries
+C2 85
+---------End Of Row-----------
+A3 4/6/2015 12:46:51 PM
+B3 Pears
+C3 14
+---------End Of Row-----------
+
+# 获取行、列
+In [50]: sheet[1]
+Out[50]: (<Cell 'Sheet1'.A1>, <Cell 'Sheet1'.B1>, <Cell 'Sheet1'.C1>)
+In [51]: sheet['a']
+Out[51]:
+(<Cell 'Sheet1'.A1>,
+ <Cell 'Sheet1'.A2>,
+ <Cell 'Sheet1'.A3>,
+ <Cell 'Sheet1'.A4>,
+ <Cell 'Sheet1'.A5>,
+ <Cell 'Sheet1'.A6>,
+ <Cell 'Sheet1'.A7>)
+In [52]: list(sheet.rows)[0]
+Out[52]: (<Cell 'Sheet1'.A1>, <Cell 'Sheet1'.B1>, <Cell 'Sheet1'.C1>)
+In [53]: list(sheet.columns)[0]
+Out[53]:
+(<Cell 'Sheet1'.A1>,
+ <Cell 'Sheet1'.A2>,
+ <Cell 'Sheet1'.A3>,
+ <Cell 'Sheet1'.A4>,
+ <Cell 'Sheet1'.A5>,
+ <Cell 'Sheet1'.A6>,
+ <Cell 'Sheet1'.A7>)
+
+# 创建并保存 Excel 文档
+In [84]: wb = openpyxl.Workbook()
+In [86]: wb.sheetnames
+Out[86]: ['Sheet']
+In [87]: sheet = wb.active
+In [88]: sheet
+Out[88]: <Worksheet "Sheet">
+In [89]: sheet.title
+Out[89]: 'Sheet'
+In [90]: sheet.title = 'Spam Bacon Eggs Sheet'
+In [91]: sheet.title
+Out[91]: 'Spam Bacon Eggs Sheet'
+In [92]: wb.save('examply_02.xlsx')
+
+# 创建和删除工作表
+In [103]: wb.create_sheet()
+Out[103]: <Worksheet "Sheet">
+In [104]: wb.sheetnames
+Out[104]: ['Spam Bacon Eggs Sheet', 'Sheet']
+In [105]: wb.create_sheet(index=0, title='First Sheet')
+Out[105]: <Worksheet "First Sheet">
+In [106]: wb.sheetnames
+Out[106]: ['First Sheet', 'Spam Bacon Eggs Sheet', 'Sheet']
+In [108]: wb.remove_sheet(wb['Sheet']) # 该方法已经更新为 Use wb.remove(worksheet) or del wb[sheetname]
+          wb.remove(wb['Sheet'])
+D:\python373\Scripts\ipython:1: DeprecationWarning: Call to deprecated function remove_sheet (Use wb.remove(worksheet) or del wb[sheetname]).
+In [109]: wb.sheetnames
+Out[109]: ['First Sheet', 'Spam Bacon Eggs Sheet']
+In [111]: wb.remove(wb['First Sheet'])
+In [112]: wb.sheetnames
+Out[112]: ['Spam Bacon Eggs Sheet']
+
+# 将值写入单元格
+In [116]: sheet['a1'] = 'Hello word!'
+In [117]: sheet['a1'].value
+Out[117]: 'Hello word!'
+
+
+# 设置单元格的字体格式
+
+In [146]: from openpyxl.styles import Font
+#  将 A1 单元格设置为 24 点、 斜体
+In [151]: italic24Font = Font(size=24, italic=Ture)
+In [154]: sh['a1'].font = italic24Font
+
+# Font对象
+# Font 对象的 style 属性影响文本在单元格中的显示方式。要设置字体风格属性，就向 Font()函数传入关键字参数。
+
+'''
+关键字参数 数据类型 描述
+name 字符串 字体名称，诸如'Calibri' 或'Times New Roman'
+size 整型 大小点数
+bold 布尔型 True 表示粗体
+italic 布尔型 True 表示斜体
+'''
+
+# 公式
+如果你希望看到该公式的计算结果，而不是原来的公式，就必须将 load_workbook()的 data_only 关键字参
+数设置为 True。这意味着 Workbook 对象要么显示公式，要么显示公式的结果，不
+能兼得（但是针对一个电子表格文件，可以加载多个 Workbook 对象） 。
+sheet['B9'] = '=SUM(B1:B8)'
+
+# 调整行和列
+In [160]: sh.row_dimensions[1].height = 70
+In [163]: sh.column_dimensions['A'].width = 20
+
+# 合并 拆分单元格
+In [165]: sh.merge_cells('a1:c1')
+In [169]: sh.unmerge_cells('a1:c1')
+
+# 冻结窗格
+In [174]: sh.freeze_panes = 'C5'
+
+freeze_panes 的设置 冻结的行和列
+sheet.freeze_panes = 'A2' 行 1
+sheet.freeze_panes = 'B1' 列 A
+sheet.freeze_panes = 'C1' 列 A 和列 B
+sheet.freeze_panes = 'C2' 行 1 和列 A 和列 B
+sheet.freeze_panes = 'A1'或 sheet.freeze_panes = None  没有冻结窗格
+
+# 图表
+In [182]: from openpyxl.chart import BarChart,Reference,Series
+In [183]: refObj = Reference(sh,min_col=1,min_row=1,max_col=1,max_row=10)
+In [184]: seriesObj = Series(refObj,title='new series')
+In [185]: chartObj = BarChart()
+In [186]: chartObj.append(seriesObj)
+In [195]: sheet.add_chart(chartObj, 'C5')
+In [196]: chartObj.title = 'My Chart'
+In [197]: wb.save('sampleChart.xlsx')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
