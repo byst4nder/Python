@@ -1,0 +1,67 @@
+# 导入csv
+import csv
+
+# 读取csv Reader 对象
+In [106]: excsv = open('example.csv')
+In [107]: csvreader = csv.reader(excsv)
+In [108]: csvdata = list(csvreader)
+In [109]: csvdata
+Out[109]:
+[['4/5/2014 13:34', 'Apples', '73'],
+ ['4/5/2014 3:41', 'Cherries', '85'],
+ ['4/6/2014 12:46', 'Pears', '14'],
+ ['4/8/2014 8:59', 'Oranges', '52'],
+ ['4/10/2014 2:07', 'Apples', '152'],
+ ['4/10/2014 18:10', 'Bananas', '23'],
+ ['4/10/2014 2:40', 'Strawberries', '98']]
+
+ In [111]: csvdata[0][0]
+Out[111]: '4/5/2014 13:34'
+In [112]: csvdata[0][1]
+Out[112]: 'Apples'
+In [113]: csvdata[0][2]
+Out[113]: '73'
+
+# 在 for 循环中，从 Reader 对象读取数据
+In [118]: for da in csvdata:
+     ...:     for d in da:
+     ...:         print(d,end='\t')
+     ...:     print()
+     ...:
+     ...:
+4/5/2014 13:34  Apples  73
+4/5/2014 3:41   Cherries        85
+4/6/2014 12:46  Pears   14
+4/8/2014 8:59   Oranges 52
+4/10/2014 2:07  Apples  152
+4/10/2014 18:10 Bananas 23
+4/10/2014 2:40  Strawberries    98
+
+# 写入csv Writer 对象
+# 设置 newline 关键字参数，未设置output.csv中的行距将有两倍
+In [120]: outputFile = open('output.csv','w',newline='')
+In [121]: outputWriter = csv.writer(outputFile)
+In [122]: outputWriter.writerow(['spam', 'eggs', 'bacon', 'ham'])
+Out[122]: 21
+In [123]: outputWriter.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
+Out[123]: 32
+In [124]: outputWriter.writerow([1, 2, 3.141592, 4])
+Out[124]: 16
+In [126]: outputFile.close()
+
+# 用制表符代替逗号来分隔单元格，并有两倍行距
+csvWriter = csv.writer(csvFile, delimiter='\t', lineterminator='\n\n')
+
+
+
+
+
+
+
+
+
+
+
+
+
+

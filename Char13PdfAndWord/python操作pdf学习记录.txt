@@ -1,0 +1,42 @@
+# 用于处理PDF的模块是PyPDF2，PyPDF2
+pip install pypdf2
+# 从PDF提取文本，没有办法从 PDF 文档中提取图像、图表或其他媒体，但它可以提取文本，并将文本返回为 Python 字符串
+import PyPDF2
+In [2]: pdfFileObj = open('meetingminutes.pdf','rb')
+In [3]: pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+In [4]: pdfReader.numPages
+Out[4]: 19
+In [5]: pageObj = pdfReader.getPage(0)
+In [6]: pageObj.extractText() #文本提取并不完美：该 PDF 中的文本 Charles E.“Chas”Roemer, President，在函数返回的字符串中消失了， 而且空格有时候也会没有。
+Out[6]: 'OOFFFFIICCIIAALL  BBOOAARRDD  MMIINNUUTTEESS   Meeting of \nMarch 7\n, 2014\n        \n     The Board of Elementary and Secondary Education shall provide leadership and \ncreate policies for education that expand opportunities for children, empower \nfamilies and communities, and advance Louisiana in an increasingly \ncompetitive glob\nal market.\n BOARD \n of ELEMENTARY\n and \n SECONDARY\n EDUCATION\n  '
+
+# 解密PDF
+
+In [7]: pdfReader = PyPDF2.PdfFileReader(open('encrypted.pdf','rb'))
+In [8]: pdfReader.isEncrypted
+Out[8]: True
+In [10]: pdfReader.decrypt('rosebud')
+Out[10]: 1
+In [11]: pdfReader.getPage(0)
+
+# 创建PDF
+#  PyPDF2 不能将任意文本写入 PDF，就像 Python 可以写入纯文本文件那样。PyPDF2 写入 PDF 的能力，仅限于从其他 PDF 中拷贝页面、旋转页面、重叠页面和加密文件。
+# 模块不允许直接编辑 PDF。必须创建一个新的 PDF，然后从已有的文档拷贝内容。
+
+1．打开一个或多个已有的 PDF（源 PDF） ，得到 PdfFileReader 对象。
+2．创建一个新的 PdfFileWriter 对象。
+3．将页面从 PdfFileReader 对象拷贝到 PdfFileWriter 对象中。
+4．最后，利用 PdfFileWriter 对象写入输出的 PDF。
+
+# PyPDF2 不能在 PdfFileWriter 对象中间插入页面，addPage()方法只能够在末尾添加页面。
+
+# 拷贝页面
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+# 安装python-docx模块
+pip install python-docx
+
+# .docx 文件有很多结构。这些结构在 python-docx 中用 3 种不同的类型来表示。在最高一层，Document 对象表示整个文档。Document 对象包含一个 Paragraph 对象的列表，
+表示文档中的段落（用户在 Word 文档中输入时，如果按下回车，新的段落就开始了） 。每个 Paragraph 对象都包含一个 Run 对象的列表。
+# Word 文档中的文本不仅仅是字符串。它包含与之相关的字体、大小、颜色和其他样式信息。在 Word 中，样式是这些属性的集合。一个 Run 对象是相同样式文
+本的延续。当文本样式发生改变时，就需要一个新的 Run 对象。
+
+# 读取word文档
+In [17]: doc = docx.Document('demo.docx')
+In [18]: len(doc.paragraphs)
+Out[18]: 7
+In [19]: doc.paragraphs[0].text
+Out[19]: 'Document Title'
+In [20]: doc.paragraphs[1].text
+Out[20]: 'A plain paragraph with some bold and some italic'
+In [21]: len(doc.paragraphs[1].runs)
+Out[21]: 5
+In [22]: doc.paragraphs[1].runs[0].text
+Out[22]: 'A plain paragraph with'
+In [23]: doc.paragraphs[1].runs[1].text
+Out[23]: ' some '
+In [24]: doc.paragraphs[1].runs[3].text
+Out[24]: ' and some '
+
+# 从.docx 文件中取得完整的文本
+
+In [25]: def getText(filename):
+    ...:     doc = docx.Document(filename)
+    ...:     fullText = []
+    ...:     for para in doc.paragraphs:
+    ...:         fullText.append(para.text)
+    ...:     return '\n'.join(fullText)
+    ...:
+
+In [27]: print(getText('demo.docx'))
+Document Title
+A plain paragraph with some bold and some italic
+Heading, level 1
+Intense quote
+first item in unordered list
+first item in ordered list
+
+# 设置 Paragraph 和 Run 对象的样式
+# 段落样式可以应用于 Paragraph 对象，字符样式可以应用于 Run 对象，链接的样式可以应用于这两种对象。可以将 Paragraph 和Run 对象的 style 属性设置为一个字符串，从而设置样式。
+# 如果对 Run 对象应用链接的样式，需要在样式名称末尾加上'Char'。例如，对Paragraph 对象设置 Quote 链接的样式， 应该使用 paragraphObj.style = 'Quote'。
+但对于Run 对象，应该使用 runObj.style = 'QuoteChar'。
+
+
+# Run 属性   text 属性 True（该属性总是启用，不论其他样式是否应用于该 Run） 、False（该属性总是禁用）或 None（默认使用该 Run 被设置的任何属性） 。
+Run 对象的 text 属性
+属性      描述
+bold 文本以粗体出现
+italic 文本以斜体出现
+underline 文本带下划线
+strike 文本带删除线
+double_strike 文本带双删除线
+all_caps 文本以大写首字母出现
+small_caps 文本以大写首字母出现，小写字母小两个点
+shadow 文本带阴影
+outline 文本以轮廓线出现，而不是实心
+rtl 文本从右至左书写
+imprint 文本以刻入页面的方式出现
+emboss 文本以凸出页面的方式出现
+
+# 获取内置样式
+In [44]: for s in doc.styles:
+    ...:     print(s)
+
+In [29]: doc.paragraphs[0].text
+Out[29]: 'Document Title'
+In [30]: doc.paragraphs[0].style
+Out[30]: _ParagraphStyle('Title') id: 2072630944520
+In [31]: doc.paragraphs[0].style = 'Normal'
+In [32]: doc.paragraphs[0].style
+Out[32]: _ParagraphStyle('Normal') id: 2072610590664
+In [35]: (doc.paragraphs[1].runs[0].text, doc.paragraphs[1].runs[1].text, doc.paragraphs[1]
+    ...: .runs[2].text, doc.paragraphs[1].runs[3].text,doc.paragraphs[1].runs[4].text)
+Out[35]: ('A plain paragraph with', ' some ', 'bold', ' and some ', 'italic')
+
+In [45]: doc.paragraphs[1].style = 'Heading 1'
+In [46]: doc.save('restyled.docx')
+
+# 写入 Word 文档
+
+In [47]: doc = docx.Document()
+In [48]: doc.add_paragraph('Hello world！')
+Out[48]: <docx.text.paragraph.Paragraph at 0x1e291261dc8>
+In [49]: doc.save('helloworld.docx')
+
+In [50]: doc
+Out[50]: <docx.document.Document at 0x1e291228a98>
+In [51]: paraObj1 = doc.add_paragraph('This is a 测试文档')
+In [52]: paraObj2 = doc.add_paragraph('This is a 测试文档,段落2')
+In [53]: paraObj1.add_run(' 这个在第二段之前')
+Out[53]: <docx.text.run.Run at 0x1e29270a248>
+In [54]: doc.save('helloworld.docx')
+# 这一行添加了一段，文本是 Hello world!，样式是 Title。
+In [56]: doc.add_paragraph('Hello world!','Title')
+Out[56]: <docx.text.paragraph.Paragraph at 0x1e2929e6ec8>
+In [57]: doc.save('helloworld.docx')
+
+# 添加标题
+# 调用 add_heading()将添加一个段落，并使用一种标题样式。
+In [60]: doc. add_heading('Header 0',0)
+Out[60]: <docx.text.paragraph.Paragraph at 0x1e292a24708>
+In [61]: doc. add_heading('Header 1',1)
+Out[61]: <docx.text.paragraph.Paragraph at 0x1e292a1a7c8>
+In [62]: doc.save('helloworld.docx')
+
+# 添加换行符和换页符
+# 要添加换行符（而不是开始一个新的段落），可以在 Run 对象上调用 add_break()方
+法， 换行符将出现在它后面。 如果希望添加换页符， 可以将docx.enum.text.WD_BREAK.PAGE
+作为唯一的参数，传递给add_break()
+
+In [68]: doc.paragraphs[0].runs[0].add_break()
+In [69]: doc.paragraphs[0].runs[0].add_break(docx.enum.text.WD_BREAK.PAGE)
+In [70]: doc.save('helloworld.docx')
+
+# 添加图像
+In [72]: doc.add_picture('catlogo.png',width=docx.shared.Inches(1),height=docx.shared.Cm(4))
+Out[72]: <docx.shape.InlineShape at 0x1e29123d688>
+In [73]: doc.save('helloworld.docx')
+
+
+
+
+
+
+
+
